@@ -1,0 +1,16 @@
+import React from 'react'
+
+function Css() {
+    return (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.5 8H15.5L11 12H15L14.5 15.5L12 16.25L9.5 15.5L9.4 15M20 4L18 18.5L12 20.5L6 18.5L4 4H20Z"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round" />
+        </svg>
+
+    )
+}
+
+export default Css

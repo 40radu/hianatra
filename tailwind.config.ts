@@ -9,9 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "blue-primary": "#020F4F",
+        "blue-secondary": "#031EA9",
       },
+      boxShadow: {
+        primary: "0 0 36px #031EA92E"
+      },
+      screens: {
+        '2xl': '1440px'
+      }
     },
   },
   plugins: [],

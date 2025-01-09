@@ -1,0 +1,12 @@
+.container-common {
+    @apply mx-auto w-full h-fit;
+    max-width: 1440px;
+    padding-inline: 20px;
+    @screen lg {
+        padding-inline : 30px;
+    };
+
+    @screen xl {
+        padding-inline: 50px;
+    }
+}

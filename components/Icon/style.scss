@@ -1,0 +1,9 @@
+.icon {
+    &--blue {
+        @apply text-blue-primary;
+    }
+
+    &--white {
+        @apply text-white;
+    }
+}

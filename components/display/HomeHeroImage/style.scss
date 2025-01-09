@@ -1,0 +1,47 @@
+.h-image {
+    @apply relative rounded-full mx-auto;
+    width: 90%;
+    padding: 20px;
+    aspect-ratio: 1/1;
+    @screen lg {
+        padding: 30px;
+    }
+    .dashed {
+        @apply absolute w-full h-full left-0 top-0;
+    };
+    .circle {
+        @apply w-full rounded-full bg-blue-secondary relative;
+        aspect-ratio: 1/1;
+        .main-img{
+            @apply absolute left-0 top-0 w-full;
+            max-height: 725px;
+        }
+        .wave {
+            @apply absolute left-0;
+            bottom: -28%;
+            @screen xl {
+                @apply hidden;
+            }
+        }
+    }
+    &__logo{
+        @apply bg-white absolute shadow-primary rounded-full w-fit h-fit flex items-center;
+        z-index: 10;
+        padding: 10px;
+        @screen lg {
+            padding: 20px;
+        }   
+    };
+    .css{
+        top: 5.5%;
+        left: 9.5%;
+    };
+    .device {
+        top:54.5%;
+        left: -5%;
+    };
+    .html {
+        top: 12%;
+        right: 4%;
+    };
+}

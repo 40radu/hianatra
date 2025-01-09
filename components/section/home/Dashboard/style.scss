@@ -1,0 +1,107 @@
+.h-dashboard {
+    @apply grid w-full relative overflow-y-hidden;
+    padding-top: 125px;
+    row-gap: 40px;
+    @screen md {
+        @apply grid-cols-2;
+        column-gap: 20px;
+    }
+    @screen lg {
+        @apply min-h-screen;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @screen xl {
+        row-gap: 0;
+    }
+    @screen 2xl {
+        column-gap: 0;
+    }
+    &__text {
+        @apply flex flex-col gap-5 justify-center;
+        &-head{
+            @apply flex flex-col;
+            gap: 10px; 
+            h1 {
+                @apply font-semibold uppercase text-2xl;
+                @screen lg {
+                    @apply text-5xl;
+                    line-height: 120%;
+                }
+                @screen xl {
+                    @apply text-6xl;
+                    line-height: 120%;
+                }
+                @screen 2xl {
+                    line-height: 82.89px;
+                    font-size: 68px;
+                }
+            };
+            span {
+                @apply font-bold;
+            };
+            .txt-secondary {
+                @apply text-blue-secondary;
+            };
+            .txt-primary {
+                @apply text-blue-primary;
+            };
+            p {
+                @apply w-full text-sm;
+                max-width: 642px;
+                @screen lg {
+                    @apply text-base;
+                }
+            }
+        }
+        &-btns--wrapper {
+            @apply flex relative z-20 w-full justify-start;
+            gap: 10px;
+        }
+    }
+    &__image {
+        @apply flex flex-col justify-center;
+    };
+    &__wave {
+        @apply hidden;
+        @screen xl {
+            @apply flex w-full absolute bottom-0 left-0;
+        }
+    };
+    &__card {
+        @apply w-fit h-fit relative z-30 p-4 shadow-primary flex flex-col bg-white;
+        gap: 5px;
+        left: 50%;
+        bottom: 5%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        margin-top: 25px;
+        @screen md {
+           @apply left-full mt-0 p-5;
+        }
+        @screen lg {
+            @apply absolute;
+            left :50%;
+            bottom: 3%;
+        }
+        @screen 2xl {
+            bottom : 5%;
+        }
+        h3 {
+            @apply text-base font-semibold text-blue-primary;
+            @screen lg {
+                @apply text-lg;
+            }
+        }
+        p {
+            @apply text-sm;
+            max-width: 190px;
+            @apply text-black;
+            line-height: 107%;
+            @screen lg {
+                max-width: 209px;
+                line-height: 120%;
+            }
+        }
+    }
+}
