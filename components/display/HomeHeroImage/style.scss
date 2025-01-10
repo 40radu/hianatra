@@ -16,13 +16,6 @@
             @apply absolute left-0 top-0 w-full;
             max-height: 725px;
         }
-        .wave {
-            @apply absolute left-0;
-            bottom: -28%;
-            @screen xl {
-                @apply hidden;
-            }
-        }
     }
     &__logo{
         @apply bg-white absolute shadow-primary rounded-full w-fit h-fit flex items-center;

@@ -31,9 +31,6 @@ function Dashboard() {
       <div className={classNames("h-dashboard__image")}>
         <HomeHeroImage />
       </div>
-      <div className={classNames("h-dashboard__wave")}>
-        <Image src="/home/wave.png" width={1920} height={1024} alt='hero' />
-      </div>
       <div className={classNames("h-dashboard__card")}>
         <Icon name='accessible' />
         <h3>Accessibilité</h3>

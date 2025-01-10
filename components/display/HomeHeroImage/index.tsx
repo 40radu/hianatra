@@ -13,9 +13,6 @@ function HomeHeroImage() {
                 <span className={classNames("main-img")}>
                     <Image src="/home/hero.png" width={1920} height={1024} alt='hero' />
                 </span>
-                <span className={classNames("wave")}>
-                    <Image src="/home/wave.png" width={1920} height={1024} alt='hero' />
-                </span>
             </div>
             <span className={classNames("h-image__logo", "css")}>
                 <Icon name="css" />

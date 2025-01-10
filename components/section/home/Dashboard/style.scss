@@ -1,5 +1,5 @@
 .h-dashboard {
-    @apply grid w-full relative overflow-y-hidden;
+    @apply grid w-full relative;
     padding-top: 125px;
     row-gap: 40px;
     @screen md {
@@ -61,12 +61,6 @@
     }
     &__image {
         @apply flex flex-col justify-center;
-    };
-    &__wave {
-        @apply hidden;
-        @screen xl {
-            @apply flex w-full absolute bottom-0 left-0;
-        }
     };
     &__card {
         @apply w-fit h-fit relative z-30 p-4 shadow-primary flex flex-col bg-white;

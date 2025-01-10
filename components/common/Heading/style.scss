@@ -1,0 +1,50 @@
+.heading {
+    @apply w-full flex flex-col;
+    gap: 6px;
+    @screen lg {
+        gap: 10px;
+    }
+    h2 {
+        @apply uppercase font-semibold text-xs;
+        letter-spacing: 1px;
+        @screen lg {
+            @apply text-xl;
+            padding-block: 12px;
+        }
+    }
+    .blue {
+        @apply text-blue-secondary
+    }
+    .black {
+        @apply text-black;
+    }
+    .description-common {
+        @apply font-semibold text-xl;
+        line-height: 120%;
+
+        @screen lg {
+            font-size: 40px;
+        }
+        .primary {
+            @apply text-blue-primary;
+        };
+        .secondary {
+            @apply text-blue-secondary;
+        }
+        .decoration {
+            @apply relative z-20 text-white;
+            &:after{
+                content: '';
+                @apply absolute -z-10 bg-no-repeat bg-cover;
+                background-image: url(/background-text.png);
+                width: 115%;
+                height: 102%;
+                left: 50%;
+                top: 50%;
+                translate: -50% -50%;
+                border-radius: 10px;
+                transform-origin: center;
+            }
+        }
+    }
+}
