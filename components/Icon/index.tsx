@@ -5,17 +5,19 @@ import Css from "./Css";
 import Html from "./Html";
 import Device from "./Device";
 import Accessible from "./Accessible";
+import ArrowRight from "./ArrowRight";
 
 export const icon = {
     play: <Play />,
     css : <Css/>,
     html : <Html/>,
     device : <Device/>,
-    accessible : <Accessible/>
+    accessible : <Accessible/>,
+    arrowRight : <ArrowRight/>
 };
 
 export type IconType = typeof icon;
-export type IconVariant = "blue" | "white";
+export type IconVariant = "blue" | "white" | "red";
 
 interface IconProps {
     className?: string;

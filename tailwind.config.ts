@@ -11,6 +11,7 @@ export default {
       colors: {
         "blue-primary": "#020F4F",
         "blue-secondary": "#031EA9",
+        "red": "#FF1414"
       },
       boxShadow: {
         primary: "0 0 36px #031EA92E"

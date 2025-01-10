@@ -1,7 +1,7 @@
 .heading {
     @apply w-full flex flex-col;
     gap: 6px;
-    @screen lg {
+    @screen xl {
         gap: 10px;
     }
     h2 {
@@ -9,6 +9,8 @@
         letter-spacing: 1px;
         @screen lg {
             @apply text-xl;
+        }
+        @screen xl {
             padding-block: 12px;
         }
     }
@@ -23,7 +25,10 @@
         line-height: 120%;
 
         @screen lg {
-            font-size: 40px;
+            font-size: 30px;
+        }
+        @screen xl {
+            font-size :  40px;
         }
         .primary {
             @apply text-blue-primary;

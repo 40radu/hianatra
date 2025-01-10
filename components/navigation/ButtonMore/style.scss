@@ -1,0 +1,10 @@
+.btn-more {
+    @apply flex w-fit h-fit items-center font-medium text-xs;
+    gap: 10px;
+    @screen lg {
+        @apply text-sm;
+    };
+    @screen xl {
+        @apply text-base;
+    };
+}
