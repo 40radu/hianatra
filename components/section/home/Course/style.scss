@@ -1,0 +1,30 @@
+.h-course {
+    @apply grid grid-cols-1;
+    @screen md {
+        @apply grid-cols-2;
+    }
+    @screen 2xl {
+        grid-template-columns: 1fr 764px;
+    }
+    
+    &__text {
+        @apply flex flex-col items-start justify-center;
+        row-gap: 25px;
+        &-description {
+            @apply flex flex-col;
+            row-gap: 10px;
+            .fat {
+                @apply font-semibold;
+                @screen lg {
+                    @apply text-lg;
+                }
+            };
+            .slim {
+                @apply text-sm;
+                @screen lg {
+                    @apply text-base;
+                }
+            }
+        }
+    }
+}
