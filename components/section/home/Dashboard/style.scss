@@ -91,10 +91,9 @@
             @apply text-sm;
             max-width: 190px;
             @apply text-black;
-            line-height: 107%;
+            line-height: 135%;
             @screen lg {
                 max-width: 209px;
-                line-height: 120%;
             }
         }
     }

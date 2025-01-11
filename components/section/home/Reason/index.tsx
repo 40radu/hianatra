@@ -1,5 +1,5 @@
-import "./style.scss"
 import Container from '@/components/common/Container'
+import "./style.scss"
 import Heading from '@/components/common/Heading'
 import ButtonMore from "@/components/navigation/ButtonMore"
 import classNames from "classnames"

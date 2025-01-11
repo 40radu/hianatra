@@ -1,7 +1,7 @@
 .btn {
     @apply w-fit flex items-center text-xs font-medium shadow-primary;
     gap: 5px;
-    padding: 10px 15px;
+    padding: 12px 14px;
     border-radius: 50px;
     @screen lg {
         @apply text-base;

@@ -1,11 +1,6 @@
 .h-reason {
-    padding-block: 50px;
     @apply flex flex-col items-center;
     gap: 100px;
-
-    @screen lg {
-        padding-top: 100px;
-    }
     @screen xl {
         gap: 150px;
     }
@@ -14,18 +9,21 @@
         max-width: 1164px;
         row-gap: 100px;
         @screen md {
-            @apply flex-row flex-wrap justify-around gap-12;
+            @apply flex-row flex-wrap justify-around gap-5;
+            @apply grid grid-cols-3;
         }
         @screen xl {
             @apply justify-between items-end;
         }
     }
     &__card {
-        max-width: 270px;
         padding: 30px 20px;
         border-radius: 20px;
         row-gap: 11px;
         @apply flex flex-col items-center shadow-primary h-fit relative text-center;
+        @screen lg {
+            max-width : 319px;
+        }
         @screen xl {
             max-width : 319px;
             padding : 30px 20px;
@@ -42,20 +40,20 @@
         h4 {
             max-width: 193px;
             line-height: 122%;
-            @apply text-base font-semibold;
+            @apply text-sm font-semibold;
             @screen xl {
                 @apply text-xl;
                 // min-height: 48px;
             }
         }
         p {
-            @apply text-sm;
+            font-size: 13px;
             @screen xl {
                 @apply text-base;
             }
         }
         &:nth-child(2) {
-            @screen lg {
+            @screen md {
                 margin-bottom: 80px;
             }
         }

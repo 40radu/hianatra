@@ -2,10 +2,13 @@
     @apply mx-auto w-full h-fit;
     max-width: 1440px;
     padding-inline: 20px;
-    @screen lg {
+    padding-top: 50px;
+    @screen md {
         padding-inline : 30px;
     };
-
+    @screen lg {
+        padding-top: 100px;
+    }
     @screen xl {
         padding-inline: 50px;
     }
