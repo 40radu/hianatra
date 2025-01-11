@@ -1,0 +1,126 @@
+.ready {
+    @apply w-full h-fit bg-blue-secondary relative overflow-hidden;
+    &__content {
+        @apply flex flex-col;
+        padding-block: 50px;
+        gap: 10px;
+        @screen md {
+            @apply flex-row justify-between;
+            padding-bottom: 75px;
+        };
+        @screen lg {
+            @apply justify-between items-center;
+            padding-block: 75px 90px;
+        }
+
+    };
+    &__text {
+        @apply flex flex-col relative z-10;
+        gap: 17px;
+        //
+        gap: 10px;
+        h3 , p{
+            @apply text-white;
+        };
+        h3 {
+            @apply text-xl uppercase font-semibold;
+            letter-spacing: 1px;
+            //
+            @apply text-base;
+            @screen lg {
+                @apply text-xl;
+            }
+        };
+        p {
+            font-size: 36px;
+            @apply font-bold;
+            //
+            @apply text-lg;
+            @screen lg {
+                @apply text-2xl
+            }
+            @screen xl {
+                font-size : 36px;
+                line-height: 130%;
+            }
+        }
+    };
+    &__logos {
+        @apply flex relative z-10;
+        //
+        // @apply grid grid-cols-3;
+        gap: 20px;
+        .logo {
+            width: 112px;
+            height: 46px;
+            img {
+                @apply w-full h-full;
+            };
+            @screen md {
+                width: 150px;
+                height: 66px;
+            };
+            @screen lg {
+                width: 172px;
+                height: 75px;
+            };
+            @screen xl {
+                width: 192px;
+                height: 86;
+            };
+            @screen 2xl {
+                width: 266px;
+                height: 117px;
+            }
+
+        };
+        //
+        @screen md {
+            @apply grid-cols-2;
+        };
+        @screen xl {
+            @apply flex;
+        }
+       
+    };
+    &__3circles {
+        @apply absolute;
+        width: 619px;
+        height: 554px;
+        img {
+            @apply w-full h-full;
+        }
+        left: -80%;
+        top: 0;
+        @screen md {
+            left: 7.5%;
+            top: -50%;
+        }
+        @screen xl {
+            top : auto;
+        }
+    };
+    &__points {
+        @apply absolute w-fit h-fit;
+        right: 0;
+        bottom: 50%;
+        svg {
+            @screen md {
+                width: 310px;
+                height: 90px;
+            }
+        } 
+        @screen md {
+            right: 30px;
+            bottom: 20px;
+        }
+    };
+    &__arrow {
+        @apply absolute hidden;
+        left: 50%;
+        transform: translateX(-50%);
+        @screen 2xl {
+            @apply flex;
+        }
+    }
+}

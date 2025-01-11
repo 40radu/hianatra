@@ -40,7 +40,8 @@
         h4 {
             max-width: 193px;
             line-height: 122%;
-            @apply text-sm font-semibold;
+            @apply font-semibold;
+            font-size: 15px;
             @screen xl {
                 @apply text-xl;
                 // min-height: 48px;

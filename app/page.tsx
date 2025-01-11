@@ -1,3 +1,4 @@
+import Ready from "@/components/common/section/Ready";
 import About from "@/components/section/home/About";
 import Dashboard from "@/components/section/home/Dashboard";
 import Reason from "@/components/section/home/Reason";
@@ -9,6 +10,7 @@ export default function Home() {
       <Dashboard/>
       <Reason/>
       <About/>
+      <Ready/>
     </>
   );
 }

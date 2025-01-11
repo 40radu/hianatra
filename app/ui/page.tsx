@@ -2,6 +2,7 @@ import Heading from '@/components/common/Heading'
 import classNames from 'classnames'
 import React from 'react'
 import "./style.scss"
+import MorePoints from '@/components/vector/MorePoints'
 
 function Ui() {
   return (
@@ -15,6 +16,8 @@ function Ui() {
         <br />
         <span className='decoration'>Avenir</span>
       </Heading>
+      <h5>more points</h5>
+        <MorePoints colorType='#FFFFFF'/>
     </>
   )
 }

@@ -1,11 +1,12 @@
 .h-about {
     @apply grid gap-5;
+    padding-bottom: 50px;
     @screen md {
         padding-top: 0;
     }
     @screen lg {
         grid-template-columns: 415px 1fr;
-        padding-top: 100px;
+        padding-block : 125px;
     }
     @screen xl {
         grid-template-columns: 548px 1fr;
