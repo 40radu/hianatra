@@ -6,6 +6,7 @@ import Html from "./Html";
 import Device from "./Device";
 import Accessible from "./Accessible";
 import ArrowRight from "./ArrowRight";
+import Apostr from "./Apostr";
 
 export const icon = {
     play: <Play />,
@@ -13,11 +14,12 @@ export const icon = {
     html : <Html/>,
     device : <Device/>,
     accessible : <Accessible/>,
-    arrowRight : <ArrowRight/>
+    arrowRight : <ArrowRight/>,
+    apostr : <Apostr/>
 };
 
 export type IconType = typeof icon;
-export type IconVariant = "blue" | "white" | "red";
+export type IconVariant = "blue" | "white" | "red" | "blue-secondary";
 
 interface IconProps {
     className?: string;

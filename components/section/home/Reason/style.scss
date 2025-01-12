@@ -44,7 +44,7 @@
             font-size: 15px;
             @screen xl {
                 @apply text-xl;
-                // min-height: 48px;
+                min-height : 48px;
             }
         }
         p {

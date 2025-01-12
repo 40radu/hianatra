@@ -1,4 +1,5 @@
 import Ready from "@/components/common/section/Ready";
+import Testimonial from "@/components/common/section/Testimonial";
 import About from "@/components/section/home/About";
 import Course from "@/components/section/home/Course";
 import Dashboard from "@/components/section/home/Dashboard";
@@ -13,6 +14,7 @@ export default function Home() {
       <About/>
       <Ready/>
       <Course/>
+      <Testimonial/>
     </>
   );
 }
