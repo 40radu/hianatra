@@ -8,12 +8,14 @@ interface ButtonProps {
     variant?: "blue" | "white";
     icon?: keyof IconType;
     iconVariant?: IconVariant;
+    className?: string;
+    type?: "submit" | "button"
 }
 
 export default function Button(props: ButtonProps) {
-    const { label, variant = "blue", icon, iconVariant = "blue" } = props;
+    const { label, variant = "blue", icon, iconVariant = "blue", className = "", type = "button" } = props;
     return (
-        <button className={classNames("btn", `btn--${variant}`)}>
+        <button type={type} className={classNames("btn", `btn--${variant}`, `${className}`)}>
             {
                 icon &&
                 <span>

@@ -1,0 +1,21 @@
+.text-area {
+    padding: 20px;
+    @apply w-full h-fit;
+    border-radius: 10px;
+    border: 1px solid;
+    @apply border-black-50;
+
+    textarea {
+        @apply w-full text-sm;
+        min-height: 105;
+        outline: none;
+
+        @screen xl {
+            @apply text-base;
+        }
+        
+        &::placeholder {
+            @apply text-black-50;
+        }
+    }
+}

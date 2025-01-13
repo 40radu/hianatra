@@ -1,0 +1,17 @@
+.form-contact {
+    @apply flex flex-col;
+    gap: 25px;
+    @screen xl {
+        gap: 40px;
+    }
+    .container-fields {
+        @apply flex flex-col;
+        gap: 15px;
+        @screen xl {
+            gap: 20px;
+        }
+        .btn {
+            @apply w-full;
+        }
+    }
+}

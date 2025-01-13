@@ -1,0 +1,94 @@
+.contact {
+    @apply grid justify-between;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    @screen md {
+        grid-template-columns: 45% 1fr;
+    }
+
+    @screen lg {
+       @apply grid-cols-2;
+    }
+
+    @screen 2xl {
+        grid-template-columns: 500px 418px 275px;
+    }
+
+    &__infos {
+        border-radius: 10px;
+        @apply flex flex-col w-full h-fit;
+        background-color: #F0F3FF;
+        padding: 40px 30px;
+        gap: 30px;
+        @screen xl {
+            gap :40px;
+            padding : 60px 40px;
+        }   
+
+        .items-container {
+            border-bottom: 1px solid;
+            @apply flex flex-col border-blue-50;
+            padding-bottom: 30px;
+            @screen xl {
+                padding-bottom: 40px;
+            }
+            &__item {
+                @apply flex items-center;
+                gap: 20px;
+                .image {
+                    width: 40px;
+                    height: 40px;
+                    @screen xl {
+                        width: 70px;
+                        height: 70px;
+                    };
+                    @screen 2xl {
+                        width: 90px;
+                        height: 90px;
+                    };
+                };
+            };
+
+            &__text {
+                @apply flex flex-col h-fit;
+                gap: 10px;
+                .title {
+                    @apply text-blue-secondary;
+                    font-size: 13px;
+                    @screen xl {
+                        @apply text-base;
+                    }
+                };
+                .description {
+                    @apply text-sm font-medium text-blue-primary;
+                    max-width: 200px;
+                    @screen xl {
+                        @apply text-base;
+                        max-width: 230px;
+                    }
+                    @screen 2xl {
+                        @apply text-xl;
+                        max-width : 300px;
+                    }
+                }
+            };
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    &__image {
+        width: 275.87px;
+        height: 320.56px;
+        @apply my-auto hidden;
+        img {
+            @apply w-full h-full object-cover;
+
+        }
+        @screen 2xl {
+            @apply flex;
+        }
+    }
+}
