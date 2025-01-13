@@ -7,7 +7,7 @@ import Heading from '../../Heading'
 import classNames from 'classnames'
 import Image from 'next/image'
 import Icon from '@/components/Icon'
-import { testimonialData } from './data'
+import { cardTestimonialData } from './data'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
 
@@ -39,7 +39,7 @@ function Testimonial() {
                     }
                 }}>
                 {
-                    testimonialData.map((td, index) => {
+                    cardTestimonialData.map((td, index) => {
                         return (
                             <SwiperSlide key={`td_${index}`}>
                                 <CardTestimonial description={td.description} image={td.image} starNumber={td.starNumber} userName={td.userName} key={`td_${index}`} />
