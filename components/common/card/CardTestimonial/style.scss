@@ -1,0 +1,56 @@
+.card-testimonial {
+    border: 2px solid;
+    @apply flex flex-col items-center border-blue-secondary;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+    @screen xl {
+        gap: 24px;
+    }
+
+    &__head {
+        background-image: url(/bg-dashed-profile.png);
+        @apply flex justify-center items-center relative bg-cover;
+        width: 85px;
+        height: 85px;
+        padding: 10px;
+        @screen xl {
+            width: 120px;
+            height: 120px;
+            padding: 12px;
+        }
+        .profile {
+            @apply w-full h-full;
+            img {
+                @apply w-full h-full;
+            }
+        };
+        .apostr {
+            @apply absolute;
+            bottom: -12px;
+        };
+    };
+    &__stars {
+        @apply flex;
+        gap: 5px;
+    };
+    &__description {
+        @apply text-center;
+        letter-spacing: 0.5px;
+        @apply text-sm;
+        @screen xl {
+            @apply text-base;
+            letter-spacing : 0.75px;
+            max-width : 488px;
+        }
+    };
+    &__user {
+        @apply text-2xl font-semibold;
+        letter-spacing: 0.25px;
+        @apply text-lg;
+        @screen xl {
+            @apply text-2xl;
+            padding: 10px;
+        }
+    };
+}

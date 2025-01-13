@@ -6,7 +6,8 @@ import classNames from "classnames"
 import Image from "next/image"
 import Link from "next/link"
 import React from 'react'
-import { reasonData } from "./data"
+import { cardReasonData } from "./data"
+import CardReason from '@/components/common/card/CardReason'
 
 function Reason() {
     return (
@@ -16,17 +17,9 @@ function Reason() {
             </Heading>
             <div className={classNames("h-reason__content")}>
                 {
-                    reasonData.map((rd, index) => {
+                    cardReasonData.map((rd, index) => {
                         return (
-                            
-                            <Link href={rd.link} key={`reason_${index}`} className={classNames("h-reason__card")}>
-                                <span className={classNames("image")}>
-                                    <Image src={rd.image} alt="" width={127} height={127} />
-                                </span>
-                                <h4>{rd.title}</h4>
-                                <p>{rd.description}</p>
-                                    <ButtonMore label="Voir plus" />
-                            </Link>
+                            <CardReason description={rd.description} image={rd.image} link={rd.link} title={rd.title} key={`rd_${index}`} />
                         )
                     })
                 }
