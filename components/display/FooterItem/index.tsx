@@ -9,7 +9,7 @@ interface FooterItemProps {
 }
 
 function FooterItem(props: FooterItemProps) {
-    const { children, title, className } = props
+    const { children, title, className = "" } = props
     return (
         <div className={classNames("footer-item", `${className}`)}>
             <h3> {title}</h3>
