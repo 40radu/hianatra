@@ -2,16 +2,17 @@
     @apply grid justify-between;
     grid-template-columns: 1fr;
     gap: 30px;
+    padding-bottom: 50px;
     @screen md {
         grid-template-columns: 45% 1fr;
     }
-
     @screen lg {
        @apply grid-cols-2;
     }
 
     @screen 2xl {
         grid-template-columns: 500px 418px 275px;
+        padding-bottom: 100px;
     }
 
     &__infos {

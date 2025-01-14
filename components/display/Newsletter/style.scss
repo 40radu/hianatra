@@ -1,0 +1,40 @@
+.newsletter {
+  &__form {
+    @apply w-fit h-fit;
+  }
+  &__description {
+    max-width: 348px;
+    @apply text-sm text-white w-full;
+    @screen 2xl {
+      @apply text-base;
+    }
+  };
+  &__fields-wrapper {
+    @apply flex items-center;
+    gap: 10px;
+  };
+  &__input {
+    border: none;
+    padding: 12px 14px;
+    max-width: 200px;
+    @screen lg {
+      padding: 16px 32px;
+    };
+    @screen 2xl {
+      max-width : 235px;
+    }
+    input {
+      @apply text-sm;
+      @screen 2xl {
+        @apply text-base;
+      }
+    }
+  };
+  &__btn {
+    padding: 12px 14px;
+    @apply text-sm;
+    @screen lg {
+      padding: 16px 32px;
+    };
+  };
+}
