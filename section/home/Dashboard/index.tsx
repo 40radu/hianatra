@@ -6,6 +6,7 @@ import Button from '@/components/navigation/Button'
 import HomeHeroImage from '@/components/display/HomeHeroImage'
 import Image from 'next/image'
 import Icon from '@/components/Icon'
+import Link from 'next/link'
 
 function Dashboard() {
   return (
@@ -24,8 +25,8 @@ function Dashboard() {
           </p>
         </div>
         <div className={classNames("h-dashboard__text-btns--wrapper")}>
-          <Button variant='blue' label='Commencer' />
-          <Button variant='white' label='Télécharger l’application' icon='play' />
+          <Link href=""><Button variant='blue' label='Commencer' /></Link>
+          <Link href=""><Button variant='white' label='Télécharger l’application' icon='play' /></Link>
         </div>
       </div>
       <div className={classNames("h-dashboard__image")}>
