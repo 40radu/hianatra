@@ -16,8 +16,10 @@ import SearchIcon from "./search";
 import Login from "./login";
 import Menu from "./Menu";
 import Cancel from "./Cancel";
+import ArrowDown from "./ArrowDown";
 
 export const icon = {
+    arrowDown: <ArrowDown />,
     cancel: <Cancel />,
     menu: <Menu />,
     search: <SearchIcon />,

@@ -1,0 +1,25 @@
+.custom-select-container {
+    @apply  w-fit flex flex-col relative z-50 ;
+
+    .default-select {
+        @apply  w-fit h-fit p-2 flex gap-2 justify-center items-center  ;
+    }
+
+    .option-select {
+        @apply  w-full hidden absolute left-0  ;
+
+        background-color: rgb(241, 241, 255); 
+        top: 40px;
+
+        p {
+            @apply w-full text-blue-secondary  ;
+
+            &:hover {
+                @apply bg-blue-secondary text-white
+            }
+        } 
+    }
+    .showOption {
+        display: block;
+    }
+}

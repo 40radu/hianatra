@@ -97,17 +97,9 @@
         }
 
 
+        /* select logic css */
         .lang-select-container {
-            @apply  flex  justify-center items-center gap-2 w-fit bg-transparent ;
-
-            // font-size: 16px;
-
-            select {
-                font-size: 14px;
-                background-color: transparent;
-            }
-
-
+            @apply  flex  justify-center items-center gap-0 w-fit bg-transparent ;
         }
 
         .login-button {

@@ -16,6 +16,7 @@ import Input from '@/components/common/Input'
 import TextArea from '@/components/common/TextArea'
 import Logo from '@/components/common/Logo'
 import NavBar from '@/components/layout/navBar'
+import CustomSelect from '@/components/display/customSelect/customSelect'
 
 function Ui() {
   return (
@@ -41,6 +42,7 @@ function Ui() {
         LOgo
       </h5>
       <Logo variant='primary' />
+      <CustomSelect />
     </>
   )
 }

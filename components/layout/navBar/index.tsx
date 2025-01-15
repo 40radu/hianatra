@@ -9,26 +9,22 @@ import Icon from '@/components/Icon'
 
 import { usePathname } from 'next/navigation'
 import Logo from '@/components/common/Logo'
+import CustomSelect from '@/components/display/customSelect/customSelect'
 
 export const dataLinks = [
 	{
 		href: "/",
-		label: "Aceuille",
+		label: "Accueil",
 
 	},
 	{
 		href: "/apropos",
-		label: "A propos",
+		label: "À propos",
 
 	},
 	{
 		href: "/ui",
-		label: "Cour",
-
-	},
-	{
-		href: "/contact",
-		label: "Contact",
+		label: "Cours",
 
 	},
 	{
@@ -36,11 +32,18 @@ export const dataLinks = [
 		label: "Blog",
 
 	},
+	{
+		href: "/contact",
+		label: "Contact",
+
+	},
 ]
 
 const NavBar = () => {
 
 	const [displayNav, setDisplayNav] = useState(false)
+	const [selectIconRotate, setSelectIconRotate] = useState(false)
+
 	const pathname = usePathname()
 
 	return (
@@ -71,10 +74,8 @@ const NavBar = () => {
 
 					<Icon name='search' />
 
-					<select name="lang">
-						<option value="EN" >EN</option>
-						<option value="FR">FR</option>
-					</select>
+					<CustomSelect />
+
 
 				</div>
 
