@@ -14,8 +14,12 @@ import Twitter from "./Twitter";
 import Linkedin from "./Linkedin";
 import SearchIcon from "./search";
 import Login from "./login";
+import Menu from "./Menu";
+import Cancel from "./Cancel";
 
 export const icon = {
+    cancel: <Cancel />,
+    menu: <Menu />,
     search: <SearchIcon />,
     login: <Login />,
     play: <Play />,
@@ -40,14 +44,16 @@ interface IconProps {
     className?: string;
     variant?: IconVariant;
     name: keyof IconType;
+    onClick?: (e: React.MouseEvent<HTMLSpanElement>) => void
 }
 
 export default function Icon(props: IconProps) {
-    const { variant = "blue", name, className } = props;
+    const { variant = "blue", name, className, onClick } = props;
 
     return (
         <span
             className={classNames("icon", variant && `icon--${variant}`, className)}
+            onClick={onClick}
         >
             {icon[name]}
         </span>

@@ -1,0 +1,11 @@
+import React from 'react'
+
+function Menu() {
+    return (
+        <svg width="35" height="30" viewBox="0 0 78 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 51.5V42.9167H77.25V51.5H0ZM0 30.0417V21.4583H77.25V30.0417H0ZM0 8.58333V0H77.25V8.58333H0Z" fill="black" />
+        </svg>
+    )
+}
+
+export default Menu

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import Footer from "@/components/layout/Footer";
+import NavBar from "@/components/layout/navBar";
 
 export const metadata: Metadata = {
   title: "Hianatra",
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <NavBar />
+        <main>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

@@ -1,0 +1,167 @@
+.navBar {   
+    
+    @apply w-screen h-fit flex justify-between items-center fixed bg-white items-center justify-center z-50 ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-inline: 20px;
+
+    @screen md {
+        padding-inline: 30px;
+    }
+
+    @screen lg {
+        padding-inline: 35px;
+    }
+
+    @screen xl {
+        padding-inline: 40px;
+    }
+
+    @screen 2xl {
+        padding-inline: 50px;
+    }
+
+    .navigation-links {
+
+        @apply w-full h-fit bg-transparent flex flex-col justify-center items-center absolute right-0 text-xl text-white z-20 rounded-lg ;
+
+        backdrop-filter: blur(6px);
+        padding: 15px;
+        padding-top: 100px;
+        // padding-left: 40px;
+        gap: 30px;
+        top: -100vh;
+        transition: all 0.3s ease-in-out;
+
+        @screen sm {
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @screen md {
+            padding: 35px;
+            margin-top: 55px;
+            gap:25px;
+        }
+
+        @screen lg {
+            @apply  w-fit flex-row h-full items-center justify-center bg-transparent text-black  p-0 static mt-0;
+
+            gap: 5px;
+        }
+
+        @screen xl {
+            gap: 10px;
+        }
+
+        @screen 2xl {
+            @apply block flex-row h-full items-center justify-center  bg-transparent text-black ;
+
+            gap: 30px;
+        }
+
+
+        a {
+            @apply text-lg text-black h-fit bg-white text-center text-black shadow-primary rounded-md ;
+
+            width: 150px;
+            padding: 10px 20px;
+
+            @screen lg {
+                @apply  w-fit h-fit bg-transparent shadow-none mt-0 ;
+                font-size : 16px
+            }
+        }
+        .active {
+            @apply bg-blue-secondary text-white;
+
+            @screen lg {
+                @apply bg-transparent text-blue-secondary ;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .navigation-links.shown {
+        @apply top-0
+    }
+
+    .lang-and-login {
+        @apply  flex items-center w-fit z-50 ;
+
+        gap: 10px;
+
+        @screen 2xl {
+            @apply flex items-center w-fit;
+            gap : 20px;
+        }
+
+
+        .lang-select-container {
+            @apply  flex  justify-center items-center gap-2 w-fit bg-transparent ;
+
+            // font-size: 16px;
+
+            select {
+                font-size: 14px;
+                background-color: transparent;
+            }
+
+
+        }
+
+        .login-button {
+            display: none;
+
+            @screen lg {
+                @apply block flex;
+            }
+        }
+
+            /* menu icon and toogle class */
+    .menu-icon-container {
+        @apply flex flex-col justify-between items-center relative;
+
+        @screen lg {
+            @apply hidden
+        }
+
+
+        z-index: 50;
+        width: 35px;
+        height: 22px;
+
+        span {
+            @apply w-full ;
+
+            transition: all 0.3s ease-in-out;
+            height: 2px;
+            background-color: black;
+        }
+        
+    }
+
+    .navShown {
+        span {
+            position: absolute;
+            width: 80%;
+             
+            &:nth-child(1){
+               rotate: 50deg;
+                bottom: 30%;
+            };
+            &:nth-child(2){
+               display: none;
+            };
+            &:nth-child(3){
+                rotate: -50deg;
+                bottom: 30%;
+             };
+        }
+
+    }
+    }
+
+
+
+}
