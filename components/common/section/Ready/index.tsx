@@ -4,6 +4,7 @@ import "./style.scss"
 import classNames from 'classnames'
 import Image from 'next/image'
 import MorePoints from '@/components/vector/MorePoints'
+import Link from 'next/link'
 
 function Ready() {
     return (
@@ -18,12 +19,12 @@ function Ready() {
                     </p>
                 </div>
                 <div className={classNames("ready__logos")}>
-                    <span className={classNames("logo")}>
+                    <Link href="" className={classNames("logo")}>
                         <Image src="/home/google-play.png" alt='' width={266} height={117} />
-                    </span>
-                    <span className={classNames("logo")}>
+                    </Link>
+                    <Link href="" className={classNames("logo")}>
                         <Image src="/home/app-store.png" alt='' width={266} height={117} />
-                    </span>
+                    </Link>
                 </div>
                 <span className={classNames("ready__3circles")}>
                     <Image src="/home/3circles.png" alt='' width={619} height={554} className={classNames("logo")} />

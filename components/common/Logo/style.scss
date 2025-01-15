@@ -1,0 +1,23 @@
+.logo {
+    width: 39px;
+    height: 48px;
+    @screen xl {
+        width: 79px;
+        height: 88px;
+    }
+    &--primary {
+        path {
+            &:nth-child(1) {
+                @apply fill-blue-primary;
+            };
+            &:nth-child(2) {
+                @apply fill-blue-secondary;
+            }
+        }
+    };
+    &--white {
+        path {
+            @apply fill-white;
+        }
+    }
+}

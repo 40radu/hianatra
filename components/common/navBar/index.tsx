@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Button from '@/components/navigation/Button'
 import Link from 'next/link'
 import Icon from '@/components/Icon'
+import Logo from '../Logo'
 
 type Props = {}
 
@@ -13,7 +14,7 @@ const NavBar = (props: Props) => {
     return (
         <header className='navBar' >
 
-            <Icon name='logo' />
+            <Logo variant='primary' />
 
             <nav className={classNames('navigation-links')} >
 

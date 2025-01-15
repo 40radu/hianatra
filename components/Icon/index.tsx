@@ -7,12 +7,15 @@ import Device from "./Device";
 import Accessible from "./Accessible";
 import ArrowRight from "./ArrowRight";
 import Apostr from "./Apostr";
-import Logo from "./logo";
+import Android from "./Android";
+import Facebook from "./Facebook";
+import Instagram from "./Instagram";
+import Twitter from "./Twitter";
+import Linkedin from "./Linkedin";
 import SearchIcon from "./search";
 import Login from "./login";
 
 export const icon = {
-    logo: <Logo />,
     search: <SearchIcon />,
     login: <Login />,
     play: <Play />,
@@ -21,7 +24,13 @@ export const icon = {
     device: <Device />,
     accessible: <Accessible />,
     arrowRight: <ArrowRight />,
-    apostr: <Apostr />
+    apostr: <Apostr />,
+    android: <Android />,
+    facebook: <Facebook />,
+    instagram: <Instagram />,
+    twitter: <Twitter />,
+    linkedin: <Linkedin />
+
 };
 
 export type IconType = typeof icon;

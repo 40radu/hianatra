@@ -1,0 +1,13 @@
+.footer-item {
+    @apply flex flex-col max-w-max;
+    gap: 22px;
+    @screen xl {
+        gap: 32px;
+    }
+    h3 {
+        @apply text-xl font-semibold text-white;
+        @screen xl {
+            @apply text-2xl;
+        }
+    }
+}

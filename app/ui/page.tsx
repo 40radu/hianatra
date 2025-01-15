@@ -14,6 +14,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Input from '@/components/common/Input'
 import TextArea from '@/components/common/TextArea'
+import Logo from '@/components/common/Logo'
 import NavBar from '@/components/common/navBar'
 
 function Ui() {
@@ -35,6 +36,11 @@ function Ui() {
       <TextArea name='message' placeholder='Message' />
       <h5>Input</h5>
       <Input name='Email' placeholder='Email' type='text' />
+      br
+      <h5>
+        LOgo
+      </h5>
+      <Logo variant='primary' />
     </>
   )
 }

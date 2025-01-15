@@ -1,20 +1,23 @@
 .btn {
     @apply w-fit flex justify-center items-center text-xs font-medium shadow-primary;
     gap: 5px;
-    padding: 12px 14px;
+    padding: 12px 16px;
     border-radius: 50px;
+    @media (max-width : 374px){
+        padding-inline: 14px;
+    }
     @screen lg {
         @apply text-base;
         padding: 14px 32px;
-    }
+    };
     @screen xl {
         padding-block : 16px;
-    }
+    };
     &--blue {
         @apply bg-blue-secondary text-white;
-    }
+    };
 
     &--white {
         @apply bg-white text-blue-primary;
-    }
+    };
 }
