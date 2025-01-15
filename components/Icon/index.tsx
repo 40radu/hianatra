@@ -7,15 +7,21 @@ import Device from "./Device";
 import Accessible from "./Accessible";
 import ArrowRight from "./ArrowRight";
 import Apostr from "./Apostr";
+import Logo from "./logo";
+import SearchIcon from "./search";
+import Login from "./login";
 
 export const icon = {
+    logo: <Logo />,
+    search: <SearchIcon />,
+    login: <Login />,
     play: <Play />,
-    css : <Css/>,
-    html : <Html/>,
-    device : <Device/>,
-    accessible : <Accessible/>,
-    arrowRight : <ArrowRight/>,
-    apostr : <Apostr/>
+    css: <Css />,
+    html: <Html />,
+    device: <Device />,
+    accessible: <Accessible />,
+    arrowRight: <ArrowRight />,
+    apostr: <Apostr />
 };
 
 export type IconType = typeof icon;
@@ -38,3 +44,4 @@ export default function Icon(props: IconProps) {
         </span>
     );
 }
+

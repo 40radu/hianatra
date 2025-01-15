@@ -1,0 +1,71 @@
+.navBar {    
+    @apply w-screen h-fit flex justify-between items-center border border-blue-500 py-[10px] px-[20px] fixed bg-white;
+
+    @screen md {
+        @apply px-[30px]
+    }
+
+    @screen lg {
+        @apply px-[35px]
+    }
+
+    @screen xl {
+        @apply px-[40px]
+    }
+
+    @screen 2xl {
+        @apply px-[50px]
+    }
+
+    .navigation-links {
+
+        @apply w-screen h-screen p-[15px] pt-[50px] pl-[40px] bg-blue-secondary flex flex-col justify-center  items-center gap-[30px] absolute top-0 right-0 text-xl text-white ;
+
+        @screen sm {
+            @apply p-[25px] pt-[50px]
+        }
+
+        @screen md {
+            @apply p-[35px] pt-[55px] gap-[25px]
+        }
+
+        @screen lg {
+            @apply  w-fit flex-row h-full items-center justify-center gap-[25px] bg-transparent text-black  p-0 static;
+        }
+
+        @screen xl {
+            @apply  gap-[35px] 
+        }
+
+        @screen 2xl {
+            @apply block flex-row h-full items-center justify-center gap-[50px] bg-transparent text-black;
+        }
+
+
+        a {
+            @apply text-xl 
+        }
+    }
+
+    .lang-and-login {
+        @apply  flex items-center gap-[10px] w-fit hidden;
+
+        @screen 2xl {
+            @apply flex items-center gap-[10px] w-fit
+        }
+
+
+        .lang-select-container {
+            @apply  flex  justify-center items-center gap-2 w-fit outline-none ;
+
+            select {
+                @apply bg-transparent;
+            }
+
+            img {
+                height: 25px;
+            }
+        }
+    }
+
+}

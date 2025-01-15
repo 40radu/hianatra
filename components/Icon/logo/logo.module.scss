@@ -1,0 +1,20 @@
+.logo {
+    width: 40px;
+    height: 50px;
+
+    @screen md {
+        @apply w-[50px] h-[60px]
+    }
+
+    @screen lg {
+        @apply w-[60px] h-[70px]
+    }
+
+    @screen xl {
+        @apply w-[70px] h-[80px]
+    }
+
+    @screen 2xl {
+        @apply w-[79px] h-[87.11px]
+    }
+}

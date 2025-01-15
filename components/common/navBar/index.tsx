@@ -4,28 +4,37 @@ import Container from '../Container'
 import classNames from 'classnames'
 import Image from 'next/image'
 import Button from '@/components/navigation/Button'
+import Link from 'next/link'
+import Icon from '@/components/Icon'
 
 type Props = {}
 
 const NavBar = (props: Props) => {
     return (
-        <Container tag='header' className='navBar' >
+        <header className='navBar' >
 
-            <Image alt='logo-icon' src={''} />
+            <Icon name='logo' />
 
-            <div className={classNames('navigation-links')} >
+            <nav className={classNames('navigation-links')} >
 
-            </div>
+                <Link href={''} >aceuille</Link>
+                <Link href={''} >a propos</Link>
+                <Link href={''} >contact</Link>
+                <Link href={''} >test</Link>
+                <Link href={''} >test</Link>
+
+            </nav>
 
             <div className={classNames('lang-and-login')} >
 
-                <div className={classNames('lang-select-container')} >
+                <div className={classNames('lang-select-container')}
+                >
 
-                    <Image alt='search-icon' src={''} />
+                    <Icon name='search' />
 
-                    <select name="lang" id="">
-                        <option value="EN" ></option>
-                        <option value="FR"></option>
+                    <select name="lang">
+                        <option value="EN" >EN</option>
+                        <option value="FR">FR</option>
                     </select>
 
                 </div>
@@ -33,12 +42,13 @@ const NavBar = (props: Props) => {
                 <Button
                     label='Login'
                     className={classNames("login-button")}
-
+                    icon='login'
+                    variant='blue'
                 />
 
             </div>
 
-        </Container>
+        </header>
     )
 }
 
