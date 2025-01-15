@@ -1,11 +1,5 @@
-interface ReasonProps {
-    image: string;
-    title: string;
-    description: string;
-    link: string;
-}
-
-const reasonData: ReasonProps[] = [
+import { CardReasonProps } from "@/components/common/card/CardReason";
+const cardReasonData: CardReasonProps[] = [
     {
         image: "/home/atomic.png",
         title: "Des cours adaptés à tous les niveaux",
@@ -26,4 +20,4 @@ const reasonData: ReasonProps[] = [
     }
 ]
 
-export { reasonData }
+export { cardReasonData }

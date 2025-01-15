@@ -1,11 +1,6 @@
-interface TestimonialProps {
-    image: string;
-    starNumber: number;
-    description: string;
-    userName: string;
-}
+import { CardTestimonialProps } from "../../card/CardTestimonial"
 
-const testimonialData: TestimonialProps[] = [
+const cardTestimonialData: CardTestimonialProps[] = [
     {
         image: "/profil.png",
         starNumber: 5,
@@ -25,4 +20,4 @@ const testimonialData: TestimonialProps[] = [
         userName: "Tolotra.m"
     },
 ]
-export { testimonialData }
+export { cardTestimonialData }

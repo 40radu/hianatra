@@ -1,0 +1,19 @@
+.h-reason {
+    @apply flex flex-col items-center;
+    gap: 100px;
+    @screen xl {
+        gap: 150px;
+    }
+    &__content {
+        @apply flex flex-col w-full h-fit items-center;
+        max-width: 1164px;
+        row-gap: 100px;
+        @screen md {
+            @apply flex-row flex-wrap justify-around gap-5;
+            @apply grid grid-cols-3;
+        }
+        @screen xl {
+            @apply justify-between items-end;
+        }
+    }
+}
