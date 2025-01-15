@@ -1,0 +1,46 @@
+.a-welcome {
+	@apply grid items-center;
+	gap: 20px;
+	@screen md {
+		@apply grid-cols-2;
+	}
+	@screen lg {
+		grid-template-columns : 40% 1fr;
+	}
+	@screen 2xl {
+		grid-template-columns :547px 1fr;
+		gap:40px;
+	}
+	&__image {
+		@apply w-full;
+		img {
+			@apply mx-auto;
+			aspect-ratio: 1/1;
+		}
+	}
+	&__text {
+		@apply flex flex-col;
+		gap: 18px;
+		@screen lg {
+			gap : 25px;
+		}
+		@screen 2xl {
+			gap: 40px;
+		}
+
+		.decoration {
+			&::after {
+        rotate: -6deg;
+    	}
+		}
+
+
+		.description {
+			@apply w-full text-sm;
+			max-width: 598px;
+			@screen lg {
+				@apply text-base;
+			}
+		}
+	}
+}
