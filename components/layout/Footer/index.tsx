@@ -11,7 +11,7 @@ import Newsletter from '@/components/display/Newsletter'
 
 function Footer() {
   return (
-    <section className={classNames("bg-footer")}>
+    <footer className={classNames("bg-footer")}>
       <Container tag='div' className={classNames("footer")}>
         <div className={classNames("footer__info")}>
           <Logo variant='white' />
@@ -45,7 +45,7 @@ function Footer() {
           </FooterItem>
         <Newsletter />
       </Container>
-    </section>
+    </footer>
   )
 }
 
