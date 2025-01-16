@@ -1,8 +1,8 @@
 .testimonial {
     .swiper {
-        padding-block: 40px;
+        padding-block: 40px 50px;
         @screen xl {
-            padding-block : 53px;
+            padding-block : 53px 63px;
         }
     };
     .swiper-pagination-bullet {

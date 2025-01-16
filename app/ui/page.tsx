@@ -15,6 +15,7 @@ import 'swiper/css/scrollbar';
 import Input from '@/components/common/Input'
 import TextArea from '@/components/common/TextArea'
 import Logo from '@/components/common/Logo'
+import CardInfo from '@/components/common/card/CardInfo'
 
 function Ui() {
   return (
@@ -38,7 +39,7 @@ function Ui() {
       <h5>
         LOgo
       </h5>
-      <Logo variant='primary'/>
+      <Logo variant='primary' />
     </>
   )
 }
