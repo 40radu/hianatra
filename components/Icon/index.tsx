@@ -38,7 +38,7 @@ export const icon = {
 };
 
 export type IconType = typeof icon;
-export type IconVariant = "blue" | "white" | "red" | "blue-secondary";
+export type IconVariant = "blue" | "white" | "red" | "blue-secondary" | "black";
 
 interface IconProps {
     className?: string;

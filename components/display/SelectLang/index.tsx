@@ -60,18 +60,19 @@ export default function Selectlang() {
 	}, [showOption])
 
 	return (
-		<div className="custom-select-container" ref={selectRef}>
+		<div className="select-lang" ref={selectRef}>
 			<div
-				className={classNames('custom-select-container__default-select')}
+				className={classNames('select-lang__default')}
 				onClick={toogleShowOption}
 			>
 				<p> {selectValue} </p>
 				<Icon
 					name='arrowDown'
+					variant='black'
 				/>
 			</div>
 
-			<div className={classNames('custom-select-container__option-select', { showOption: showOption })} >
+			<div className={classNames('select-lang__option', { showOption: showOption })} >
 				{
 					optionsData.map((option, index) => (
 						<p onClick={option.onClick} key={`lang_${index}`}>

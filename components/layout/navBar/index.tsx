@@ -19,8 +19,8 @@ function NavBar() {
 	const pathname = usePathname()
 
 	return (
-		<Container tag='header' className={classNames('container-header')} >
-			<div className='container-header__nav-bar' >
+		<header className={classNames('container-header')} >
+			<Container tag='div' className='container-header__nav-bar' >
 				<Logo variant='primary' />
 				<nav className={classNames('container-header__nav-bar__responsive', { shown: viewNavResponsive })} >
 					{
@@ -29,6 +29,7 @@ function NavBar() {
 								<Link key={id}
 									href={link.href}
 									className={classNames({ active: pathname === link.href })}
+									onClick={() => setViewNavResponsive(false)}
 								>
 									{link.label}
 								</Link>
@@ -61,8 +62,8 @@ function NavBar() {
 						<span></span>
 					</div>
 				</div>
-			</div>
-		</Container>
+			</Container>
+		</header>
 	)
 }
 
