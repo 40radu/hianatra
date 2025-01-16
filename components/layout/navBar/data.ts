@@ -1,4 +1,9 @@
-export const dataLinks = [
+interface LinksProps {
+	href : string;
+	label : string;
+}
+
+export const dataLinks : LinksProps[] = [
 	{
 		href: "/",
 		label: "Accueil",

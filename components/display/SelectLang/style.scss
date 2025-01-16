@@ -1,14 +1,14 @@
 .custom-select-container {
-    @apply  w-fit flex flex-col relative z-50 ;
+    @apply  w-fit flex flex-col relative z-50 cursor-pointer;
 
-    .default-select {
+    &__default-select {
         @apply  w-fit h-fit p-2 flex gap-2 justify-center items-center;
 
         font-weight: 500;
 
     }
 
-    .option-select {
+    &__option-select {
         @apply  w-full hidden absolute left-0 border border-blue-secondary rounded-md bg-white ;
 
         top: 40px;

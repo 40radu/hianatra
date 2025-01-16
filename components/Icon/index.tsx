@@ -12,16 +12,14 @@ import Facebook from "./Facebook";
 import Instagram from "./Instagram";
 import Twitter from "./Twitter";
 import Linkedin from "./Linkedin";
-import SearchIcon from "./search";
-import Login from "./login";
-import Menu from "./Menu";
-import Cancel from "./Cancel";
+import SearchIcon from "./Search";
+import Login from "./Login";
 import ArrowDown from "./ArrowDown";
+import Cancel from "./Cancel";
 
 export const icon = {
     arrowDown: <ArrowDown />,
     cancel: <Cancel />,
-    menu: <Menu />,
     search: <SearchIcon />,
     login: <Login />,
     play: <Play />,
