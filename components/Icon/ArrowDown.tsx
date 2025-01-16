@@ -2,9 +2,10 @@ import React from 'react'
 
 const ArrowDown = () => {
     return (
-        <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1.5571L7 7.5571L13 1.5571" stroke="#1E1E1E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9.5571L12 15.5571L18 9.5571" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
+
     )
 }
 
