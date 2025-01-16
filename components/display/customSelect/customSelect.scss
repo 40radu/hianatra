@@ -2,7 +2,10 @@
     @apply  w-fit flex flex-col relative z-50 ;
 
     .default-select {
-        @apply  w-fit h-fit p-2 flex gap-2 justify-center items-center  ;
+        @apply  w-fit h-fit p-2 flex gap-2 justify-center items-center;
+
+        font-weight: 500;
+
     }
 
     .option-select {

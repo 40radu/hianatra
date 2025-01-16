@@ -101,6 +101,8 @@
         /* select logic css */
         .lang-select-container {
             @apply  flex  justify-center items-center gap-0 w-fit bg-transparent ;
+
+            gap: 4px;
         }
 
         .login-button {
