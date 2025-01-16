@@ -44,16 +44,14 @@ interface IconProps {
     className?: string;
     variant?: IconVariant;
     name: keyof IconType;
-    onClick?: (e: React.MouseEvent<HTMLSpanElement>) => void
 }
 
 export default function Icon(props: IconProps) {
-    const { variant = "blue", name, className, onClick } = props;
+    const { variant = "blue", name, className = "" } = props;
 
     return (
         <span
             className={classNames("icon", variant && `icon--${variant}`, className)}
-            onClick={onClick}
         >
             {icon[name]}
         </span>
