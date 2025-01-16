@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './customSelect.scss'
 import classNames from 'classnames'
 import Icon from '@/components/Icon'
@@ -11,6 +11,7 @@ const CustomSelect = () => {
 
     const [selectValue, setSelectValue] = useState('FR')
     const [showOption, setShowOption] = useState(false)
+    const optionSelectRef = useRef<HTMLDivElement | null>(null)
 
     const setEnglishLanguage = () => {
         setSelectValue('EN')
@@ -26,12 +27,23 @@ const CustomSelect = () => {
         setShowOption(!showOption)
     }
 
+    const handleClikOutSide = (e: MouseEvent) => {
+
+        if (optionSelectRef.current && !optionSelectRef.current.contains(e.target as Node)) {
+            setShowOption(false)
+        }
+
+    }
+
     useEffect(() => {
-        console.log(showOption)
+        document.addEventListener("mousedown", handleClikOutSide)
+
+        return (() => document.removeEventListener('mousedown', handleClikOutSide))
+
     }, [showOption])
 
     return (
-        <div className="custom-select-container">
+        <div className="custom-select-container" ref={optionSelectRef}>
             <div
                 className={classNames('default-select')}
                 onClick={toogleShowOption}

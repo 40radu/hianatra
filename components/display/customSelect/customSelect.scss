@@ -6,7 +6,7 @@
     }
 
     .option-select {
-        @apply  w-full hidden absolute left-0  ;
+        @apply  w-full hidden absolute left-0 border border-blue-secondary ;
 
         background-color: rgb(241, 241, 255); 
         top: 40px;
@@ -14,8 +14,10 @@
         p {
             @apply w-full text-blue-secondary  ;
 
+            padding-left: 7px;
+
             &:hover {
-                @apply bg-blue-secondary text-white
+                @apply bg-blue-secondary text-white  ;
             }
         } 
     }

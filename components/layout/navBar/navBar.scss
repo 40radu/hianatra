@@ -1,9 +1,10 @@
 .navBar {   
     
-    @apply w-screen h-fit flex justify-between items-center fixed bg-white items-center justify-center z-50 ;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-inline: 20px;
+    @apply   h-fit flex justify-between items-center fixed bg-white items-center justify-center z-50 mx-auto;
+
+        padding: 10px 20px;
+        left: 50%;
+        transform: translateX(-50%);
 
     @screen md {
         padding-inline: 30px;
@@ -28,7 +29,6 @@
         backdrop-filter: blur(6px);
         padding: 15px;
         padding-top: 100px;
-        // padding-left: 40px;
         gap: 30px;
         top: -100vh;
         transition: all 0.3s ease-in-out;

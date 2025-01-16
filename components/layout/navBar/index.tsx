@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState } from 'react'
-import "./navBar.scss"
 import classNames from 'classnames'
 import Button from '@/components/navigation/Button'
 import Link from 'next/link'
@@ -10,34 +9,10 @@ import Icon from '@/components/Icon'
 import { usePathname } from 'next/navigation'
 import Logo from '@/components/common/Logo'
 import CustomSelect from '@/components/display/customSelect/customSelect'
+import { dataLinks } from './data'
+import Container from '@/components/common/Container'
+import "./navBar.scss"
 
-export const dataLinks = [
-	{
-		href: "/",
-		label: "Accueil",
-
-	},
-	{
-		href: "/apropos",
-		label: "À propos",
-
-	},
-	{
-		href: "/ui",
-		label: "Cours",
-
-	},
-	{
-		href: "/blog",
-		label: "Blog",
-
-	},
-	{
-		href: "/contact",
-		label: "Contact",
-
-	},
-]
 
 const NavBar = () => {
 
@@ -47,7 +22,7 @@ const NavBar = () => {
 	const pathname = usePathname()
 
 	return (
-		<header className='navBar' >
+		<Container tag='header' className='navBar' >
 
 			<Logo variant='primary' />
 
@@ -101,7 +76,7 @@ const NavBar = () => {
 			</div>
 
 
-		</header>
+		</Container>
 	)
 }
 
