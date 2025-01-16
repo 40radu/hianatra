@@ -9,7 +9,7 @@ import Link from 'next/link'
 function Ready() {
     return (
         <section className={classNames("ready")}>
-            <Container className={classNames("ready__content")}>
+            <Container className={classNames("ready__content")} tag='div'>
                 <div className={classNames("ready__text")}>
                     <h3>Prêt?</h3>
                     <p>

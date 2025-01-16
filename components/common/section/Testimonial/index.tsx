@@ -5,8 +5,6 @@ import Container from '../../Container'
 import "./style.scss"
 import Heading from '../../Heading'
 import classNames from 'classnames'
-import Image from 'next/image'
-import Icon from '@/components/Icon'
 import { cardTestimonialData } from './data'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
@@ -14,7 +12,6 @@ import { Autoplay, Pagination } from 'swiper/modules'
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-import Star from '@/components/Icon/Star/Star'
 import CardTestimonial from '../../card/CardTestimonial'
 
 function Testimonial() {

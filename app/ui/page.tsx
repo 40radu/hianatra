@@ -11,6 +11,7 @@ import 'swiper/css/scrollbar';
 import Input from '@/components/common/Input'
 import TextArea from '@/components/common/TextArea'
 import Logo from '@/components/common/Logo'
+import CardInfo from '@/components/common/card/CardInfo'
 import NavBar from '@/components/layout/navBar'
 import Selectlang from '@/components/display/SelectLang'
 
