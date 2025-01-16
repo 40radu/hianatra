@@ -1,13 +1,9 @@
 "use client"
 
 import Heading from '@/components/common/Heading'
-import classNames from 'classnames'
 import React from 'react'
 import "./style.scss"
 import MorePoints from '@/components/vector/MorePoints'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules'
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -16,10 +12,13 @@ import Input from '@/components/common/Input'
 import TextArea from '@/components/common/TextArea'
 import Logo from '@/components/common/Logo'
 import CardInfo from '@/components/common/card/CardInfo'
+import NavBar from '@/components/layout/navBar'
+import Selectlang from '@/components/display/SelectLang'
 
 function Ui() {
   return (
     <>
+      <NavBar />
       <h5>heading</h5>
       <Heading label='Pourquoi nous?' align='start'>
         Normal <br />
@@ -40,6 +39,7 @@ function Ui() {
         LOgo
       </h5>
       <Logo variant='primary' />
+      <Selectlang />
     </>
   )
 }

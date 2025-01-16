@@ -6,6 +6,7 @@ import Course from "@/section/home/Course";
 import Dashboard from "@/section/home/Dashboard";
 import Reason from "@/section/home/Reason";
 
+
 export default function Home() {
   return (
     <>

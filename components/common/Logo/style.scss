@@ -1,10 +1,28 @@
 .logo {
     width: 39px;
     height: 48px;
+    z-index: 50;
+
+    @screen md {
+        width: 55px;
+        height: 63px;
+    }
+
+    @screen lg {
+        width: 65px;
+        height: 75px;
+    }
+
     @screen xl {
+        width: 70px;
+        height: 80px;
+    }
+
+    @screen 2xl {
         width: 79px;
         height: 88px;
     }
+
     &--primary {
         path {
             &:nth-child(1) {
