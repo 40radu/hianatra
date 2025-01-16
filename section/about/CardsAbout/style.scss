@@ -1,0 +1,10 @@
+.cards-about {
+    @apply flex flex-wrap;
+    height: max-content;
+    padding-bottom: 50px;
+    gap: 20px;
+    @screen lg {
+        @apply flex-nowrap;
+        padding-block : 100px;
+    }
+}
