@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Hianatra",
@@ -12,9 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body>
         {children}
+        <Footer />
       </body>
     </html>
   );

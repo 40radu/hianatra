@@ -1,0 +1,53 @@
+.card-info {
+	@apply flex flex-col w-full;
+	border: 1px solid #5A6FDC;
+	border-radius: 10px;
+	padding: 20px 20px 40px;
+	gap: 20px;
+	height: fit-content;
+	@screen lg {
+		min-height : 325px;
+	}
+	@screen 2xl {
+		min-height: 360px;
+		gap: 30px;
+	}
+	&__head {
+		@apply flex items-center justify-start;
+		gap: 14px;
+		@screen xl {
+			gap : 24px;
+		}
+		
+		.img {
+			width: 50px;
+			aspect-ratio: 1/1;
+			@screen xl {
+				width: 65px;
+			}
+			@screen 2xl {
+				width: 100px;
+			}
+			img {
+				@apply w-full h-full object-cover;
+			}
+		}
+		h4 {
+			@apply text-base font-medium;
+			letter-spacing: 0.5px;
+			@screen xl {
+				@apply text-lg;
+			}
+			@screen 2xl {
+				@apply text-xl;
+			}
+		}
+	}
+	&__description {
+		@apply flex flex-col w-full gap-3 text-sm;
+		letter-spacing: 0.5px;
+		@screen 2xl {
+			@apply text-base;
+		}
+	}
+}

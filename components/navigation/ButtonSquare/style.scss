@@ -1,0 +1,17 @@
+.btn-square {
+  @apply flex justify-center items-center text-lg;
+    border-radius: 10px;
+    padding: 20px;
+    &__blue {
+       @apply bg-blue-secondary;
+        span {
+          @apply text-white font-semibold;
+        }
+  };
+  &__white {
+    @apply bg-white;
+    span {
+      @apply font-medium;
+    }
+  };
+}

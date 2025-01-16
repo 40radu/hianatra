@@ -1,21 +1,22 @@
 .input {
-    padding: 20px;
-    @apply w-full h-fit;
-    border-radius: 10px;
-    border: 1px solid;
-    @apply flex border-black-50;
+  padding: 20px;
+  @apply w-full h-fit;
+  border-radius: 10px;
+  border: 1px solid;
+  @apply flex border-black-50 bg-white text-sm;
 
-    input {
-        @apply w-full text-sm;
-        height: 20px;
-        outline: none;
-        line-height: 20px;
+  @screen xl {
+    @apply text-base;
+  };
 
-        @screen xl {
-            @apply text-base;
-        }
-        &::placeholder {
-            @apply text-black-50;
-        }
+  input {
+    @apply w-full bg-transparent;
+    height: 20px;
+    outline: none;
+    line-height: 20px;
+
+    &::placeholder {
+      @apply text-black-50;
     }
+  }
 }

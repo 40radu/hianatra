@@ -1,5 +1,6 @@
 .btn-more {
-    @apply flex w-fit h-fit items-center font-medium text-xs;
+    @apply flex w-fit h-fit items-center font-medium;
+    font-size: 13px;
     gap: 10px;
     @screen lg {
         @apply text-sm;
