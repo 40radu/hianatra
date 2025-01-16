@@ -1,0 +1,45 @@
+.card-instructor {
+	@apply flex flex-col w-full items-center h-fit;
+	gap: 24px;
+	&__profile {
+		aspect-ratio: 1/1;
+		background-image: url(/about/bg-dashed-profil.png);
+		@apply bg-no-repeat bg-cover;
+		width: 90px;
+		padding: 8px;
+		@screen md {
+			width: 150px;
+			padding: 12px;
+		}
+		@screen 2xl {
+			width: 250px;
+			padding: 25px;
+		}
+		img {
+			@apply w-full h-full object-cover;	
+		}
+	}
+	&__descri {
+			@apply flex flex-col w-full items-center text-center;
+			letter-spacing: 0.05em;
+			gap: 8px;
+			@screen 2xl {
+				gap: 10px;
+			}
+			&-name {
+				@apply text-sm font-semibold;
+				@screen md {
+					@apply text-2xl;
+				}
+			}
+			&-job {
+				@apply text-xs font-medium text-blue-secondary;
+				@screen md {
+					@apply text-base;
+				}
+				@screen 2xl {
+					@apply text-lg;
+				}
+			}
+	}
+}
