@@ -55,8 +55,12 @@ const CustomSelect = () => {
             </div>
 
             <div className={classNames('option-select', { showOption: showOption })} >
-                <p onClick={setEnglishLanguage} > EN </p>
-                <p onClick={setFrenchLanguage} > FR </p>
+                <p onClick={setEnglishLanguage}>
+                    EN
+                </p>
+                <p onClick={setFrenchLanguage}>
+                    FR
+                </p>
             </div>
         </div>
     )

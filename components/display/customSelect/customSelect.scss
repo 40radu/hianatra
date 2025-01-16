@@ -6,9 +6,8 @@
     }
 
     .option-select {
-        @apply  w-full hidden absolute left-0 border border-blue-secondary ;
+        @apply  w-full hidden absolute left-0 border border-blue-secondary rounded-md bg-white ;
 
-        background-color: rgb(241, 241, 255); 
         top: 40px;
 
         p {
