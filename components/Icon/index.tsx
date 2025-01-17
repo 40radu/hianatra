@@ -16,6 +16,8 @@ import SearchIcon from "./Search";
 import Login from "./Login";
 import ArrowDown from "./ArrowDown";
 import Cancel from "./Cancel";
+import Student from "./Student";
+import Lesson from "./Lesson";
 import SearchMin from "./SearchMin";
 
 export const icon = {
@@ -35,7 +37,9 @@ export const icon = {
     facebook: <Facebook />,
     instagram: <Instagram />,
     twitter: <Twitter />,
-    linkedin: <Linkedin />
+    linkedin: <Linkedin />,
+    student: <Student />,
+    lesson: <Lesson />
 
 };
 
