@@ -1,0 +1,38 @@
+
+
+
+    .course-navbar {
+        @apply w-full h-fit py-4 flex items-center justify-between;
+
+        &__navigation {
+            @apply flex ;
+            gap: 10px;
+        }
+
+        &__search {
+            @apply h-fit relative ;
+            width: 400px;
+
+            &__icon {
+                @apply absolute;
+                top : 50%;
+                transform: translateY(-50%);
+                left: 10px;
+                opacity: 0.5;
+            }
+
+            &__input {
+                padding-left: 35px;
+                background-color: white;
+                opacity: 1;
+            }
+
+        }
+    }
+
+
+.test {
+    @apply w-full h-fit  ;
+    max-width: 100vw;
+    background-color: rgb(232, 232, 255);
+}
