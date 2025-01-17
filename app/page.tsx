@@ -1,5 +1,6 @@
 import Ready from "@/components/common/section/Ready";
 import Testimonial from "@/components/common/section/Testimonial";
+import CourseHeader from "@/components/display/CourseHeader";
 import About from "@/section/home/About";
 import Contact from "@/section/home/Contact";
 import Course from "@/section/home/Course";
@@ -17,6 +18,7 @@ export default function Home() {
       <Course />
       <Testimonial />
       <Contact />
+      <CourseHeader />
     </>
   );
 }

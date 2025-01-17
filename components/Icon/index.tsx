@@ -16,11 +16,13 @@ import SearchIcon from "./Search";
 import Login from "./Login";
 import ArrowDown from "./ArrowDown";
 import Cancel from "./Cancel";
+import SearchMin from "./SearchMin";
 
 export const icon = {
     arrowDown: <ArrowDown />,
     cancel: <Cancel />,
     search: <SearchIcon />,
+    miniSearch: <SearchMin />,
     login: <Login />,
     play: <Play />,
     css: <Css />,
@@ -38,7 +40,7 @@ export const icon = {
 };
 
 export type IconType = typeof icon;
-export type IconVariant = "blue" | "white" | "red" | "blue-secondary" | "black";
+export type IconVariant = "blue" | "white" | "red" | "blue-secondary" | "black" | "gray";
 
 interface IconProps {
     className?: string;

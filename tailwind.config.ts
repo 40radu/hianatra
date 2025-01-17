@@ -13,7 +13,8 @@ export default {
         "blue-secondary": "#031EA9",
         "red": "#FF1414", 
         "black-50": "#00000080",
-        "blue-50":"#031EA980"
+        "blue-50":"#031EA980",
+        "blue-clean" : "#EFEFFF"
       },
       boxShadow: {
         primary: "0 0 36px #031EA92E"

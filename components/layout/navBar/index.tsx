@@ -39,10 +39,8 @@ function NavBar() {
 					}
 				</nav>
 				<div className={classNames('container-header__nav-bar__right')} >
-					<div className={classNames('container-header__nav-bar__right__select-lang')}>
-						<Icon name='search' />
-						<Selectlang />
-					</div>
+					<Icon name='search' />
+					<Selectlang />
 					<Button
 						label='Login'
 						className={classNames("container-header__nav-bar__right__button")}

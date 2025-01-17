@@ -14,6 +14,7 @@ import Logo from '@/components/common/Logo'
 import CardInfo from '@/components/common/card/CardInfo'
 import NavBar from '@/components/layout/navBar'
 import Selectlang from '@/components/display/SelectLang'
+import CourseHeader from '@/components/display/CourseHeader'
 
 function Ui() {
   return (
@@ -40,6 +41,7 @@ function Ui() {
       </h5>
       <Logo variant='primary' />
       <Selectlang />
+      <CourseHeader />
     </>
   )
 }
