@@ -1,11 +1,11 @@
 import classNames from 'classnames'
 import React from 'react'
 
-interface CircleDashed {
+interface CircleDashedProps {
 	className?: string
 }
 
-function CircleDashed(props: CircleDashed) {
+function CircleDashed(props: CircleDashedProps) {
 	const { className = "" } = props
 	return (
 		<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" className={classNames(`${className}`)}>

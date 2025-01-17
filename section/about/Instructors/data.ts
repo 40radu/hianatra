@@ -19,10 +19,6 @@ const instructorData: CardInstructorProps[] = [
 		job: "Javascript Instructor",
 		name: "Bro"
 	}, {
-		imgSrc: "/about/profile2.png",
-		job: "Javascript Instructor",
-		name: "Ihasina1"
-	}, {
 		imgSrc: "/about/profile3.png",
 		job: "Javascript Instructor",
 		name: "Ihasina2"

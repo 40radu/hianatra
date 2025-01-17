@@ -4,13 +4,14 @@ import "./style.scss"
 interface TextAreaProps {
     name: string;
     placeholder: string;
+    onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
 }
 
 function TextArea(props: TextAreaProps) {
-    const { name, placeholder } = props
+    const { name, placeholder, onChange } = props
     return (
         <div className={classNames("text-area")}>
-            <textarea name={name} placeholder={placeholder} />
+            <textarea name={name} placeholder={placeholder} onChange={onChange} />
         </div>
     )
 }

@@ -6,13 +6,19 @@ interface InputProps {
   name: string;
   placeholder: string;
   className?: string
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
 function Input(props: InputProps) {
-  const { name, type = "text", placeholder, className = "" } = props
+  const { name, type = "text", placeholder, className = "", onChange } = props
   return (
     <div className={classNames("input", `${className}`)}>
-      <input name={name} type={type} placeholder={placeholder} />
+      <input
+        name={name}
+        type={type}
+        placeholder={placeholder}
+        onChange={onChange}
+      />
     </div>
   )
 }

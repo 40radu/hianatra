@@ -12,8 +12,16 @@ import Facebook from "./Facebook";
 import Instagram from "./Instagram";
 import Twitter from "./Twitter";
 import Linkedin from "./Linkedin";
+import SearchIcon from "./Search";
+import Login from "./Login";
+import ArrowDown from "./ArrowDown";
+import Cancel from "./Cancel";
 
 export const icon = {
+    arrowDown: <ArrowDown />,
+    cancel: <Cancel />,
+    search: <SearchIcon />,
+    login: <Login />,
     play: <Play />,
     css: <Css />,
     html: <Html />,
@@ -30,7 +38,7 @@ export const icon = {
 };
 
 export type IconType = typeof icon;
-export type IconVariant = "blue" | "white" | "red" | "blue-secondary";
+export type IconVariant = "blue" | "white" | "red" | "blue-secondary" | "black";
 
 interface IconProps {
     className?: string;
@@ -39,7 +47,7 @@ interface IconProps {
 }
 
 export default function Icon(props: IconProps) {
-    const { variant = "blue", name, className } = props;
+    const { variant = "blue", name, className = "" } = props;
 
     return (
         <span
@@ -49,3 +57,4 @@ export default function Icon(props: IconProps) {
         </span>
     );
 }
+

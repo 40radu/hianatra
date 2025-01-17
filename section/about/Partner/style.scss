@@ -1,0 +1,30 @@
+.partner {
+	@apply grid items-center;
+	padding-bottom: 50px;
+	row-gap: 25px;
+	@screen md {
+		@apply grid-cols-2;
+	}
+	@screen lg {
+		padding-bottom: 100px;
+	}
+
+	&__logos {
+		@apply flex w-full justify-around;
+		@screen xl {
+			@apply justify-evenly;
+		}
+		img {
+			width: 100px;
+			height: 52px;
+			@screen lg {
+				width: 130px;
+				height: 61px;
+			}
+			@screen xl {
+				width: 143px;
+				height: 72px;
+			}
+		}
+	}
+}
