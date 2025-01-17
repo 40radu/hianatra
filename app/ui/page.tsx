@@ -19,7 +19,7 @@ import CourseHeader from '@/components/display/CourseHeader'
 function Ui() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <h5>heading</h5>
       <Heading label='Pourquoi nous?' align='start'>
         Normal <br />

@@ -1,0 +1,16 @@
+.cardCourseContainer {
+  @apply border border-black;
+
+  &__course {
+    @apply flex  flex-wrap;
+    gap: 15px;
+    border: 1px solid black;
+
+    &__card {
+      @apply flex items-center justify-center;
+      width: 433px;
+      height: 410px;
+      border: 1px solid black;
+    }
+  }
+}

@@ -1,4 +1,6 @@
 .container {
+  padding-top: 0;
+
   &__navbar {
     @apply w-full h-auto flex flex-col bg-blue-clean;
     gap: 20px;
