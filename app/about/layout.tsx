@@ -7,11 +7,7 @@ export const metadata: Metadata = {
 };
 
 function AboutLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
-	return (
-		<>
-			{children}
-		</>
-	)
+	return children
 }
 
 export default AboutLayout

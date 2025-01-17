@@ -6,9 +6,9 @@ import React from 'react'
 function Contact() {
 	return (
 		<>
-			<HeroCommon smallTitle='Nous' largeTitle='Contacter.'/>
-			<ContactUs/>
-			<ContactCommon/>
+			<HeroCommon smallTitle='Nous' largeTitle='Contacter.' />
+			<ContactUs />
+			<ContactCommon />
 		</>
 	)
 }
