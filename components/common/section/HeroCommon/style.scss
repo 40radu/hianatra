@@ -15,9 +15,8 @@
 			grid-template-columns: 1fr 35%;
 		}
 		h1 {
-			@apply font-medium text-lg relative z-10;
+			@apply font-medium text-lg relative z-10 w-fit rounded-full;
 			background-color:#FDFDFF;
-			max-width: 230px;
 			@screen md {
 				font-size :25px;
 				max-width : none;

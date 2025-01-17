@@ -6,10 +6,10 @@ import React from 'react'
 import { contactData } from './data'
 import ContactForm from '@/components/display/ContactForm'
 
-function Contact() {
+function ContactCommon() {
   return (
-    <Container className={classNames("contact")}>
-      <div className={classNames("contact__infos")}>
+    <Container className={classNames("contact-common")}>
+      <div className={classNames("contact-common__infos")}>
         {
           contactData.map((dt, index) => {
             return (
@@ -29,11 +29,11 @@ function Contact() {
         }
       </div>
       <ContactForm />
-      <span className={classNames("contact__image")}>
+      <span className={classNames("contact-common__image")}>
         <Image src="/home/contact.png" alt='' width={1920} height={1024} />
       </span>
     </Container>
   )
 }
 
-export default Contact
+export default ContactCommon
