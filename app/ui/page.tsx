@@ -14,6 +14,7 @@ import Logo from '@/components/common/Logo'
 import CardInfo from '@/components/common/card/CardInfo'
 import NavBar from '@/components/layout/navBar'
 import Selectlang from '@/components/display/SelectLang'
+import CardCourse from '@/components/common/card/CardCourse'
 
 function Ui() {
   return (
@@ -40,6 +41,15 @@ function Ui() {
       </h5>
       <Logo variant='primary' />
       <Selectlang />
+      <h5>Card courses</h5>
+      <CardCourse
+      image='/courses/html.png'
+      isFree = {true}
+      numberOfLesson={10}
+      numberOfStudent={10}
+      title='Introduction en HTML'
+      topic='HTML'
+      />
     </>
   )
 }
