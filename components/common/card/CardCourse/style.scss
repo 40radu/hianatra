@@ -1,92 +1,91 @@
 .card-course {
-	@apply flex flex-col cursor-pointer relative overflow-hidden;
-	max-width: 433px;
-	border-radius: 10px;
-	gap: 20px;
-	border: 0.8px solid #C7C7CC;
-	&__head {
-		@apply w-full relative h-fit;	
-		&-image {
-			height: 282px;
-			@apply w-full object-cover flex;
-			img {
-				@apply w-full;
-				border-radius: 10px 10px 0 0;
-			}
-		}
-		&-topic {
-			@apply w-fit absolute bg-white flex items-center;
-			border-radius: 10px;
-			padding: 10px;	
-			top: 20px;
-			right: 20px;
-			p{
-				@apply text-lg font-medium;
-				
-			}
-		}
-	}
-	&__body {
-		@apply flex flex-col;
-		padding: 20px;
-		padding-top: 0;
-		gap: 10px;
-		&-access {
-			@apply text-lg font-medium text-blue-primary;
-			line-height: 22px;
-		}
-		.free {
-			color: #3CAD25;
-		}
-		h4 {
-			@apply text-lg font-bold text-black;
-			line-height: 22px;
-		}
-		&-description {
-			@apply flex w-full;
-			gap: 20px;
-			.item {
-				@apply flex gap-1 items-center font-medium text-black;
-			}
-		}
-	}
-	&:hover &__hover {
-			transform: translateX(0);
-	}
-	&__hover {
-		transition: 0.4s ease-in-out;
-		background-color: #EFEFFF;
-		@apply absolute w-full h-full flex flex-col justify-between ;
-		transform: translateX(100%);
-		padding: 20px;
-		border-radius: 10px;
-		&-price {
-			@apply text-2xl font-semibold text-blue-secondary;
-		}
-		&-text {
-			@apply flex flex-col;
-			gap: 20px;
-			h4 {
-				@apply text-lg font-bold text-black;
-				line-height: 22px;
-			}
-			.info {
-				@apply flex w-full;
-				gap: 20px;
-				.item {
-					@apply flex gap-1 items-center font-medium text-black;
-				}
-			}
-			p {
-				line-height: 20px;
-			}
-		}
-		&-wrapper_btns  {
-			@apply flex justify-between;
-			gap: 22px;
-			button {
-				width: 100%;
-			}
-		}
-	}
+  @apply flex flex-col cursor-pointer relative overflow-hidden;
+  max-width: 433px;
+  border-radius: 10px;
+  gap: 20px;
+  border: 0.8px solid #c7c7cc;
+  &__head {
+    @apply w-full relative h-fit;
+    &-image {
+      height: 282px;
+      @apply w-full object-cover flex;
+      img {
+        @apply w-full;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+    &-topic {
+      @apply w-fit absolute bg-white flex items-center;
+      border-radius: 10px;
+      padding: 10px;
+      top: 20px;
+      right: 20px;
+      p {
+        @apply text-lg font-medium;
+      }
+    }
+  }
+  &__body {
+    @apply flex flex-col;
+    padding: 20px;
+    padding-top: 0;
+    gap: 10px;
+    &-access {
+      @apply text-lg font-medium text-blue-primary;
+      line-height: 22px;
+    }
+    .free {
+      color: #3cad25;
+    }
+    h4 {
+      @apply text-lg font-bold text-black;
+      line-height: 22px;
+    }
+    &-description {
+      @apply flex w-full;
+      gap: 20px;
+      .item {
+        @apply flex gap-1 items-center font-medium text-black;
+      }
+    }
+  }
+  &:hover &__hover {
+    transform: translateX(0);
+  }
+  &__hover {
+    transition: 0.3s ease-in-out;
+    background-color: #efefff;
+    @apply absolute w-full h-full flex flex-col justify-between;
+    transform: translateX(100%);
+    padding: 20px;
+    border-radius: 10px;
+    &-price {
+      @apply text-2xl font-semibold text-blue-secondary;
+    }
+    &-text {
+      @apply flex flex-col;
+      gap: 20px;
+      h4 {
+        @apply text-lg font-bold text-black;
+        line-height: 22px;
+      }
+      .info {
+        @apply flex w-full;
+        gap: 20px;
+        .item {
+          @apply flex gap-1 items-center font-medium text-black;
+        }
+      }
+      p {
+        line-height: 20px;
+      }
+    }
+    &-wrapper_btns {
+      @apply flex justify-between;
+      gap: 22px;
+      button {
+        width: 100%;
+      }
+    }
+  }
 }

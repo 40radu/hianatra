@@ -5,7 +5,7 @@ import Icon, { IconType, IconVariant } from "../../Icon";
 
 interface ButtonProps {
     label: string;
-    variant?: "blue" | "white";
+    variant?: "blue" | "white" | "transparent";
     icon?: keyof IconType;
     iconVariant?: IconVariant;
     className?: string;

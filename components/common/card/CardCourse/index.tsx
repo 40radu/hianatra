@@ -12,10 +12,12 @@ interface CardCourseProps {
 	title: string;
 	numberOfStudent: number;
 	numberOfLesson: number;
+	price: string;
+	description: string
 }
 
 function CardCourse(props: CardCourseProps) {
-	const { image, isFree, numberOfLesson, numberOfStudent, title, topic } = props
+	const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price, description } = props
 	return (
 		<div className={classNames("card-course")}>
 			<div className={classNames("card-course__head")}>
@@ -45,7 +47,7 @@ function CardCourse(props: CardCourseProps) {
 				</div>
 			</div>
 			<div className={classNames("card-course__hover")}>
-				<p className={classNames("card-course__hover-price")}>20.000 ar</p>
+				<p className={classNames("card-course__hover-price")}> {price} </p>
 				<div className={classNames("card-course__hover-text")}>
 					<h4>{title}</h4>
 					<div className={classNames("info")}>
@@ -59,12 +61,12 @@ function CardCourse(props: CardCourseProps) {
 						</span>
 					</div>
 					<p >
-					Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.
+						{description}
 					</p>
 				</div>
 				<div className={classNames("card-course__hover-wrapper_btns")}>
-					<Button label='Voir Plus'/>
-					<Button label='S&apos;inscrire'  variant='white'/>
+					<Button label='Voir Plus' />
+					<Button label='S&apos;inscrire' variant='transparent' />
 				</div>
 
 			</div>

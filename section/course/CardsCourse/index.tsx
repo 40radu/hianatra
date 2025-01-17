@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '@/components/common/Container'
 import './style.scss'
 import classNames from 'classnames'
+import CardCourse from '@/components/common/card/CardCourse'
 
 export type CardsCourseProps = {
   filter: "Tous les cours" | "Collections" | "Archives"
@@ -26,9 +27,21 @@ function CardsCourse({ filter }:
         {
           Array.from({ length: 6 }, (_, id) => {
             return (
-              <div className={classNames('cardCourseContainer__course__card')} key={id}>
-                {filterTest}
-              </div>
+              // <div className={classNames('cardCourseContainer__course__card')} key={id}>
+              //   {filterTest}
+              // </div>
+
+              <CardCourse
+                key={id}
+                image='/courses/html.png'
+                isFree={true}
+                numberOfLesson={10}
+                numberOfStudent={10}
+                title={filter}
+                topic='HTML'
+                price='20 000 Ar'
+                description='this is the descroptioon of the this specific card and course'
+              />
             )
           })
         }

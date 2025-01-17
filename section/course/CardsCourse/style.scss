@@ -1,8 +1,9 @@
 .cardCourseContainer {
   @apply border border-black;
+  padding-bottom: 100px;
 
   &__course {
-    @apply flex  flex-wrap;
+    @apply flex  flex-wrap justify-center items-center;
     gap: 15px;
     border: 1px solid black;
 
