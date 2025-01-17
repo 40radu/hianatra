@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 function CoursesLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
-	return (children)
+	return children
 }
 
 export default CoursesLayout
