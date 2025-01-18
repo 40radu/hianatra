@@ -18,7 +18,7 @@ export type CardsCourseProps = {
 function CardsCourse({ filter }:
   CardsCourseProps
 ) {
-  const windowInnerWidwth = window.innerWidth
+  const [windwWidth, setWindowWidth] = useState(0)
   let filterTest: string;
 
   if (filter == 'Tous les cours') {
@@ -28,6 +28,17 @@ function CardsCourse({ filter }:
   } else {
     filterTest = 'ceci sont vos archive'
   }
+
+
+  useEffect(() => {
+    const updateWindowWidth = () => setWindowWidth(window.innerWidth)
+    updateWindowWidth()
+
+    window.addEventListener('resize', updateWindowWidth)
+
+    return () => window.removeEventListener('resize', updateWindowWidth)
+
+  }, [])
 
 
   return (
@@ -50,7 +61,7 @@ function CardsCourse({ filter }:
         }}>
 
         {
-          windowInnerWidwth > 800 ?
+          windwWidth > 800 ?
             (
               Array.from({ length: 3 }, (_, index) => {
                 return (
