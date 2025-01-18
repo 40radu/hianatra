@@ -1,37 +1,40 @@
 .select-lang {
-    @apply  w-fit flex flex-col relative z-50 cursor-pointer;
+  @apply w-fit flex flex-col relative z-50 cursor-pointer;
 
-    &__default {
-        @apply  w-fit h-fit p-2 flex gap-2 justify-center items-center font-medium text-sm;
+  &__default {
+    @apply w-fit h-fit p-2 flex gap-2 justify-center items-center font-medium text-sm;
+    @screen lg {
+      @apply text-base;
+    }
+    p {
+      width: 23px;
+      height: 24px;
+    }
+  }
 
-        @screen lg {
-            @apply text-base;
-        }
+  &__option {
+    @apply hidden absolute left-0 border border-blue-secondary rounded-md bg-white;
+
+    top: 40px;
+    width: 80%;
+
+    @screen lg {
+      @apply w-full;
     }
 
-    &__option {
-        @apply  hidden absolute left-0 border border-blue-secondary rounded-md bg-white ;
+    p {
+      @apply w-full text-blue-secondary text-sm;
+      padding-left: 7px;
+      @screen lg {
+        @apply text-base;
+      }
 
-        top: 40px;
-        width: 80%;
-
-        @screen lg {
-            @apply w-full;
-        }
-
-        p {
-            @apply w-full text-blue-secondary text-sm  ;
-            padding-left: 7px;
-            @screen lg {
-                @apply text-base;
-            }
-
-            &:hover {
-                @apply bg-blue-secondary text-white  ;
-            }
-        } 
+      &:hover {
+        @apply bg-blue-secondary text-white;
+      }
     }
-    .showOption {
-        display: block;
-    }
+  }
+  .showOption {
+    display: block;
+  }
 }

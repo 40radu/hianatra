@@ -49,7 +49,6 @@ export default function Selectlang() {
 		if (selectRef.current && !selectRef.current.contains(e.target as Node)) {
 			setShowOption(false)
 		}
-
 	}
 
 	useEffect(() => {

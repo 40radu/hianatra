@@ -10,12 +10,12 @@ export const dataLinks : LinksProps[] = [
 
 	},
 	{
-		href: "/apropos",
+		href: "/about",
 		label: "À propos",
 
 	},
 	{
-		href: "/ui",
+		href: "/courses",
 		label: "Cours",
 
 	},

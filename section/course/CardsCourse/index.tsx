@@ -19,33 +19,18 @@ function CardsCourse({ filter }:
   CardsCourseProps
 ) {
   const [windwWidth, setWindowWidth] = useState(0)
-  let filterTest: string;
-
-  if (filter == 'Tous les cours') {
-    filterTest = "ceci sont tous les cours"
-  } else if (filter === 'Collections') {
-    filterTest = 'ceci sont vos collections'
-  } else {
-    filterTest = 'ceci sont vos archive'
-  }
-
 
   useEffect(() => {
     const updateWindowWidth = () => setWindowWidth(window.innerWidth)
     updateWindowWidth()
-
     window.addEventListener('resize', updateWindowWidth)
-
     return () => window.removeEventListener('resize', updateWindowWidth)
-
   }, [])
 
 
   return (
     <Container tag='div' className={classNames("cardCourseContainer")} >
-
       <Swiper
-
         modules={[Pagination, Autoplay]}
         slidesPerView={1}
         spaceBetween={10}
@@ -54,12 +39,12 @@ function CardsCourse({ filter }:
         autoplay={false}
         breakpoints={{
           375: { slidesPerView: 1.2 },
-          500: { slidesPerView: 1.5 },
-          750: { slidesPerView: 2.2 },
+          400: { slidesPerView: 1.3 },
+          500: { slidesPerView: 1.6 },
+          600: { slidesPerView: 2 },
+          730: { slidesPerView: 2.4 },
           800: { slidesPerView: 1 }
-
         }}>
-
         {
           windwWidth > 800 ?
             (
@@ -92,7 +77,6 @@ function CardsCourse({ filter }:
               })
             )
         }
-
       </Swiper>
     </Container>
   )

@@ -1,5 +1,8 @@
 .course {
   @apply flex flex-wrap justify-center;
-  gap: 5px;
   padding-bottom: 50px;
+  gap: 20px;
+  @screen 2xl {
+    gap: 10px;
+  }
 }
