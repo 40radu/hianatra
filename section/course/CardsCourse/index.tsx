@@ -27,10 +27,6 @@ function CardsCourse({ filter }:
         {
           Array.from({ length: 6 }, (_, id) => {
             return (
-              // <div className={classNames('cardCourseContainer__course__card')} key={id}>
-              //   {filterTest}
-              // </div>
-
               <CardCourse
                 key={id}
                 image='/courses/html.png'
