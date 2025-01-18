@@ -40,6 +40,7 @@
 
     &__search {
       @apply h-fit  w-fit flex flex-row items-center justify-center bg-white;
+      max-width: 100%;
       gap: 10px;
       padding: 8px 15px;
       border-radius: 5px;

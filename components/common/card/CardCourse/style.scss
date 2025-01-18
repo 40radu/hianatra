@@ -2,11 +2,13 @@
   @apply flex flex-col cursor-pointer relative overflow-hidden;
   width: 280px;
   max-width: 433px;
+  margin-bottom: 50px;
   border-radius: 5px;
   gap: 10px;
   border: 0.8px solid #c7c7cc;
   @screen lg {
     @apply w-full;
+    margin-bottom: 0;
     border-radius: 10px;
     gap: 20px;
   }

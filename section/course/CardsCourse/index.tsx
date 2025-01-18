@@ -1,9 +1,16 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react'
 import Container from '@/components/common/Container'
 import './style.scss'
 import classNames from 'classnames'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, Pagination } from 'swiper/modules'
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import OneSectionSlideCard from './OneSectionSlide'
 import CardCourse from '@/components/common/card/CardCourse'
-
 export type CardsCourseProps = {
   filter: "Tous les cours" | "Collections" | "Archives"
 }
@@ -11,7 +18,8 @@ export type CardsCourseProps = {
 function CardsCourse({ filter }:
   CardsCourseProps
 ) {
-  let filterTest: string
+  const windowInnerWidwth = window.innerWidth
+  let filterTest: string;
 
   if (filter == 'Tous les cours') {
     filterTest = "ceci sont tous les cours"
@@ -21,27 +29,60 @@ function CardsCourse({ filter }:
     filterTest = 'ceci sont vos archive'
   }
 
+
   return (
     <Container tag='div' className={classNames("cardCourseContainer")} >
-      <div className={classNames('cardCourseContainer__course')} >
+
+      <Swiper
+
+        modules={[Pagination, Autoplay]}
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{ clickable: false }}
+        loop={true}
+        autoplay={false}
+        breakpoints={{
+          375: { slidesPerView: 1.2 },
+          500: { slidesPerView: 1.5 },
+          750: { slidesPerView: 2.2 },
+          800: { slidesPerView: 1 }
+
+        }}>
+
         {
-          Array.from({ length: 6 }, (_, id) => {
-            return (
-              <CardCourse
-                key={id}
-                image='/courses/html.png'
-                isFree={true}
-                numberOfLesson={10}
-                numberOfStudent={10}
-                title={filter}
-                topic='HTML'
-                price='20 000 Ar'
-                description='this is the descroptioon of the this specific card and course'
-              />
+          windowInnerWidwth > 800 ?
+            (
+              Array.from({ length: 3 }, (_, index) => {
+                return (
+                  <SwiperSlide key={`card-slide-section-${index}`}>
+                    <OneSectionSlideCard filter={filter} />
+                  </SwiperSlide>
+                )
+              })
             )
-          })
+            :
+            (
+              Array.from({ length: 6 }, (_, id) => {
+                return (
+                  <SwiperSlide key={`card-slide-${id}`}>
+                    <CardCourse
+                      key={id}
+                      image='/courses/html.png'
+                      isFree={true}
+                      numberOfLesson={10}
+                      numberOfStudent={10}
+                      title={filter}
+                      topic='HTML'
+                      price='20 000 Ar'
+                      description='this is the descroptioon of the this specific card and course'
+                    />
+                  </SwiperSlide>
+                )
+              })
+            )
         }
-      </div>
+
+      </Swiper>
     </Container>
   )
 

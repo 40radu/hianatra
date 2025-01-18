@@ -1,17 +1,13 @@
 .cardCourseContainer {
-  @apply border border-black;
-  padding-bottom: 100px;
+  // @apply border border-black;
+  padding-bottom: 50px;
+  @screen lg {
+    padding-bottom: 0;
+  }
 
   &__course {
-    @apply flex  flex-wrap justify-center items-center;
-    gap: 15px;
-    border: 1px solid black;
-
-    &__card {
-      @apply flex items-center justify-center;
-      width: 433px;
-      height: 410px;
-      border: 1px solid black;
-    }
+    @apply flex  flex-wrap justify-center;
+    gap: 5px;
+    // border: 1px solid black;
   }
 }
