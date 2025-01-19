@@ -1,3 +1,5 @@
+'use client'
+
 import Container from '@/components/common/Container'
 import Logo from '@/components/common/Logo'
 import classNames from 'classnames'
@@ -8,8 +10,18 @@ import Icon from '@/components/Icon'
 import Link from 'next/link'
 import FooterItem from '@/components/display/FooterItem'
 import Newsletter from '@/components/display/Newsletter'
+import { usePathname } from 'next/navigation'
 
 function Footer() {
+  const pathname = usePathname()
+
+  if (
+    pathname !== '/' &&
+    pathname !== '/about' &&
+    pathname !== 'blog' &&
+    pathname !== '/courses' &&
+    pathname !== '/contact'
+  ) return null
   return (
     <footer className={classNames("bg-footer")}>
       <Container tag='div' className={classNames("footer")}>
@@ -27,22 +39,22 @@ function Footer() {
             )}
           </div>
         </div>
-          <FooterItem title='Lien'>
-            <ul className={classNames("footer__links")}>
-              {
-                linkData.map((dt, index) => (
-                  <Link href={dt.link} key={`link_${index}`}> <li>{dt.label} </li></Link>
-                ))
-              }
-            </ul>
-          </FooterItem>
-          <FooterItem title='Contactez-nous'>
-            <ul className={classNames("footer__contact")}>
-              <li>exemple@gmail.com</li>
-              <li>+261 34 12 34 567</li>
-              <li>Antananarivo, Madagascar</li>
-            </ul>
-          </FooterItem>
+        <FooterItem title='Lien'>
+          <ul className={classNames("footer__links")}>
+            {
+              linkData.map((dt, index) => (
+                <Link href={dt.link} key={`link_${index}`}> <li>{dt.label} </li></Link>
+              ))
+            }
+          </ul>
+        </FooterItem>
+        <FooterItem title='Contactez-nous'>
+          <ul className={classNames("footer__contact")}>
+            <li>exemple@gmail.com</li>
+            <li>+261 34 12 34 567</li>
+            <li>Antananarivo, Madagascar</li>
+          </ul>
+        </FooterItem>
         <Newsletter />
       </Container>
     </footer>

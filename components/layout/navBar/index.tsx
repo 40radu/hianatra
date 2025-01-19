@@ -14,9 +14,16 @@ import Selectlang from '@/components/display/SelectLang'
 
 
 function NavBar() {
-
 	const [viewNavResponsive, setViewNavResponsive] = useState(false)
 	const pathname = usePathname()
+
+	if (
+		pathname !== '/' &&
+		pathname !== '/about' &&
+		pathname !== 'blog' &&
+		pathname !== '/courses' &&
+		pathname !== '/contact'
+	) return null
 
 	return (
 		<header className={classNames('container-header')} >
