@@ -22,6 +22,7 @@ function Footer() {
     pathname !== '/courses' &&
     pathname !== '/contact'
   ) return null
+
   return (
     <footer className={classNames("bg-footer")}>
       <Container tag='div' className={classNames("footer")}>

@@ -18,10 +18,10 @@ export type CardsCourseProps = {
 function CardsCourse({ filter }:
   CardsCourseProps
 ) {
-  const [windwWidth, setWindowWidth] = useState(0)
+  const [innerWidth, setInnerWidth] = useState(0)
 
   useEffect(() => {
-    const updateWindowWidth = () => setWindowWidth(window.innerWidth)
+    const updateWindowWidth = () => setInnerWidth(window.innerWidth)
     updateWindowWidth()
     window.addEventListener('resize', updateWindowWidth)
     return () => window.removeEventListener('resize', updateWindowWidth)
@@ -32,21 +32,17 @@ function CardsCourse({ filter }:
     <Container tag='div' className={classNames("cardCourseContainer")} >
       <Swiper
         modules={[Pagination, Autoplay]}
-        slidesPerView={1}
+        slidesPerView={1.15}
         spaceBetween={10}
         pagination={{ clickable: false }}
         loop={true}
         autoplay={false}
         breakpoints={{
-          375: { slidesPerView: 1.2 },
-          400: { slidesPerView: 1.3 },
-          500: { slidesPerView: 1.6 },
-          600: { slidesPerView: 2 },
-          730: { slidesPerView: 2.4 },
-          800: { slidesPerView: 1 }
+          768: { slidesPerView: 2.4 },
+          1024: { slidesPerView: 1 }
         }}>
         {
-          windwWidth > 800 ?
+          innerWidth > 1024 ?
             (
               Array.from({ length: 3 }, (_, index) => {
                 return (

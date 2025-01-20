@@ -2,11 +2,16 @@
   @apply flex flex-col cursor-pointer relative overflow-hidden;
   width: 280px;
   max-width: 433px;
-  margin-bottom: 50px;
   border-radius: 5px;
   gap: 10px;
   border: 0.8px solid #c7c7cc;
   @screen lg {
+    width: 300px;
+  }
+  @screen xl {
+    width: 370px;
+  }
+  @screen 2xl {
     @apply w-full;
     margin-bottom: 0;
     border-radius: 10px;
@@ -18,7 +23,7 @@
     &-image {
       height: 200px;
       @apply w-full object-cover flex;
-      @screen lg {
+      @screen 2xl {
         height: 282px;
       }
       img {
@@ -33,7 +38,7 @@
       top: 20px;
       right: 20px;
 
-      @screen lg {
+      @screen 2xl {
         border-radius: 10px;
         padding: 10px;
       }
@@ -41,7 +46,7 @@
       p {
         @apply text-sm font-medium;
 
-        @screen lg {
+        @screen 2xl {
           @apply text-lg font-medium;
         }
       }
@@ -53,12 +58,22 @@
     padding-top: 0;
     gap: 10px;
     @screen lg {
+      gap: 5px;
+    }
+    @screen xl {
+      padding: 15px;
+      padding-top: 0;
+      gap: 15px;
+    }
+    @screen 2xl {
       padding: 20px;
+      padding-top: 0;
+      gap: 20px;
     }
     &-access {
       @apply text-sm font-medium text-blue-primary;
       line-height: 20px;
-      @screen lg {
+      @screen 2xl {
         @apply text-lg font-medium;
         line-height: 22px;
       }
@@ -69,20 +84,22 @@
     h4 {
       @apply text-sm font-bold text-black;
       line-height: 20px;
-      @screen lg {
+      @screen 2xl {
         @apply text-lg font-medium;
         line-height: 22px;
       }
     }
     &-description {
       @apply flex w-full;
+
       gap: 10px;
-      @screen lg {
+      @screen 2xl {
         gap: 20px;
+        height: 24px;
       }
       .item {
         @apply flex gap-1 items-center text-sm font-medium text-black;
-        @screen lg {
+        @screen 2xl {
           @apply text-lg;
         }
       }
@@ -98,14 +115,14 @@
     transform: translateX(100%);
     padding: 15px;
     border-radius: 5px;
-    @screen lg {
+    @screen 2xl {
       justify-content: space-between;
       padding: 20px;
       border-radius: 10px;
     }
     &-price {
       @apply text-xl font-semibold text-blue-secondary;
-      @screen lg {
+      @screen 2xl {
         @apply text-2xl;
       }
     }
@@ -116,7 +133,7 @@
         @apply font-bold text-black;
         line-height: 20px;
         font-size: 16px;
-        @screen lg {
+        @screen 2xl {
           @apply text-lg;
           line-height: 22px;
         }
@@ -126,7 +143,7 @@
         gap: 20px;
         .item {
           @apply flex gap-1 items-center font-medium text-black text-sm;
-          @screen lg {
+          @screen 2xl {
             font-size: 18px;
           }
         }
@@ -134,7 +151,7 @@
       p {
         line-height: 20px;
         font-size: 14px;
-        @screen lg {
+        @screen 2xl {
           font-size: 18px;
         }
       }
@@ -144,6 +161,14 @@
       gap: 22px;
       button {
         width: 100%;
+        @screen lg {
+          padding: 12px 12px;
+          font-size: 14px;
+        }
+        @screen xl {
+          padding-block: 12px;
+          font-size: 16px;
+        }
       }
     }
   }

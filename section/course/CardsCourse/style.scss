@@ -1,6 +1,9 @@
 .cardCourseContainer {
-  // @apply border border-black;
-  padding-bottom: 50px;
+  @screen lg {
+  }
+  .swiper-wrapper {
+    margin-bottom: 50px;
+  }
   @screen lg {
     padding-bottom: 0;
   }
@@ -8,6 +11,5 @@
   &__course {
     @apply flex  flex-wrap justify-center;
     gap: 5px;
-    // border: 1px solid black;
   }
 }
