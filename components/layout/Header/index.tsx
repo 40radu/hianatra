@@ -37,10 +37,12 @@ function Header() {
 							{link.label}
 						</Link>
 					))}
-					<Link href="" className={classNames("button")}> <Button icon='login' label='Login' iconVariant='white' /></Link>
+					<Link href="/" onClick={handleMenuOpen} className={classNames("button")}>
+						<Button icon='login' label='Login' iconVariant='white' />
+					</Link>
 				</nav>
 				<div className={classNames("header__content-right")}>
-					<Icon name='search' variant='black' />
+					<Icon name='search' variant='black' className='search'/>
 					<Selectlang />
 					<Link href="" className={classNames("button")}> <Button icon='login' label='Login' iconVariant='white' /></Link>
 					<div className={classNames("menu-bar", { active: isMenuOpen })} onClick={handleMenuOpen}>

@@ -1,7 +1,7 @@
 .header {
 	&__bg {
-		@apply flex w-full fixed top-0 left-0 z-50;
-		padding-block: 10px 0;
+		@apply flex w-full fixed top-0 left-0 z-50 bg-white;
+		padding-block: 5px;
 		box-shadow: 1px 2px 20px rgba(#8d8d8d, 0.2);
 		backdrop-filter: blur(6px);
 	}
@@ -32,12 +32,12 @@
 				}
 
 				&:hover {
-					@apply text-blue-primary;
+					@apply text-blue-secondary;
 				}
 			}
 
 			.active {
-				@apply text-blue-primary;
+				@apply text-blue-secondary;
 			}
 		}
 
@@ -47,6 +47,10 @@
 
 			@screen xl {
 				gap: 10px;
+			}
+
+			.search {
+				@apply cursor-pointer;
 			}
 
 			.button {
@@ -118,7 +122,7 @@
 
 			a {
 				&.active {
-					@apply text-blue-primary;
+					@apply text-blue-secondary font-medium;
 					transition: 0.5s ease-in-out;
 				}
 			}
