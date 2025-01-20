@@ -44,7 +44,7 @@ function CardsCourse({ filter }:
         {
           innerWidth > 1024 ?
             (
-              Array.from({ length: 3 }, (_, index) => {
+              Array.from({ length: filter === "Collections" ? 2 : 3 }, (_, index) => {
                 return (
                   <SwiperSlide key={`card-slide-section-${index}`}>
                     <OneSectionSlideCard filter={filter} />
@@ -54,7 +54,7 @@ function CardsCourse({ filter }:
             )
             :
             (
-              Array.from({ length: 6 }, (_, id) => {
+              Array.from({ length: filter === "Collections" ? 6 : 6 }, (_, id) => {
                 return (
                   <SwiperSlide key={`card-slide-${id}`}>
                     <CardCourse

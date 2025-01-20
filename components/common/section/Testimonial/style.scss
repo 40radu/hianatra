@@ -1,4 +1,7 @@
 .testimonial {
+    @screen lg {
+        padding-top:25px;
+    }
     .swiper {
         padding-block: 40px 50px;
         @screen xl {

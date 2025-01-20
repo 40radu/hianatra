@@ -5,7 +5,7 @@ import React from 'react'
 import "./style.scss"
 import Button from '@/components/navigation/Button'
 
-interface CardCourseProps {
+export interface CardCourseProps {
 	topic: string;
 	image: string;
 	isFree: boolean;

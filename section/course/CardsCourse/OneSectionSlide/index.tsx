@@ -9,7 +9,7 @@ function OneSectionSlideCard(props: CardsCourseProps) {
     return (
         <div className={classNames('course')} >
             {
-                Array.from({ length: 6 }, (_, id) => {
+                Array.from({ length: filter === "Collections" ? 6 : 6 }, (_, id) => {
                     return (
                         <CardCourse
                             key={id}

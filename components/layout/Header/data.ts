@@ -17,7 +17,6 @@ export const dataLinks : LinksProps[] = [
 	{
 		href: "/courses",
 		label: "Cours",
-
 	},
 	{
 		href: "/blog",
