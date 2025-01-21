@@ -1,10 +1,7 @@
 .course {
-  @apply flex flex-wrap justify-center;
+  @apply flex flex-wrap justify-start;
   gap: 20px;
   @screen lg {
     gap: 10px;
   }
-  // @screen 2xl {
-  //   gap: 20px;
-  // }
 }

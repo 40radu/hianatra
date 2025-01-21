@@ -2,7 +2,7 @@ import { CardsCourseProps } from '.';
 import { courseLinks } from './../../../components/display/CourseHeader/data';
 import { CardCourseProps } from '@/components/common/card/CardCourse';
 
-type CourseDataType = {
+export type CourseDataType = {
     type : CardsCourseProps['filter'],
     content : CardCourseProps[]
 }[]

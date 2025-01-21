@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import Container from '@/components/common/Container'
 import './style.scss'
 import classNames from 'classnames'
@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import OneSectionSlideCard from './OneSectionSlide'
 import CardCourse from '@/components/common/card/CardCourse'
+import { courseData } from './data'
 export type CardsCourseProps = {
   filter: "Tous les cours" | "Collections" | "Archives"
 }
@@ -19,6 +20,15 @@ function CardsCourse({ filter }:
   CardsCourseProps
 ) {
   const [innerWidth, setInnerWidth] = useState(0)
+  const seletedCourse = courseData.find((course) => course.type === filter)
+  const sections = useMemo(() => {
+    if (!seletedCourse?.content) return []
+    const groupeContent = []
+    for (let i = 0; i < seletedCourse.content.length; i += 6) {
+      groupeContent.push(seletedCourse.content.slice(i, i + 6))
+    }
+    return groupeContent
+  }, [seletedCourse])
 
   useEffect(() => {
     const updateWindowWidth = () => setInnerWidth(window.innerWidth)
@@ -44,29 +54,29 @@ function CardsCourse({ filter }:
         {
           innerWidth > 1024 ?
             (
-              Array.from({ length: filter === "Collections" ? 2 : 3 }, (_, index) => {
+              sections.map((section, index) => {
                 return (
                   <SwiperSlide key={`card-slide-section-${index}`}>
-                    <OneSectionSlideCard filter={filter} />
+                    <OneSectionSlideCard section={section} />
                   </SwiperSlide>
                 )
               })
             )
             :
             (
-              Array.from({ length: filter === "Collections" ? 6 : 6 }, (_, id) => {
+              seletedCourse?.content.map((course, id) => {
                 return (
                   <SwiperSlide key={`card-slide-${id}`}>
                     <CardCourse
                       key={id}
                       image='/courses/html.png'
-                      isFree={true}
-                      numberOfLesson={10}
-                      numberOfStudent={10}
-                      title={filter}
-                      topic='HTML'
-                      price='20 000 Ar'
-                      description='this is the descroptioon of the this specific card and course'
+                      isFree={course.isFree}
+                      numberOfLesson={course.numberOfLesson}
+                      numberOfStudent={course.numberOfStudent}
+                      title={course.title}
+                      topic={course.topic.toUpperCase()}
+                      price={course.price}
+                      description={course.description}
                     />
                   </SwiperSlide>
                 )
@@ -76,8 +86,6 @@ function CardsCourse({ filter }:
       </Swiper>
     </Container>
   )
-
-
 }
 
 export default CardsCourse

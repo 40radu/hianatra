@@ -1,26 +1,28 @@
-import CardCourse from '@/components/common/card/CardCourse'
+import CardCourse, { CardCourseProps } from '@/components/common/card/CardCourse'
 import classNames from 'classnames'
 import React from 'react'
 import './style.scss'
-import { CardsCourseProps } from '..'
 
-function OneSectionSlideCard(props: CardsCourseProps) {
-    const { filter = 'Tous les cours' } = props
+type CardGroupeProps = {
+    section: CardCourseProps[]
+}
+
+function OneSectionSlideCard({ section }: CardGroupeProps) {
     return (
         <div className={classNames('course')} >
             {
-                Array.from({ length: filter === "Collections" ? 6 : 6 }, (_, id) => {
+                section.map((course, id) => {
                     return (
                         <CardCourse
                             key={id}
                             image='/courses/html.png'
-                            isFree={true}
-                            numberOfLesson={10}
-                            numberOfStudent={10}
-                            title={filter}
-                            topic='HTML'
-                            price='20 000 Ar'
-                            description='this is the descroptioon of the this specific card and course'
+                            isFree={course.isFree}
+                            numberOfLesson={course.numberOfLesson}
+                            numberOfStudent={course.numberOfStudent}
+                            title={course.title}
+                            topic={course.topic.toUpperCase()}
+                            price={course.price}
+                            description={course.description}
                         />
                     )
                 })
