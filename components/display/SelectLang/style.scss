@@ -6,17 +6,13 @@
 		padding: 10px;
 		gap: 2px;
 
-		@screen xl {
-			gap: 8px;
-		}
-
 		p {
-			@apply font-semibold text-sm;
+			@apply font-semibold text-sm flex items-center;
 			min-width: 24px;
-			height: 20px;
+			aspect-ratio: 1/1;
 
 			@screen xl {
-				@apply text-base;
+				font-size: 0.9375rem;
 			}
 		}
 
@@ -27,19 +23,16 @@
 
 	&__option {
 		@apply absolute border border-blue-secondary rounded-md bg-white;
-		top: 50px;
-		width: 70%;
-		left: 8px;
+		top: 45px;
+		width: 65%;
+		left: 10px;
 
 		p {
 			@apply w-full text-blue-primary text-center;
 			padding-right: 2px;
-			padding-block: 1.5px 0;
-			font-size: 14px;
-			@screen xl {
-				font-size : 15px;
-				padding-block: 2px 1px;
-			}
+			padding-block: 1px;
+			font-size: 13px;
+
 			&:hover {
 				@apply bg-blue-secondary text-white font-medium;
 			}
