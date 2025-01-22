@@ -4,25 +4,25 @@ import React from 'react'
 import './style.scss'
 
 type CardGroupeProps = {
-    section: CardCourseProps[]
+    carsdArray: CardCourseProps[]
 }
 
-function OneSectionSlideCard({ section }: CardGroupeProps) {
+function OneSectionSlideCard({ carsdArray }: CardGroupeProps) {
     return (
         <div className={classNames('course')} >
             {
-                section.map((course, id) => {
+                carsdArray.map((card, id) => {
                     return (
                         <CardCourse
                             key={id}
                             image='/courses/html.png'
-                            isFree={course.isFree}
-                            numberOfLesson={course.numberOfLesson}
-                            numberOfStudent={course.numberOfStudent}
-                            title={course.title}
-                            topic={course.topic.toUpperCase()}
-                            price={course.price}
-                            description={course.description}
+                            isFree={card.isFree}
+                            numberOfLesson={card.numberOfLesson}
+                            numberOfStudent={card.numberOfStudent}
+                            title={card.title}
+                            topic={card.topic.toUpperCase()}
+                            price={card.price}
+                            description={card.description}
                         />
                     )
                 })

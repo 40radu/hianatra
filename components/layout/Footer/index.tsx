@@ -1,5 +1,3 @@
-'use client'
-
 import Container from '@/components/common/Container'
 import Logo from '@/components/common/Logo'
 import classNames from 'classnames'
@@ -10,18 +8,8 @@ import Icon from '@/components/Icon'
 import Link from 'next/link'
 import FooterItem from '@/components/display/FooterItem'
 import Newsletter from '@/components/display/Newsletter'
-import { usePathname } from 'next/navigation'
 
 function Footer() {
-  const pathname = usePathname()
-
-  if (
-    pathname !== '/' &&
-    pathname !== '/about' &&
-    pathname !== 'blog' &&
-    pathname !== '/courses' &&
-    pathname !== '/contact'
-  ) return null
 
   return (
     <footer className={classNames("bg-footer")}>

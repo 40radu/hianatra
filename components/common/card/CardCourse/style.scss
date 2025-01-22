@@ -107,9 +107,10 @@
   }
   &:hover &__hover {
     transform: translateX(0);
+    transition: 0.3s ease-in-out;
   }
   &__hover {
-    transition: 0.3s ease-in-out;
+    transition: 0s;
     background-color: #efefff;
     @apply absolute w-full h-full flex flex-col justify-between;
     transform: translateX(100%);

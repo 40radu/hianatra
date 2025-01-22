@@ -47,7 +47,7 @@ function CardCourse(props: CardCourseProps) {
 				</div>
 			</div>
 			<div className={classNames("card-course__hover")}>
-				<p className={classNames("card-course__hover-price")}> {price} </p>
+				<p className={classNames("card-course__hover-price")}> {price} Ar </p>
 				<div className={classNames("card-course__hover-text")}>
 					<h4>{title}</h4>
 					<div className={classNames("info")}>

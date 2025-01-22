@@ -18,7 +18,7 @@ export const courseData : CourseDataType = [
                         numberOfStudent : 4,
                         description : 'this is a html description',
                         numberOfLesson : 10,
-                        price : '20 000',
+                        price : '20.000',
                         title : 'HTML course'
                     },
                     {
@@ -28,7 +28,7 @@ export const courseData : CourseDataType = [
                         numberOfStudent : 6,
                         description : 'this is a css description',
                         numberOfLesson : 10,
-                        price : '20 000',
+                        price : '20.000',
                         title : 'CSS course'
                     },
                     {
@@ -38,7 +38,7 @@ export const courseData : CourseDataType = [
                         numberOfStudent : 4,
                         description : 'this is a ui/ux description',
                         numberOfLesson : 10,
-                        price : '20 000',
+                        price : '20.000',
                         title : 'UI/UX course'
                     },
                     {
@@ -48,7 +48,7 @@ export const courseData : CourseDataType = [
                         numberOfStudent : 4,
                         description : 'this is a Vue js description',
                         numberOfLesson : 10,
-                        price : '20 000',
+                        price : '20.000',
                         title : 'Vue js course'
                     },
                     {
@@ -58,7 +58,7 @@ export const courseData : CourseDataType = [
                         numberOfStudent : 4,
                         description : 'this is a react description',
                         numberOfLesson : 10,
-                        price : '20 000',
+                        price : '20.000',
                         title : 'react course'
                     },
                     {
@@ -68,7 +68,7 @@ export const courseData : CourseDataType = [
                         numberOfStudent : 7,
                         description : 'this is a sass description',
                         numberOfLesson : 10,
-                        price : '20 000',
+                        price : '20.000',
                         title : 'sass course'
                     },
                     {
@@ -78,7 +78,7 @@ export const courseData : CourseDataType = [
                         numberOfStudent : 5,
                         description : 'this is a javascripte description',
                         numberOfLesson : 10,
-                        price : '20 000',
+                        price : '20.000',
                         title : 'javascripte course'
                     },
                     {
@@ -88,7 +88,7 @@ export const courseData : CourseDataType = [
                         numberOfStudent : 6,
                         description : 'this is a Next description',
                         numberOfLesson : 10,
-                        price : '20 000',
+                        price : '20.000',
                         title : 'Next course'
                     },
                     {
@@ -98,7 +98,7 @@ export const courseData : CourseDataType = [
                         numberOfStudent : 8,
                         description : 'this is a Tailwind description',
                         numberOfLesson : 10,
-                        price : '20 000',
+                        price : '20.000',
                         title : 'Tailwind course'
                     },
                     {
@@ -108,7 +108,7 @@ export const courseData : CourseDataType = [
                         numberOfStudent : 5,
                         description : 'this is a Nuxt description',
                         numberOfLesson : 10,
-                        price : '20 000',
+                        price : '20.000',
                         title : 'Nuxt course'
                     }
         ]
@@ -123,7 +123,7 @@ export const courseData : CourseDataType = [
                 numberOfStudent : 4,
                 description : 'this is a html description',
                 numberOfLesson : 10,
-                price : '20 000',
+                price : '20.000',
                 title : 'HTML course'
             },
             {
@@ -133,7 +133,7 @@ export const courseData : CourseDataType = [
                 numberOfStudent : 6,
                 description : 'this is a css description',
                 numberOfLesson : 10,
-                price : '20 000',
+                price : '20.000',
                 title : 'CSS course'
             },
             {
@@ -143,7 +143,7 @@ export const courseData : CourseDataType = [
                 numberOfStudent : 4,
                 description : 'this is a ui/ux description',
                 numberOfLesson : 10,
-                price : '20 000',
+                price : '20.000',
                 title : 'UI/UX course'
             }
         ]
@@ -158,7 +158,7 @@ export const courseData : CourseDataType = [
                 numberOfStudent : 4,
                 description : 'this is a html description',
                 numberOfLesson : 10,
-                price : '20 000',
+                price : '20.000',
                 title : 'HTML course'
             },
             {
@@ -168,7 +168,7 @@ export const courseData : CourseDataType = [
                 numberOfStudent : 6,
                 description : 'this is a css description',
                 numberOfLesson : 10,
-                price : '20 000',
+                price : '20.000',
                 title : 'CSS course'
             },
             {
@@ -178,7 +178,7 @@ export const courseData : CourseDataType = [
                 numberOfStudent : 4,
                 description : 'this is a ui/ux description',
                 numberOfLesson : 10,
-                price : '20 000',
+                price : '20.000',
                 title : 'UI/UX course'
             },
             {
@@ -188,7 +188,7 @@ export const courseData : CourseDataType = [
                 numberOfStudent : 4,
                 description : 'this is a Vue js description',
                 numberOfLesson : 10,
-                price : '20 000',
+                price : '20.000',
                 title : 'Vue js course'
             },
             {
@@ -198,7 +198,7 @@ export const courseData : CourseDataType = [
                 numberOfStudent : 4,
                 description : 'this is a react description',
                 numberOfLesson : 10,
-                price : '20 000',
+                price : '20.000',
                 title : 'react course'
             },
             {
@@ -208,7 +208,7 @@ export const courseData : CourseDataType = [
                 numberOfStudent : 7,
                 description : 'this is a sass description',
                 numberOfLesson : 10,
-                price : '20 000',
+                price : '20.000',
                 title : 'sass course'
             },
             {
@@ -218,7 +218,7 @@ export const courseData : CourseDataType = [
                 numberOfStudent : 5,
                 description : 'this is a javascripte description',
                 numberOfLesson : 10,
-                price : '20 000',
+                price : '20.000',
                 title : 'javascripte course'
             },
         ]
