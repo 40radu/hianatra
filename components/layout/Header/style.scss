@@ -1,13 +1,8 @@
 .header {
 	&__bg {
-		@apply flex w-full fixed top-0 left-0 z-50 bg-white;
+		@apply flex w-full fixed top-0 left-0 z-50;
 		padding-block: 5px;
-		box-shadow: 1px 2px 20px rgba(#8d8d8d, 0.2);
-		backdrop-filter: blur(6px);
 	}
-
-	;
-
 	&__content {
 		@apply w-full flex justify-between items-center;
 		padding-block: 5px;
@@ -55,12 +50,13 @@
 
 			.button {
 				@apply hidden w-fit;
-
 				@screen lg {
 					@apply flex;
 				}
+				button {
+					padding-block: 12px;
+				}
 			}
-
 			.menu-bar {
 				@apply flex flex-col cursor-pointer relative;
 				gap: 5px;
@@ -106,18 +102,23 @@
 
 		&-responsive {
 			@apply flex flex-col items-center fixed left-0 right-0 top-0 bg-white;
-			gap: 20px;
+			gap: 25px;
 			padding-block: 100px 50px;
 			box-shadow: 1px 2px 20px rgba(#8d8d8d, 0.2);
 			transform: translateY(-102%);
 			transition: 0.5s ease-in-out;
+
+			@screen lg {
+				@apply hidden;
+			}
 
 			&.active {
 				transform: translateY(0);
 			}
 
 			.button button {
-				width: 150px;
+				width: 135px;
+				@apply text-base;
 			}
 
 			a {
