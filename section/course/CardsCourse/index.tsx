@@ -13,7 +13,7 @@ import OneSectionSlideCard from './OneSectionSlide'
 import CardCourse, { CardCourseProps } from '@/components/common/card/CardCourse'
 import { courseData, CourseDataType } from './data'
 export type CardsCourseProps = {
-  filter: "Tous les cours" | "Collections" | "Archives"
+  filter: "all" | "collections" | "archives"
 }
 
 function CardsCourse({ filter }:
@@ -42,10 +42,18 @@ function CardsCourse({ filter }:
         innerWidth < 500 &&
         <Swiper
           modules={[Pagination, Autoplay]}
-          slidesPerView={1.1}
+          slidesPerView={1}
           spaceBetween={10}
           loop={true}
           autoplay={false}
+          breakpoints={
+            {
+              400: {
+                slidesPerView: 1.07
+              }
+            }
+
+          }
         >
           {
             firstThreeCards.map((course, id) => {
@@ -69,7 +77,7 @@ function CardsCourse({ filter }:
         </Swiper>
       }
       <OneSectionSlideCard
-        carsdArray={innerWidth > 500 ? seletedCourse?.content! : course!}
+        cardsArray={innerWidth > 500 ? seletedCourse?.content! : course!}
       />
     </Container>
   )

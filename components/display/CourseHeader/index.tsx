@@ -9,7 +9,8 @@ import './style.scss'
 import CardsCourse, { CardsCourseProps } from '@/section/course/CardsCourse'
 
 function CourseHeader() {
-	const [filterCourse, setFilterCourse] = useState<CardsCourseProps['filter']>("Tous les cours")
+	const [filterCourse, setFilterCourse] = useState<CardsCourseProps['filter']>("all")
+
 	return (
 		<>
 			<Container className={classNames("container")} >
@@ -22,9 +23,9 @@ function CourseHeader() {
 									<ButtonSquare
 										key={`course--${id}`}
 										label={link.label}
-										variant={filterCourse === link.label ? "blue" : "white"}
+										variant={filterCourse === link.href ? "blue" : "white"}
 										className={classNames('container__navbar__navigation__button')}
-										onClick={() => setFilterCourse(link.label)}
+										onClick={() => setFilterCourse(link.href)}
 									/>
 								)
 							})

@@ -1,5 +1,4 @@
 import { CardsCourseProps } from '.';
-import { courseLinks } from './../../../components/display/CourseHeader/data';
 import { CardCourseProps } from '@/components/common/card/CardCourse';
 
 export type CourseDataType = {
@@ -9,7 +8,7 @@ export type CourseDataType = {
 
 export const courseData : CourseDataType = [
     {
-        type : "Tous les cours",
+        type : "all",
         content : [
                     {
                         topic : 'html',
@@ -114,7 +113,7 @@ export const courseData : CourseDataType = [
         ]
     },
     {
-        type :  "Archives",
+        type :  "archives",
         content : [
             {
                 topic : 'html',
@@ -149,7 +148,7 @@ export const courseData : CourseDataType = [
         ]
     },
     {
-        type :  "Collections",
+        type :  "collections",
         content : [
             {
                 topic : 'html',

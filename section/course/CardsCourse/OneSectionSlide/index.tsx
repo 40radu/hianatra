@@ -4,14 +4,14 @@ import React from 'react'
 import './style.scss'
 
 type CardGroupeProps = {
-    carsdArray: CardCourseProps[]
+    cardsArray: CardCourseProps[]
 }
 
-function OneSectionSlideCard({ carsdArray }: CardGroupeProps) {
+function OneSectionSlideCard({ cardsArray }: CardGroupeProps) {
     return (
         <div className={classNames('course')} >
             {
-                carsdArray.map((card, id) => {
+                cardsArray.map((card, id) => {
                     return (
                         <CardCourse
                             key={id}

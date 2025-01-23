@@ -1,21 +1,21 @@
 import { CardsCourseProps } from "@/section/course/CardsCourse"
 
 interface LinksCoursType {
-    label : CardsCourseProps['filter'], 
-    href : string
+    label : string, 
+    href : CardsCourseProps["filter"]
 }
 
 export const courseLinks : LinksCoursType[] = [
     {
         label : "Tous les cours",
-        href : "/ui"
+        href : "all"
     },
     {
         label : "Collections",
-        href : "/test"
+        href : "collections"
     },
     {
         label : "Archives",
-        href : "/test2"
+        href : "archives"
     }
 ]
