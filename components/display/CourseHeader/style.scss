@@ -2,7 +2,7 @@
   padding-top: 0;
 
   &__navbar {
-    @apply w-full h-auto flex flex-col bg-blue-clean;
+    @apply w-full h-auto flex flex-col bg-blue-clean overflow-hidden;
     gap: 20px;
     padding: 10px;
     border-radius: 10px;
@@ -16,15 +16,18 @@
     }
 
     &__navigation {
-      @apply flex;
+      @apply flex overflow-scroll;
       gap: 10px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       @screen 2xl {
         gap: 20px;
       }
 
       &__button {
-        @apply text-sm;
+        @apply text-sm text-nowrap;
         padding: 10px;
         border-radius: 5px;
         @screen lg {
