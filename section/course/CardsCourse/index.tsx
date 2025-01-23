@@ -42,10 +42,10 @@ function CardsCourse({ filter }:
         innerWidth < 500 &&
         <Swiper
           modules={[Pagination, Autoplay]}
-          slidesPerView={1}
-          spaceBetween={10}
+          slidesPerView={1.2}
+          spaceBetween={20}
           loop={true}
-          autoplay={false}
+          autoplay={{ delay: 6000 }}
           breakpoints={
             {
               400: {

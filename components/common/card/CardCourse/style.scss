@@ -1,13 +1,18 @@
 .card-course {
   @apply flex flex-col cursor-pointer relative overflow-hidden;
-  width: 335px;
+  width: 100%;
   max-width: 433px;
   border-radius: 10px;
-  gap: 10px;
+  gap: 20px;
   border: 0.8px solid #c7c7cc;
-
+  @screen md {
+    width: 340px;
+    max-width: 433px;
+    width: calc(50% - 10px);
+  }
   @screen lg {
     width: 300px;
+    max-width: 433px;
   }
   @screen xl {
     width: 370px;
