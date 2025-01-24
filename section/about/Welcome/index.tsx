@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import Image from 'next/image'
 import React from 'react'
 import "./style.scss"
+import Link from 'next/link'
 
 function Welcome() {
 	return (
@@ -19,7 +20,7 @@ function Welcome() {
 				<p className={classNames("description")}>
 					Lorem Ipsum has been the industr’s standard dummy text ever since unknown printer took galley type and scmbled make type specimen book. It has survived not only five centuries.
 				</p>
-				<Button label='Commencer le cours'/>
+				<Link href="/courses"><Button label='Commencer le cours'/></Link>
 			</div>
 		</Container>
 	)

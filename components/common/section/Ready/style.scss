@@ -17,7 +17,6 @@
     &__text {
         @apply flex flex-col relative z-10;
         gap: 17px;
-        //
         gap: 10px;
         h3 , p{
             @apply text-white;
@@ -32,10 +31,7 @@
             }
         };
         p {
-            font-size: 36px;
-            @apply font-bold;
-            //
-            @apply text-lg;
+            @apply font-bold text-lg;
             @screen lg {
                 @apply text-2xl
             }
@@ -47,8 +43,6 @@
     };
     &__logos {
         @apply flex relative z-10;
-        //
-        // @apply grid grid-cols-3;
         gap: 20px;
         .logo {
             width: 112px;
@@ -74,7 +68,6 @@
             }
 
         };
-        //
         @screen md {
             @apply grid-cols-2;
         };
@@ -119,6 +112,9 @@
         @apply absolute hidden;
         left: 50%;
         transform: translateX(-50%);
+        img {
+            @apply w-full h-auto object-cover;
+        }
         @screen 2xl {
             @apply flex;
         }

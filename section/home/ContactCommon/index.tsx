@@ -30,7 +30,7 @@ function ContactCommon() {
       </div>
       <ContactForm />
       <span className={classNames("contact-common__image")}>
-        <Image src="/home/contact.png" alt='' width={1920} height={1024} />
+        <Image src="/home/contact.svg" alt='' width={1920} height={1024} />
       </span>
     </Container>
   )

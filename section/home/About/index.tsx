@@ -13,7 +13,7 @@ function About() {
     return (
         <Container className={classNames("h-about")}>
             <span className={classNames("h-about__image")}>
-                <Image src="/home/illustration-about.png" alt='about-img' width={548} height={548} />
+                <Image src="/home/illustration-about.svg" alt='about-img' width={548} height={548} />
             </span>
             <div className={classNames("h-about__text")}>
                 <Heading label='à propos de nous' align='start'>
@@ -35,7 +35,7 @@ function About() {
                         })
                     }
                 </div>
-                <Link href=""><Button label='Nous connaître' /></Link>
+                <Link href="/about"><Button label='Nous connaître' /></Link>
             </div>
         </Container>
     )

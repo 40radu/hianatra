@@ -18,11 +18,11 @@ function Course() {
             <p className={classNames("fat")}>Des bases aux compétences avancées, apprenez à créer le web de demain.</p>
             <p className={classNames("slim")}>Chez Hianatra, nous proposons une variété de cours adaptés à tous les niveaux et couvrant les aspects essentiels du développement web.</p>
         </div>
-        <Link href="" ><Button label='En savoir plus'/></Link>
+        <Link href="/courses" ><Button label='En savoir plus'/></Link>
       </div>
 
       <div className={classNames("h-course__image")}>
-                <Image src='/contact.png' alt='' width={764} height={764}/>
+                <Image src='/contact.svg' alt='' width={764} height={764}/>
       </div>
     </Container>
   )

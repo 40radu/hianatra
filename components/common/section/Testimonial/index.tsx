@@ -18,8 +18,8 @@ function Testimonial() {
     return (
         <Container className={classNames("testimonial")}>
             <Heading label='vos retours' align='center' textAlign='center' >
-                <span className='primary'>Que disent les <br />
-                    utilisateurs de </span><br />
+                <span className='primary'>Que disent les utilisateurs<br />
+                     de </span>
                 <span className='decoration'>Hianatra?</span>
             </Heading>
             <Swiper

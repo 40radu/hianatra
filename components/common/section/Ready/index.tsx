@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 function Ready() {
     return (
-        <section className={classNames("ready")}>
+        <section className={classNames("ready")} id='ready'>
             <Container className={classNames("ready__content")} tag='div'>
                 <div className={classNames("ready__text")}>
                     <h3>Prêt?</h3>
@@ -30,7 +30,7 @@ function Ready() {
                     <Image src="/home/3circles.png" alt='' width={619} height={554} className={classNames("logo")} />
                 </span>
                 <span className={classNames("ready__arrow")}>
-                    <Image src="/home/arrow.png" alt='' width={130} height={86.5} className={classNames("logo")} />
+                    <Image src="/home/arrow.svg" alt='' width={130} height={86.5}/>
                 </span>
                 <MorePoints className={classNames('ready__points')} />
             </Container>
