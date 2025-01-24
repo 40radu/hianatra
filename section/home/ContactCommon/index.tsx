@@ -9,7 +9,7 @@ import ContactForm from '@/components/display/ContactForm'
 function ContactCommon() {
   return (
     <Container className={classNames("contact-common")}>
-      <div className={classNames("contact-common__infos")}>
+      <div className={classNames("contact-common__infos")} id='contact'>
         {
           contactData.map((dt, index) => {
             return (

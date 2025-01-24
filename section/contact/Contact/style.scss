@@ -22,4 +22,12 @@
             };
         }
     }
+    &__image {
+        @apply w-full h-full;
+        max-width: 764px;
+        aspect-ratio: 1/1;
+        img {
+            @apply w-full h-full;
+        }
+    }
 }

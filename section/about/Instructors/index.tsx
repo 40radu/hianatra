@@ -35,7 +35,8 @@ function Instructors() {
 						slidesPerView: 3
 					},
 					1280: {
-						slidesPerView: 4
+						slidesPerView: 4,
+						loop : false
 					}
 				}}
 				className={classNames("instructors__content")}>

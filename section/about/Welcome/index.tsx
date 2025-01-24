@@ -11,7 +11,7 @@ function Welcome() {
 	return (
 		<Container className={classNames("a-welcome")}>
 			<span className={classNames("a-welcome__image")}>
-				<Image src="/about/welcome.png" alt='welcome image' width={547} height={555} />
+				<Image src="/about/welcome.svg" alt='welcome image' width={547} height={547} priority/>
 			</span >
 			<div className={classNames("a-welcome__text")}>
 				<Heading label='Bienvenue sur Hianatra.' align='start'>
