@@ -1,18 +1,17 @@
 import Container from '@/components/common/Container'
 import "./style.scss"
 import Heading from '@/components/common/Heading'
-import classNames from "classnames"
 import React from 'react'
 import { cardReasonData } from "./data"
 import CardReason from '@/components/common/card/CardReason'
 
 function Reason() {
     return (
-        <Container className={classNames("h-reason")}>
+        <Container className="h-reason">
             <Heading label='POURQUOI NOUS?'>
                 Raison de nous suivre
             </Heading>
-            <div className={classNames("h-reason__content")}>
+            <div className="h-reason__content">
                 {
                     cardReasonData.map((rd, index) => {
                         return (
