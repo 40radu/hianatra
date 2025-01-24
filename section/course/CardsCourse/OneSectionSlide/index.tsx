@@ -15,7 +15,7 @@ function OneSectionSlideCard({ cardsArray }: CardGroupeProps) {
                     return (
                         <CardCourse
                             key={id}
-                            image='/courses/html.png'
+                            image={card.image}
                             isFree={card.isFree}
                             numberOfLesson={card.numberOfLesson}
                             numberOfStudent={card.numberOfStudent}

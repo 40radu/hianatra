@@ -1,11 +1,10 @@
 .cardCourseContainer {
-  @screen lg {
+  padding-block: 50px;
+  @screen 2xl {
+    padding-block: 100px;
   }
   .swiper-wrapper {
     margin-bottom: 50px;
-  }
-  @screen lg {
-    padding-bottom: 0;
   }
 
   &__course {

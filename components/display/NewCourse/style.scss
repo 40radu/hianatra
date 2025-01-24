@@ -1,0 +1,35 @@
+.new-course {
+  gap: 25px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    @screen lg {
+      font-size: 28px;
+    }
+    @screen xl {
+      font-size: 32px;
+    }
+  }
+
+  &__container {
+    @apply flex flex-wrap justify-between;
+    gap: 15px;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 50px;
+  }
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    @screen xl {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    @apply bg-blue-primary;
+  }
+}

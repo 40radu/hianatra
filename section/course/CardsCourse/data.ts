@@ -12,7 +12,7 @@ export const courseData : CourseDataType = [
         content : [
                     {
                         topic : 'html',
-                        image : '/course/html',
+                        image : '/courses/html.png',
                         isFree : true,
                         numberOfStudent : 4,
                         description : 'this is a html description',
@@ -22,8 +22,8 @@ export const courseData : CourseDataType = [
                     },
                     {
                         topic : 'css',
-                        image : '/course/html',
-                        isFree : true,
+                        image : '/courses/Css.png',
+                        isFree : false,
                         numberOfStudent : 6,
                         description : 'this is a css description',
                         numberOfLesson : 10,
@@ -32,7 +32,7 @@ export const courseData : CourseDataType = [
                     },
                     {
                         topic : 'ui/ux',
-                        image : '/course/html',
+                        image : '/courses/ui-ux.png',
                         isFree : true,
                         numberOfStudent : 4,
                         description : 'this is a ui/ux description',
@@ -42,7 +42,7 @@ export const courseData : CourseDataType = [
                     },
                     {
                         topic : 'Vue js',
-                        image : '/course/html',
+                        image : "/courses/javascript.png",
                         isFree : true,
                         numberOfStudent : 4,
                         description : 'this is a Vue js description',
@@ -52,7 +52,7 @@ export const courseData : CourseDataType = [
                     },
                     {
                         topic : 'react',
-                        image : '/course/html',
+                        image : '/courses/html.png',
                         isFree : false,
                         numberOfStudent : 4,
                         description : 'this is a react description',
@@ -62,53 +62,13 @@ export const courseData : CourseDataType = [
                     },
                     {
                         topic : 'sass',
-                        image : '/course/html',
+                        image : '/courses/Css.png',
                         isFree : false,
                         numberOfStudent : 7,
                         description : 'this is a sass description',
                         numberOfLesson : 10,
                         price : '20.000',
                         title : 'sass course'
-                    },
-                    {
-                        topic : 'javascripte',
-                        image : '/course/html',
-                        isFree : true,
-                        numberOfStudent : 5,
-                        description : 'this is a javascripte description',
-                        numberOfLesson : 10,
-                        price : '20.000',
-                        title : 'javascripte course'
-                    },
-                    {
-                        topic : 'Next',
-                        image : '/course/html',
-                        isFree : false,
-                        numberOfStudent : 6,
-                        description : 'this is a Next description',
-                        numberOfLesson : 10,
-                        price : '20.000',
-                        title : 'Next course'
-                    },
-                    {
-                        topic : 'Tailwind',
-                        image : '/course/html',
-                        isFree : false,
-                        numberOfStudent : 8,
-                        description : 'this is a Tailwind description',
-                        numberOfLesson : 10,
-                        price : '20.000',
-                        title : 'Tailwind course'
-                    },
-                    {
-                        topic : 'Nuxt',
-                        image : '/course/html',
-                        isFree : true,
-                        numberOfStudent : 5,
-                        description : 'this is a Nuxt description',
-                        numberOfLesson : 10,
-                        price : '20.000',
-                        title : 'Nuxt course'
                     }
         ]
     },
@@ -117,33 +77,13 @@ export const courseData : CourseDataType = [
         content : [
             {
                 topic : 'html',
-                image : '/course/html',
+                image : '/courses/html.png',
                 isFree : true,
                 numberOfStudent : 4,
                 description : 'this is a html description',
                 numberOfLesson : 10,
                 price : '20.000',
                 title : 'HTML course'
-            },
-            {
-                topic : 'css',
-                image : '/course/html',
-                isFree : true,
-                numberOfStudent : 6,
-                description : 'this is a css description',
-                numberOfLesson : 10,
-                price : '20.000',
-                title : 'CSS course'
-            },
-            {
-                topic : 'ui/ux',
-                image : '/course/html',
-                isFree : true,
-                numberOfStudent : 4,
-                description : 'this is a ui/ux description',
-                numberOfLesson : 10,
-                price : '20.000',
-                title : 'UI/UX course'
             }
         ]
     },
@@ -152,7 +92,7 @@ export const courseData : CourseDataType = [
         content : [
             {
                 topic : 'html',
-                image : '/course/html',
+                image : '/courses/html.png',
                 isFree : true,
                 numberOfStudent : 4,
                 description : 'this is a html description',
@@ -162,7 +102,7 @@ export const courseData : CourseDataType = [
             },
             {
                 topic : 'css',
-                image : '/course/html',
+                image : '/courses/Css.png',
                 isFree : true,
                 numberOfStudent : 6,
                 description : 'this is a css description',
@@ -172,54 +112,15 @@ export const courseData : CourseDataType = [
             },
             {
                 topic : 'ui/ux',
-                image : '/course/html',
+                image : '/courses/ui-ux.png',
                 isFree : true,
                 numberOfStudent : 4,
                 description : 'this is a ui/ux description',
                 numberOfLesson : 10,
                 price : '20.000',
                 title : 'UI/UX course'
-            },
-            {
-                topic : 'Vue js',
-                image : '/course/html',
-                isFree : true,
-                numberOfStudent : 4,
-                description : 'this is a Vue js description',
-                numberOfLesson : 10,
-                price : '20.000',
-                title : 'Vue js course'
-            },
-            {
-                topic : 'react',
-                image : '/course/html',
-                isFree : false,
-                numberOfStudent : 4,
-                description : 'this is a react description',
-                numberOfLesson : 10,
-                price : '20.000',
-                title : 'react course'
-            },
-            {
-                topic : 'sass',
-                image : '/course/html',
-                isFree : false,
-                numberOfStudent : 7,
-                description : 'this is a sass description',
-                numberOfLesson : 10,
-                price : '20.000',
-                title : 'sass course'
-            },
-            {
-                topic : 'javascripte',
-                image : '/course/html',
-                isFree : true,
-                numberOfStudent : 5,
-                description : 'this is a javascripte description',
-                numberOfLesson : 10,
-                price : '20.000',
-                title : 'javascripte course'
-            },
+            }
+            
         ]
     }, 
 ]

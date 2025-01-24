@@ -1,8 +1,10 @@
 .course {
-  @apply flex flex-wrap justify-center;
+  @apply grid;
   gap: 20px;
-  padding-bottom: 50px;
-  @screen lg {
-    gap: 10px;
+  @screen md {
+    @apply grid-cols-2;
+  }
+  @screen xl {
+    @apply grid-cols-3;
   }
 }
