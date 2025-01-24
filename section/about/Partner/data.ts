@@ -6,12 +6,12 @@ interface DataPartnerProps {
 const dataPartner: DataPartnerProps[] = [
     {
         name: "saha-academy",
-        logo: "/about/saha-acamedy.png"
+        logo: "/about/saha-academy.svg"
         
     },
     {
         name: "saha-technology",
-        logo: "/about/saha-technology.png"
+        logo: "/about/saha-technology.svg"
     }
 ]
 

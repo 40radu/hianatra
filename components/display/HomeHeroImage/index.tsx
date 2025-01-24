@@ -11,7 +11,7 @@ function HomeHeroImage() {
                 src="/bg-dashed.png" width={1920} height={1024} alt='hero' />
             <div className={classNames("circle")}>
                 <span className={classNames("main-img")}>
-                    <Image src="/home/hero.png" width={1920} height={1024} alt='hero' />
+                    <Image src="/home/hero.svg" width={1920} height={1024} alt='hero' />
                 </span>
             </div>
             <span className={classNames("h-image__logo", "css")}>

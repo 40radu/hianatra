@@ -12,10 +12,12 @@
 		gap:40px;
 	}
 	&__image {
-		@apply w-full;
+		max-width: 547px;
+		width: 100%;
+		aspect-ratio: 1/1;
 		img {
-			@apply mx-auto;
-			aspect-ratio: 1/1;
+			@apply mx-auto w-full;
+			height: auto;
 		}
 	}
 	&__text {
