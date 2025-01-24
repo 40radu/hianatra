@@ -32,7 +32,7 @@ function Header() {
 	return (
 		<header className={classNames("header__bg")}>
 			<Container tag='div' className={classNames("header__content")}>
-				<Logo variant='primary' />
+				<Link href="/" className='logo'><Logo variant='primary' /></Link>
 				<nav className={classNames("header__content-nav")}>
 					{dataLinks.map((link, index) => (
 						<Link key={`link_${index}`} href={link.href} className={classNames("link", { active: pathname == link.href })}>

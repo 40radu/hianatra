@@ -5,7 +5,12 @@ import CardsAbout from '@/section/about/CardsAbout'
 import Instructors from '@/section/about/Instructors'
 import Partner from '@/section/about/Partner'
 import Welcome from '@/section/about/Welcome'
+import { Metadata } from 'next'
 import React from 'react'
+
+export const metadata: Metadata = {
+	title: "À propos | Hianatra",
+}
 
 function About() {
 	return (
@@ -14,9 +19,9 @@ function About() {
 			<Welcome />
 			<CardsAbout />
 			<Ready />
-			<Instructors/>
-			<Testimonial/>
-			<Partner/>
+			<Instructors />
+			<Testimonial />
+			<Partner />
 		</>
 	)
 }

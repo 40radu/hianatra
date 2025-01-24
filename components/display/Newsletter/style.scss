@@ -18,7 +18,7 @@
     padding: 12px 14px;
     max-width: 200px;
     @screen lg {
-      padding: 16px 32px;
+      padding-block: 16px;
     };
     @screen 2xl {
       max-width : 235px;

@@ -13,11 +13,11 @@ function ContactForm() {
                 <span className='primary'>Contactez</span><span className='secondary'>-nous</span>
             </Heading>
             <form className={classNames("container-fields")}>
-                <Input name='name' placeholder='Name' />
-                <Input name='email' placeholder='Email' />
-                <Input name='subject' placeholder='Subject' />
-                <TextArea name='message' placeholder='Message' />
-                <Button type='submit' label='Envoyer un message' className='btn'/>
+                <fieldset><Input name='name' placeholder='Name' /></fieldset>
+                <fieldset><Input name='email' placeholder='Email' /></fieldset>
+                <fieldset><Input name='subject' placeholder='Subject' /></fieldset>
+                <fieldset><TextArea name='message' placeholder='Message' /></fieldset>
+                <Button type='submit' label='Envoyer un message' className='btn' />
             </form>
         </div>
     )

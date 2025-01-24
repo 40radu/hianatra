@@ -1,38 +1,39 @@
-import classNames from 'classnames'
+"use client"
+
 import React from 'react'
 import "./style.scss"
 import Container from '@/components/common/Container'
 import Button from '@/components/navigation/Button'
 import HomeHeroImage from '@/components/display/HomeHeroImage'
-import Image from 'next/image'
 import Icon from '@/components/Icon'
 import Link from 'next/link'
+import { scrollTo } from '@/app/utils/scrollTo'
 
-function Dashboard() {
+function HeroHome() {
   return (
-    <Container className={classNames("h-dashboard")}>
-      <div className={classNames("h-dashboard__text")}>
-        <div className={classNames("h-dashboard__text-head")}>
+    <Container className="h-hero">
+      <div className="h-hero__text">
+        <div className="h-hero__text-head">
           <h1>
             Vos
-            <span className={classNames("txt-secondary")}> premières lignes</span> de code,
-            votre <span className={classNames("txt-primary")}>premier succès.</span>
+            <span className="txt-secondary"> premières lignes</span> de code,
+            votre <span className="txt-primary">premier succès.</span>
           </h1>
           <p>
-            Plongez dans l'univers du développement web grâce à des
+            Plongez dans l&apos;univers du développement web grâce à des
             cours simples et interactifs. Progressez à votre rythme
             et transformez vos idées en projets concrets.
           </p>
         </div>
-        <div className={classNames("h-dashboard__text-btns--wrapper")}>
+        <div className="h-hero__text-btns--wrapper">
           <Link href=""><Button variant='blue' label='Commencer' /></Link>
-          <Link href=""><Button variant='white' label='Télécharger l’application' icon='play' /></Link>
+          <Button variant='white' label='Télécharger l’application' icon='play' onClick={()=>scrollTo('ready')}/>
         </div>
       </div>
-      <div className={classNames("h-dashboard__image")}>
+      <div className="h-hero__image">
         <HomeHeroImage />
       </div>
-      <div className={classNames("h-dashboard__card")}>
+      <div className="h-hero__card">
         <Icon name='accessible' />
         <h3>Accessibilité</h3>
         <p>
@@ -44,4 +45,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard
+export default HeroHome
