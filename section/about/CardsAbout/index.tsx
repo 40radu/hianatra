@@ -2,13 +2,12 @@ import CardInfo from '@/components/common/card/CardInfo'
 import Container from '@/components/common/Container'
 import React from 'react'
 import "./style.scss"
-import classNames from 'classnames'
 import { dataCardInfo } from './data'
 
 
 function CardsAbout() {
 	return (
-		<Container className={classNames("cards-about")}>
+		<Container className="cards-about">
 			{
 				dataCardInfo.map((dt, index) => (
 					<CardInfo

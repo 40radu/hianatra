@@ -3,7 +3,6 @@
 import CardInstructor from '@/components/common/card/CardInstructor'
 import Container from '@/components/common/Container'
 import Heading from '@/components/common/Heading'
-import classNames from 'classnames'
 import React from 'react'
 import "./style.scss"
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -15,7 +14,7 @@ import { instructorData } from './data'
 
 function Instructors() {
 	return (
-		<Container className={classNames("instructors")}>
+		<Container className="instructors">
 			<Heading label='Team’s Hianatra'>
 				Instructor Qualifié <span className='decoration'>Hianatra</span>
 			</Heading>
@@ -39,7 +38,7 @@ function Instructors() {
 						loop : false
 					}
 				}}
-				className={classNames("instructors__content")}>
+				className="instructors__content">
 				{instructorData.map((id, index) => (
 					<SwiperSlide key={`instructor_${index}`}>
 						<CardInstructor imgSrc={id.imgSrc} job={id.job} name={id.name} />

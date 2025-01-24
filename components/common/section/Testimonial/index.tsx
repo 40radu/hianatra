@@ -4,7 +4,6 @@ import React from 'react'
 import Container from '../../Container'
 import "./style.scss"
 import Heading from '../../Heading'
-import classNames from 'classnames'
 import { cardTestimonialData } from './data'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
@@ -16,7 +15,7 @@ import CardTestimonial from '../../card/CardTestimonial'
 
 function Testimonial() {
     return (
-        <Container className={classNames("testimonial")}>
+        <Container className="testimonial">
             <Heading label='vos retours' align='center' textAlign='center' >
                 <span className='primary'>Que disent les utilisateurs<br />
                      de </span>
