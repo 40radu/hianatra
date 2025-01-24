@@ -1,3 +1,4 @@
+import React from "react";
 import Ready from "@/components/common/section/Ready";
 import Testimonial from "@/components/common/section/Testimonial";
 import About from "@/section/home/About";

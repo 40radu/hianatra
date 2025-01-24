@@ -1,10 +1,7 @@
 import Container from '@/components/common/Container'
 import "./style.scss"
 import Heading from '@/components/common/Heading'
-import ButtonMore from "@/components/navigation/ButtonMore"
 import classNames from "classnames"
-import Image from "next/image"
-import Link from "next/link"
 import React from 'react'
 import { cardReasonData } from "./data"
 import CardReason from '@/components/common/card/CardReason'

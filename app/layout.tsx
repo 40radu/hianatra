@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import "./globals.scss";
 import Footer from "@/components/layout/Footer";
