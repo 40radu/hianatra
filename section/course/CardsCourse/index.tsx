@@ -1,5 +1,4 @@
 import React from 'react'
-import Container from '@/components/common/Container'
 import classNames from 'classnames'
 import "swiper/css";
 import "swiper/css/pagination";
@@ -19,11 +18,11 @@ function CardsCourse({ filter }:
 
 
   return (
-    <Container tag='div' className={classNames("cardCourseContainer")} >
+    <div className={classNames("cardCourseContainer")} >
       <OneSectionSlideCard
         cardsArray={seletedCourse?.content!}
       />
-    </Container>
+    </div>
   )
 }
 

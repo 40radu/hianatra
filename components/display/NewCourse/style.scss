@@ -4,7 +4,7 @@
   h3 {
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     @screen lg {
       font-size: 28px;
     }
@@ -24,6 +24,8 @@
   .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
+    bottom: var(--swiper-pagination-bottom, 20px);
+    bottom: 20px;
     @screen xl {
       width: 8px;
       height: 8px;
