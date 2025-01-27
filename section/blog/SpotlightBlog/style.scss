@@ -1,0 +1,35 @@
+.b-spotlight {
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    @screen lg {
+      font-size: 28px;
+    }
+    @screen xl {
+      font-size: 32px;
+    }
+  }
+
+  &__container {
+    @apply flex flex-wrap justify-between;
+    gap: 15px;
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 50px;
+  }
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    bottom: var(--swiper-pagination-bottom, 20px);
+    bottom: 20px;
+    @screen xl {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    @apply bg-blue-primary;
+  }
+}
