@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import './style.scss'
-import { spotlightCourseData } from './data'
+import { spotlightBlogData } from './data'
 import CardBlog from '@/components/common/card/CardBlog'
 
 function SpotlightBlog() {
@@ -35,7 +35,7 @@ function SpotlightBlog() {
         }
       >
         {
-          spotlightCourseData.map((course, id) => {
+          spotlightBlogData.map((course, id) => {
             return (
               <SwiperSlide key={`blog-slide-${id}`}>
                 <CardBlog

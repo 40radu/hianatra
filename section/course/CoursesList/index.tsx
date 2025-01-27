@@ -4,11 +4,11 @@ import React, { useState } from 'react'
 import Container from '@/components/common/Container'
 import ButtonSquare from '@/components/navigation/ButtonSquare'
 import './style.scss'
-import { courseLinksData, courseListData, listTab } from './data'
-import BodyTabs from '@/components/display/BodyTabs'
+import { courseLinksData, courseListData, listTabCourse } from './data'
+import BodyTabsCourse from '@/components/display/BodyTabsCourse'
 
 function CoursesList() {
-  const [tabActive, setTabActive] = useState<listTab>("all")
+  const [tabActive, setTabActive] = useState<listTabCourse>("all")
   const dataCourseActive = courseListData.find((course) => course.type === tabActive)
 
   return (
@@ -31,7 +31,7 @@ function CoursesList() {
             }
           </div>
         </div>
-        <BodyTabs cardsList={dataCourseActive!.content} />
+        <BodyTabsCourse cardsList={dataCourseActive!.content} />
       </Container>
     </>
   )

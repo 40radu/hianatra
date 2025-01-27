@@ -7,7 +7,7 @@ type BodyTabsProps = {
 	cardsList: CardCourseProps[]
 }
 
-function BodyTabs(props: BodyTabsProps) {
+function BodyTabsCourse(props: BodyTabsProps) {
 	const { cardsList } = props
 	return (
 		<div className={classNames('course')} >
@@ -21,7 +21,7 @@ function BodyTabs(props: BodyTabsProps) {
 							numberOfLesson={card.numberOfLesson}
 							numberOfStudent={card.numberOfStudent}
 							title={card.title}
-							topic={card.topic.toUpperCase()}
+							topic={card.topic}
 							price={card.price}
 							description={card.description}
 						/>
@@ -32,4 +32,4 @@ function BodyTabs(props: BodyTabsProps) {
 	)
 }
 
-export default BodyTabs
+export default BodyTabsCourse
