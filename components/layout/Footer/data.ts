@@ -36,15 +36,15 @@ const socialMediaData: SocialMediaProps[] = [
 const linkData: LinkProps[] = [
     {
         label: "Accueil",
-        link: "",
+        link: "/",
     },
     {
         label: "À propos",
-        link: "",
+        link: "/about",
     },
     {
         label: "Cours",
-        link: "",
+        link: "/courses",
     },
     {
         label: "Parcours",

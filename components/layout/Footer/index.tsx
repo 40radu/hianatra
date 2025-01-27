@@ -10,6 +10,7 @@ import FooterItem from '@/components/display/FooterItem'
 import Newsletter from '@/components/display/Newsletter'
 
 function Footer() {
+
   return (
     <footer className={classNames("bg-footer")}>
       <Container tag='div' className={classNames("footer")}>
@@ -27,22 +28,22 @@ function Footer() {
             )}
           </div>
         </div>
-          <FooterItem title='Lien'>
-            <ul className={classNames("footer__links")}>
-              {
-                linkData.map((dt, index) => (
-                  <Link href={dt.link} key={`link_${index}`}> <li>{dt.label} </li></Link>
-                ))
-              }
-            </ul>
-          </FooterItem>
-          <FooterItem title='Contactez-nous'>
-            <ul className={classNames("footer__contact")}>
-              <li>exemple@gmail.com</li>
-              <li>+261 34 12 34 567</li>
-              <li>Antananarivo, Madagascar</li>
-            </ul>
-          </FooterItem>
+        <FooterItem title='Lien'>
+          <ul className={classNames("footer__links")}>
+            {
+              linkData.map((dt, index) => (
+                <Link href={dt.link} key={`link_${index}`}> <li>{dt.label} </li></Link>
+              ))
+            }
+          </ul>
+        </FooterItem>
+        <FooterItem title='Contactez-nous'>
+          <ul className={classNames("footer__contact")}>
+            <li>exemple@gmail.com</li>
+            <li>+261 34 12 34 567</li>
+            <li>Antananarivo, Madagascar</li>
+          </ul>
+        </FooterItem>
         <Newsletter />
       </Container>
     </footer>

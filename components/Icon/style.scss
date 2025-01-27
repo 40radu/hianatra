@@ -1,20 +1,23 @@
 .icon {
-    &--blue {
-        @apply text-blue-primary;
-    }
+  &--blue {
+    @apply text-blue-primary;
+  }
 
-    &--white {
-        @apply text-white;
-    }
+  &--white {
+    @apply text-white;
+  }
 
-    &--red {
-        @apply text-red;
-    }
+  &--red {
+    @apply text-red;
+  }
 
-    &--blue-secondary {
-        @apply text-blue-secondary;
-    }
-    &--black {
-        @apply text-black;
-    }
+  &--blue-secondary {
+    @apply text-blue-secondary;
+  }
+  &--black {
+    @apply text-black;
+  }
+  &--gray {
+    color: #919090;
+  }
 }

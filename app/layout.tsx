@@ -1,7 +1,8 @@
+import React from "react";
 import type { Metadata } from "next";
 import "./globals.scss";
 import Footer from "@/components/layout/Footer";
-import NavBar from "@/components/layout/navBar";
+import Header from "@/components/layout/Header";
 
 export const metadata: Metadata = {
   title: "Accueil | Hianatra",
@@ -16,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        <NavBar />
+        <Header/>
         <main>
           {children}
         </main>
