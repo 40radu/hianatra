@@ -11,17 +11,12 @@ import 'swiper/css/scrollbar';
 import Input from '@/components/common/Input'
 import TextArea from '@/components/common/TextArea'
 import Logo from '@/components/common/Logo'
-import CardInfo from '@/components/common/card/CardInfo'
-// import NavBar from '@/components/layout/navBar'
 import Selectlang from '@/components/display/SelectLang'
 import CardCourse from '@/components/common/card/CardCourse'
-import CardsCourse from '@/section/course/CardsCourse'
-import CourseHeader from '@/components/display/CourseHeader'
 
 function Ui() {
   return (
     <>
-      {/* <NavBar /> */}
       <h5>heading</h5>
       <Heading label='Pourquoi nous?' align='start'>
         Normal <br />
@@ -44,7 +39,6 @@ function Ui() {
       <Logo variant='primary' />
       <Selectlang />
       <h5>Card courses</h5>
-      <CourseHeader />
       <CardCourse
         image='/courses/html.png'
         isFree={true}

@@ -1,3 +1,4 @@
+import React from "react";
 import classNames from "classnames";
 import "./style.scss";
 import Play from "./Play";
@@ -12,19 +13,15 @@ import Facebook from "./Facebook";
 import Instagram from "./Instagram";
 import Twitter from "./Twitter";
 import Linkedin from "./Linkedin";
-import SearchIcon from "./Search";
 import Login from "./Login";
 import ArrowDown from "./ArrowDown";
 import Cancel from "./Cancel";
 import Student from "./Student";
 import Lesson from "./Lesson";
-import SearchMin from "./SearchMin";
 
 export const icon = {
     arrowDown: <ArrowDown />,
     cancel: <Cancel />,
-    search: <SearchIcon />,
-    miniSearch: <SearchMin />,
     login: <Login />,
     play: <Play />,
     css: <Css />,

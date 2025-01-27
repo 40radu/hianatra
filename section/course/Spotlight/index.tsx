@@ -3,13 +3,16 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination } from 'swiper/modules'
 import CardCourse from '@/components/common/card/CardCourse'
-import { newsCourseData } from './data'
 import Container from '@/components/common/Container'
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
 import './style.scss'
+import { spotlightCourseData } from './data'
 
-function NewsCourseCards() {
+function Spotlight() {
 	return (
-		<Container tag='section' className='new-course' >
+		<Container tag='section' className='c-spotlight' >
 			<h3>À la une</h3>
 			<Swiper
 				modules={[Pagination, Autoplay]}
@@ -32,7 +35,7 @@ function NewsCourseCards() {
 				}
 			>
 				{
-					newsCourseData.map((course, id) => {
+					spotlightCourseData.map((course, id) => {
 						return (
 							<SwiperSlide key={`card-slide-${id}`}>
 								<CardCourse
@@ -56,4 +59,4 @@ function NewsCourseCards() {
 	)
 }
 
-export default NewsCourseCards
+export default Spotlight

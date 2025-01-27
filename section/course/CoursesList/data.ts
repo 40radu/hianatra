@@ -1,12 +1,32 @@
-import { CardsCourseProps } from '.';
-import { CardCourseProps } from '@/components/common/card/CardCourse';
 
-export type CourseDataType = {
-    type : CardsCourseProps['filter'],
+import { CardCourseProps } from '@/components/common/card/CardCourse';
+export type listTab = "all" | "collections" | "archives"
+
+export interface LinksCoursType {
+    label : string, 
+    href : listTab
+}
+ const courseLinksData : LinksCoursType[] = [
+    {
+        label : "Tous les cours",
+        href : "all"
+    },
+    {
+        label : "Collections",
+        href : "collections"
+    },
+    {
+        label : "Archives",
+        href : "archives"
+    }
+]
+
+type ListCourseProps = {
+    type : listTab,
     content : CardCourseProps[]
 }[]
 
-export const courseData : CourseDataType = [
+const courseListData : ListCourseProps = [
     {
         type : "all",
         content : [
@@ -124,3 +144,5 @@ export const courseData : CourseDataType = [
         ]
     }, 
 ]
+
+export {courseLinksData, courseListData}

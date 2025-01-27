@@ -1,5 +1,11 @@
-.container {
-  padding-top: 35px;
+.c-list-course {
+  padding-block: 25px 50px;
+  gap: 40px;
+  @apply flex flex-col;
+  @screen lg {
+    gap: 50px;
+    padding-block: 75px;
+  }
 
   &__navbar {
     @apply w-full h-auto flex flex-col bg-blue-clean overflow-hidden;

@@ -1,8 +1,6 @@
 import { CardCourseProps } from "@/components/common/card/CardCourse";
 
-type NewCardType = CardCourseProps[]
-
-export const newsCourseData : NewCardType = [
+export const spotlightCourseData : CardCourseProps[] = [
     {
         topic : 'html',
         image : '/courses/html.png',

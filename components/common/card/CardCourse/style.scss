@@ -36,7 +36,7 @@
         @apply text-sm font-medium;
 
         @screen 2xl {
-          @apply text-lg font-medium;
+          @apply text-lg;
         }
       }
     }
@@ -134,15 +134,15 @@
         .item {
           @apply flex gap-1 items-center font-medium text-black text-sm;
           @screen 2xl {
-            font-size: 18px;
+            @apply text-lg;
           }
         }
       }
       p {
         line-height: 20px;
-        font-size: 14px;
+        @apply text-sm;
         @screen 2xl {
-          font-size: 18px;
+          @apply text-lg;
         }
       }
     }
@@ -152,12 +152,12 @@
       button {
         width: 100%;
         @screen lg {
-          padding: 12px 12px;
+          padding: 12px;
           font-size: 14px;
         }
         @screen xl {
           padding-block: 12px;
-          font-size: 16px;
+          @apply text-base;
         }
       }
     }

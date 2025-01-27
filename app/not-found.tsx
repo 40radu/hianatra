@@ -11,9 +11,9 @@ function NotFound() {
             <div className={classNames('not-found__message')} >
                 <h2>
                     404
-                    <span></span>
-                    <p> cette page n'éxiste pas </p>
                 </h2>
+                <span></span>
+                <p> cette page n&apos;éxiste pas </p>
             </div>
         </section>
     )

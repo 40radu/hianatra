@@ -1,6 +1,6 @@
 import HeroCommon from '@/components/common/section/HeroCommon'
-import CourseHeader from '@/components/display/CourseHeader'
-import NewsCourseCards from '@/components/display/NewCourse'
+import CoursesList from '@/section/course/CoursesList'
+import Spotlight from '@/section/course/Spotlight'
 import { Metadata } from 'next'
 import React from 'react'
 
@@ -15,8 +15,9 @@ function Courses() {
 				smallTitle='Les cours chez'
 				largeTitle='Hianatra'
 			/>
-			<NewsCourseCards />
-			<CourseHeader />
+			<Spotlight />
+			<CoursesList />
+
 		</>
 	)
 }
