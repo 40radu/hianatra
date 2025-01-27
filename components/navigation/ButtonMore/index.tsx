@@ -1,4 +1,4 @@
-import Icon, { IconType, IconVariant } from '@/components/Icon';
+import Icon, { IconVariant } from '@/components/Icon';
 import React from 'react'
 import "./style.scss"
 import classNames from 'classnames';

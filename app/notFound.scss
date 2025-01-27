@@ -1,0 +1,26 @@
+.not-found {
+  @apply flex flex-col items-center justify-center;
+  gap: 20px;
+  height: 100vh;
+
+  &__title {
+    @apply text-2xl font-medium;
+  }
+
+  &__message {
+    @apply flex items-center justify-center;
+    gap: 20px;
+
+    h2 {
+      @apply flex items-end gap-3 text-xl font-semibold;
+    }
+    span {
+      width: 1px;
+      height: 30px;
+      background-color: black;
+    }
+    p {
+      @apply font-light text-lg;
+    }
+  }
+}
