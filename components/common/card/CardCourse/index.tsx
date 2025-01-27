@@ -28,7 +28,7 @@ function CardCourse(props: CardCourseProps) {
 					<p>{topic}</p>
 				</div>
 			</div>
-			<div className={classNames("card-course__body", "rado")}>
+			<div className={classNames("card-course__body")}>
 				<p className={classNames("card-course__body-access", { free: isFree })}>
 					{isFree ? "Gratuit" : "Payante"}
 				</p>
