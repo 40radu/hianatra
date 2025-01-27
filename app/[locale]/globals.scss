@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: "Montserrat", serif;
+    background-color: #fff;
+    color: #1E1E1E;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+input , textarea , select , optgroup , option {
+    outline: none;
+}

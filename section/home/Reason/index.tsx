@@ -4,12 +4,14 @@ import Heading from '@/components/common/Heading'
 import React from 'react'
 import { cardReasonData } from "./data"
 import CardReason from '@/components/common/card/CardReason'
+import { getI18n } from '@/locales/server'
 
-function Reason() {
+async function Reason() {
+    const t = await getI18n()
     return (
         <Container className="h-reason">
             <Heading label='POURQUOI NOUS?'>
-                Raison de nous suivre
+                {t("hello")}
             </Heading>
             <div className="h-reason__content">
                 {
