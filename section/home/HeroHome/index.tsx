@@ -11,7 +11,7 @@ import { scrollTo } from '@/app/utils/scrollTo'
 import { useScopedI18n } from '@/locales/client'
 
 function HeroHome() {
-  const heroLangTranslator = useScopedI18n("homeHero")
+  const heroLangTranslator = useScopedI18n("heroHome")
   return (
     <Container className="h-hero">
       <div className="h-hero__text">
