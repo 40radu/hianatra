@@ -1,6 +1,6 @@
 import { BlogCourseProps } from "@/components/common/card/CardBlog";
 
-export const spotlightCourseData : BlogCourseProps[] = [
+export const spotlightBlogData : BlogCourseProps[] = [
     {
         topic : 'html',
         image : '/courses/html.png',
