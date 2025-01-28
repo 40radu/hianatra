@@ -6,11 +6,12 @@ import Button from '@/components/navigation/Button'
 import Link from 'next/link'
 import { aboutData } from './data'
 import "./style.scss"
-import { getScopedI18n } from '@/locales/server'
+import { getI18n, getScopedI18n } from '@/locales/server'
 
 
 async function About() {
     const translate = await getScopedI18n("homeAbout")
+    const tAboutUs = await getI18n()
     return (
         <Container className="h-about">
             <span className="h-about__image">
@@ -35,7 +36,7 @@ async function About() {
                         })
                     }
                 </div>
-                <Link href="/about"><Button label={translate("button")} /></Link>
+                <Link href="/about"><Button label={tAboutUs('moreAboutUs')} /></Link>
             </div>
         </Container>
     )

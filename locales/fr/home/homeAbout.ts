@@ -1,6 +1,6 @@
 export default { 
   heading : { 
-    title : "à propos de nous'",
+    title : "à propos de nous",
     mission : "Notre mission :",
     descri : "vous propulser dans l’univers du développement web."
    },
@@ -14,6 +14,5 @@ export default {
       title : "Une pédagogie adaptée",
       descri : "Nos cours sont conçus pour être accessibles, interactifs et engageants."
      },
-    },
-    button : "Nous connaître"
+    }
  }

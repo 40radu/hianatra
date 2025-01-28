@@ -22,27 +22,28 @@
             @apply text-white;
         };
         h3 {
-            @apply text-xl uppercase font-semibold;
+            @apply text-base uppercase font-semibold;
             letter-spacing: 1px;
-            //
-            @apply text-base;
             @screen lg {
                 @apply text-xl;
             }
         };
         p {
             @apply font-bold text-lg;
+            max-width: 310px;
             @screen lg {
-                @apply text-2xl
+                @apply text-2xl;
+                max-width: 410px;
             }
             @screen xl {
                 font-size : 36px;
                 line-height: 130%;
+                max-width: 620px;
             }
         }
     };
     &__logos {
-        @apply flex relative z-10;
+        @apply flex relative z-10 items-center;
         gap: 20px;
         .logo {
             width: 112px;

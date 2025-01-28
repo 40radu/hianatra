@@ -4,18 +4,16 @@ import "./style.scss"
 import Image from 'next/image'
 import MorePoints from '@/components/vector/MorePoints'
 import Link from 'next/link'
+import { getScopedI18n } from '@/locales/server'
 
-function Ready() {
+async function Ready() {
+	const t = await getScopedI18n("ready")
 	return (
 		<section className="ready" id='ready'>
 			<Container className="ready__content" tag='div'>
 				<div className="ready__text">
-					<h3>Prêt?</h3>
-					<p>
-						Téléchargez notre application <br />
-						mobile pour démarrer <br />
-						facilement votre cours.
-					</p>
+					<h3>{t("title")}</h3>
+					<p>{t("description")}</p>
 				</div>
 				<div className="ready__logos">
 					<Link href="" className="logo">
