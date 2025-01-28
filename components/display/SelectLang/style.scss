@@ -7,7 +7,7 @@
     gap: 2px;
 
     p {
-      @apply font-semibold text-sm flex items-center;
+      @apply font-semibold text-sm flex items-center uppercase;
       min-width: 24px;
       aspect-ratio: 1/1;
 
@@ -28,7 +28,7 @@
     left: 10px;
 
     p {
-      @apply w-full text-blue-primary text-center;
+      @apply w-full text-blue-primary text-center uppercase;
       padding-right: 2px;
       padding-block: 1px;
       font-size: 13px;

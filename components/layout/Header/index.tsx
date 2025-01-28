@@ -9,9 +9,11 @@ import "./style.scss"
 import Link from 'next/link'
 import { dataLinks } from './data'
 import { usePathname } from 'next/navigation'
+import { useScopedI18n } from '@/locales/client'
 
 function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+	const t = useScopedI18n('header')
 	const handleMenuOpen = () => {
 		setIsMenuOpen(!isMenuOpen)
 	}
@@ -36,7 +38,7 @@ function Header() {
 				<nav className={classNames("header__content-nav")}>
 					{dataLinks.map((link, index) => (
 						<Link key={`link_${index}`} href={link.href} className={classNames("link", { active: pathname == link.href })}>
-							{link.label}
+							{t(link.labelKey)}
 						</Link>
 					))}
 				</nav>
@@ -46,7 +48,7 @@ function Header() {
 							key={`link_${index}`} href={link.href}
 							className={classNames("link", { active: pathname == link.href })}
 							onClick={handleMenuOpen}>
-							{link.label}
+							{t(link.labelKey)}
 						</Link>
 					))}
 					<Link href="/contact" onClick={handleMenuOpen} className={classNames("button")}>

@@ -35,19 +35,19 @@ function SpotlightBlog() {
         }
       >
         {
-          spotlightBlogData.map((course, id) => {
+          spotlightBlogData.map((blog, id) => {
             return (
               <SwiperSlide key={`blog-slide-${id}`}>
                 <CardBlog
                   key={id}
-                  image={course.image}
-                  isFree={course.isFree}
-                  numberOfLesson={course.numberOfLesson}
-                  numberOfStudent={course.numberOfStudent}
-                  title={course.title}
-                  topic={course.topic.toUpperCase()}
-                  price={course.price}
-                  description={course.description}
+                  image={blog.image}
+                  isFree={blog.isFree}
+                  numberOfLesson={blog.numberOfLesson}
+                  numberOfStudent={blog.numberOfStudent}
+                  title={blog.title}
+                  topic={blog.topic.toUpperCase()}
+                  price={blog.price}
+                  description={blog.description}
                 />
               </SwiperSlide>
             )

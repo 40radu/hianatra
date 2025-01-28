@@ -1,4 +1,7 @@
 .b-spotlight {
+  @screen lg {
+    padding-top: 50px;
+  }
   h3 {
     font-size: 24px;
     font-weight: 700;
@@ -9,11 +12,6 @@
     @screen xl {
       font-size: 32px;
     }
-  }
-
-  &__container {
-    @apply flex flex-wrap justify-between;
-    gap: 15px;
   }
 
   .swiper-wrapper {
