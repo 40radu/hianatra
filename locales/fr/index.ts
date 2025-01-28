@@ -2,6 +2,7 @@ import header from "./common/header";
 import ready from "./common/ready";
 import heroHome from "./home/heroHome";
 import homeCourse from "./home/homeCourse";
+import homeAbout from "./home/homeAbout";
 import homeReason from "./home/homeReason";
 
 export default {
@@ -10,6 +11,8 @@ export default {
   homeReason,
   viewMore : "Voir plus",
   readMore : "En savoir plus",
+  moreAboutUs : "Nous connaitre",
   ready,
-  homeCourse
+  homeCourse,
+  homeAbout,
 } as const
