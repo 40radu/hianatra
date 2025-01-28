@@ -28,8 +28,8 @@ async function About() {
                         aboutData.map((dt, index) => {
                             return (
                                 <div className="card" key={`about_${index}`}>
-                                    <h4>{translate(dt.title)}</h4>
-                                    <p>{translate(dt.description)}</p>
+                                    <h4>{translate(`card.${dt.title}`)}</h4>
+                                    <p>{translate(`card.${dt.description}`)}</p>
                                 </div>
                             )
                         })
