@@ -1,17 +1,17 @@
 interface AboutProps {
-    title: string;
-    desription: string;
+    title: "card.approach.title"|"card.teaching.title";
+    description: "card.approach.descri" | "card.teaching.descri";
 }
-
+// |
 const aboutData: AboutProps[] = [
     {
-        title: "Une approche pratique",
-        desription: "Apprenez en réalisant des projets concrets, étape par étape."
+        title: "card.approach.title",
+        description: "card.approach.descri"
 
     },
     {
-        title: "Une pédagogie adaptée",
-        desription: "Nos cours sont conçus pour être accessibles, interactifs et engageants."
+        title: "card.teaching.title",
+        description: "card.teaching.descri"
     }
 ]
 

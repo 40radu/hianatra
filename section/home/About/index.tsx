@@ -6,35 +6,36 @@ import Button from '@/components/navigation/Button'
 import Link from 'next/link'
 import { aboutData } from './data'
 import "./style.scss"
+import { getScopedI18n } from '@/locales/server'
 
 
-function About() {
+async function About() {
+    const translate = await getScopedI18n("homeAbout")
     return (
         <Container className="h-about">
             <span className="h-about__image">
                 <Image src="/home/illustration-about.svg" alt='about-img' width={548} height={548} />
             </span>
             <div className="h-about__text">
-                <Heading label='à propos de nous' align='start'>
-                    <span className='primary'>Notre mission :</span> vous propulser dans l’univers du développement web.
+                <Heading label={translate("heading.title")} align='start'>
+                    <span className='primary'>{translate('heading.mission')}</span> {translate("heading.descri")}
                 </Heading>
                 <p className="h-about__text__description">
-                    Hianatra est une plateforme en ligne dédiée à l’apprentissage du développement web.
-                    Nous croyons que chacun a le potentiel de créer et d’innover, peu importe son niveau de départ.
+                    {translate("description")}
                 </p>
                 <div className="h-about__text__wrapper-card">
                     {
                         aboutData.map((dt, index) => {
                             return (
                                 <div className="card" key={`about_${index}`}>
-                                    <h4>{dt.title}</h4>
-                                    <p>{dt.desription}</p>
+                                    <h4>{translate(dt.title)}</h4>
+                                    <p>{translate(dt.description)}</p>
                                 </div>
                             )
                         })
                     }
                 </div>
-                <Link href="/about"><Button label='Nous connaître' /></Link>
+                <Link href="/about"><Button label={translate("button")} /></Link>
             </div>
         </Container>
     )
