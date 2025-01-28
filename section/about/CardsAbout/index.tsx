@@ -3,9 +3,11 @@ import Container from '@/components/common/Container'
 import React from 'react'
 import "./style.scss"
 import { dataCardInfo } from './data'
+import { getScopedI18n } from '@/locales/server'
 
 
-function CardsAbout() {
+async function CardsAbout() {
+	const translate = await getScopedI18n("aboutCards")
 	return (
 		<Container className="cards-about">
 			{
@@ -13,9 +15,9 @@ function CardsAbout() {
 					<CardInfo
 						key={`card-info_${index}`}
 						image={dt.image}
-						title={dt.title}
-						firstDescription={dt.firstDescription}
-						secondDescription={dt.secondDescription} />
+						title={translate(dt.title)}
+						firstDescription={translate(dt.firstDescription)}
+						secondDescription={translate(dt.secondDescription)} />
 				))
 			}
 		</Container>
