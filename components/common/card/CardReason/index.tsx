@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
 import './style.scss'
+import { getI18n } from '@/locales/server';
 export interface CardReasonProps {
     image: string;
     title: string;
@@ -11,8 +12,9 @@ export interface CardReasonProps {
     link: string;
 }
 
-function CardReason(props: CardReasonProps) {
+async function CardReason(props: CardReasonProps) {
     const { image, description, link, title } = props
+    const t = await getI18n()
     return (
         <Link href={link} className={classNames("card-reason")}>
             <span className={classNames("image")}>
@@ -20,7 +22,7 @@ function CardReason(props: CardReasonProps) {
             </span>
             <h4>{title}</h4>
             <p>{description}</p>
-            <ButtonMore label="Voir plus" />
+            <ButtonMore label={t("viewMore")} />
         </Link>
     )
 }

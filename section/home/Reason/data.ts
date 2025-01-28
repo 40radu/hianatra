@@ -3,21 +3,21 @@ const cardReasonData: CardReasonProps[] = [
     {
         image: "/home/atomic.svg",
         title: "courses.title",
-        description: "Que vous soyez débutant ou avancé, nos formations sont conçues pour vous aider à progresser étape par étape.",
+        description: "courses.description",
         link: ""
     },
-    // {
-    //     image: "/home/hours.svg",
-    //     title: "flexibility.",
-    //     description: "Apprenez à votre rythme, quand et où vous voulez, avec un accès en ligne 24/7.",
-    //     link: ""
-    // },
-    // {
-    //     image: "/home/achievement.svg",
-    //     title: "experts",
-    //     description: "Nos formateurs sont des développeurs expérimentés, prêts à partager leurs connaissances et astuces.",
-    //     link: ""
-    // }
+    {
+        image: "/home/hours.svg",
+        title: "flexibility.title",
+        description: "flexibility.description",
+        link: ""
+    },
+    {
+        image: "/home/achievement.svg",
+        title: "experts.title",
+        description: "experts.description",
+        link: ""
+    }
 ]
 
 export { cardReasonData }
