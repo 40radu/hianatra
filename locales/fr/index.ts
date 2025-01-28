@@ -1,3 +1,4 @@
+import aboutHero from "./about/aboutHero";
 import header from "./common/header";
 import heroHome from "./home/heroHome";
 import homeAbout from "./home/homeAbout";
@@ -10,5 +11,6 @@ export default {
   homeReason,
   homeAbout,
   homeTestimonial,
+  aboutHero,
   viewMore : "Voir plus"
 } as const
