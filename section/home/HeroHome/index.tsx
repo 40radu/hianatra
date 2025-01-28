@@ -10,10 +10,8 @@ import Link from 'next/link'
 import { scrollTo } from '@/app/utils/scrollTo'
 import { useScopedI18n } from '@/locales/client'
 
-// { }
-
 function HeroHome() {
-  const heroLangTranslator = useScopedI18n("heroLang")
+  const heroLangTranslator = useScopedI18n("homeHero")
   return (
     <Container className="h-hero">
       <div className="h-hero__text">

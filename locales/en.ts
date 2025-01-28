@@ -5,14 +5,14 @@ export default {
     course: "Courses",
     blog: "Blogs",
   },
-  heroLang : {
+  homeHero : {
     title: {
     your: "your",
     firstLine: "first line",
     ofCode: "of code , your",
     firstSucces: "first success",
     },
-    description : "Immerse yourself in the world of web development with simple and interactive lessons. Progress at your own pace and transform your ideas into concrete project",
+    description : "Immerse yourself in the world of web development with simple, interactive courses. Progress at your own pace and turn your ideas into concrete projects",
     button : {
     ready : "Get started",
     downloadApp : "Download application"
