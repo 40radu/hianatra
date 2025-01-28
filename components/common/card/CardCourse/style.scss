@@ -21,7 +21,7 @@
       }
     }
     &-topic {
-      @apply w-fit absolute bg-white flex items-center;
+      @apply w-fit absolute bg-white flex items-center uppercase;
       border-radius: 5px;
       padding: 5px;
       top: 20px;

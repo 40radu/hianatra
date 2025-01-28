@@ -21,7 +21,7 @@ function BodyTabsBlog(props: BodyTabsProps) {
 							numberOfLesson={card.numberOfLesson}
 							numberOfStudent={card.numberOfStudent}
 							title={card.title}
-							topic={card.topic.toUpperCase()}
+							topic={card.topic}
 							price={card.price}
 							description={card.description}
 						/>

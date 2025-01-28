@@ -1,10 +1,10 @@
 
-import { CardCourseProps } from '@/components/common/card/CardCourse';
-export type listTab = "all" | "collections" | "archives"
+import { BlogCourseProps } from '@/components/common/card/CardBlog';
+export type listTabBlog = "all" | "collections" | "archives"
 
 export interface LinksBlogsType {
     label : string, 
-    href : listTab
+    href : listTabBlog
 }
  const blogLinksData : LinksBlogsType[] = [
     {
@@ -22,8 +22,8 @@ export interface LinksBlogsType {
 ]
 
 type ListBlogProps = {
-    type : listTab,
-    content : CardCourseProps[]
+    type : listTabBlog,
+    content : BlogCourseProps[]
 }[]
 
 const blogListData : ListBlogProps = [
