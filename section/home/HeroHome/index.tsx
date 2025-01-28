@@ -8,26 +8,27 @@ import HomeHeroImage from '@/components/display/HomeHeroImage'
 import Icon from '@/components/Icon'
 import Link from 'next/link'
 import { scrollTo } from '@/app/utils/scrollTo'
+import { useScopedI18n } from '@/locales/client'
+
+// { }
 
 function HeroHome() {
+  const heroLangTranslator = useScopedI18n("heroLang")
   return (
     <Container className="h-hero">
       <div className="h-hero__text">
         <div className="h-hero__text-head">
           <h1>
-            Vos
-            <span className="txt-secondary"> premières lignes</span> de code,
-            votre <span className="txt-primary">premier succès.</span>
+            {heroLangTranslator("title.your")}
+            <span className="txt-secondary"> {heroLangTranslator('title.firstLine')}</span> {heroLangTranslator("title.ofCode")} <span className="txt-primary">{heroLangTranslator("title.firstSucces")}.</span>
           </h1>
           <p>
-            Plongez dans l&apos;univers du développement web grâce à des
-            cours simples et interactifs. Progressez à votre rythme
-            et transformez vos idées en projets concrets.
+            {heroLangTranslator("description")}
           </p>
         </div>
         <div className="h-hero__text-btns--wrapper">
-          <Link href=""><Button variant='blue' label='Commencer' /></Link>
-          <Button variant='white' label='Télécharger l’application' icon='play' onClick={()=>scrollTo('ready')}/>
+          <Link href=""><Button variant='blue' label={heroLangTranslator("button.ready")} /></Link>
+          <Button variant='white' label={heroLangTranslator("button.downloadApp")} icon='play' onClick={() => scrollTo('ready')} />
         </div>
       </div>
       <div className="h-hero__image">
@@ -35,10 +36,9 @@ function HeroHome() {
       </div>
       <div className="h-hero__card">
         <Icon name='accessible' />
-        <h3>Accessibilité</h3>
+        <h3>{heroLangTranslator("accesibility.title")}</h3>
         <p>
-          Apprentissage adapté à tous, quel que soit le niveau ou les
-          connaissances préalables.
+          {heroLangTranslator("accesibility.descrition")}
         </p>
       </div>
     </Container>
