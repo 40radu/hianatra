@@ -1,3 +1,8 @@
 export default {
-  'hello': 'Hello'
+  header: {
+    home: "Home",
+    about: "About",
+    course: "Courses",
+    blog: "Blogs",
+  }
 } as const

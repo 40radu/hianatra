@@ -1,26 +1,26 @@
 interface LinksProps {
 	href : string;
-	label : string;
+	labelKey : "home" | "about" | "course" | "blog"
 }
 
 export const dataLinks : LinksProps[] = [
 	{
 		href: "/",
-		label: "Accueil",
+		labelKey: "home",
 
 	},
 	{
 		href: "/about",
-		label: "À propos",
+		labelKey: "about",
 
 	},
 	{
 		href: "/courses",
-		label: "Cours",
+		labelKey: "course",
 	},
 	{
 		href: "/blog",
-		label: "Blog",
+		labelKey: "blog",
 
 	},
 ]

@@ -4,8 +4,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import './style.scss'
 import classNames from 'classnames'
 import Icon from '@/components/Icon'
+import { useChangeLocale, useCurrentLocale } from '@/locales/client'
 
-type LangList = "FR" | "EN"
+type LangList = "fr" | "en"
 
 interface OptionProps {
 	lang: LangList;
@@ -14,19 +15,19 @@ interface OptionProps {
 
 
 export default function Selectlang() {
-
-	const [selectValue, setSelectValue] = useState<LangList>('FR')
+	const mainLang = useCurrentLocale()
+	const changeLang = useChangeLocale()
 	const [showOption, setShowOption] = useState(false)
 	const selectRef = useRef<HTMLDivElement | null>(null)
 
 	const setEnglishLanguage = () => {
-		setSelectValue('EN')
-		setShowOption(false)
+		changeLang('en')
+		toogleShowOption()
 	}
 
 	const setFrenchLanguage = () => {
-		setSelectValue('FR')
-		setShowOption(false)
+		changeLang('fr')
+		toogleShowOption()
 	}
 
 	const toogleShowOption = () => {
@@ -35,11 +36,11 @@ export default function Selectlang() {
 
 	const optionsData: OptionProps[] = [
 		{
-			lang: 'EN',
+			lang: 'en',
 			onClick: setEnglishLanguage
 		},
 		{
-			lang: 'FR',
+			lang: 'fr',
 			onClick: setFrenchLanguage
 		},
 	]
@@ -63,7 +64,7 @@ export default function Selectlang() {
 			<div
 				className={classNames('select-lang__default')}
 				onClick={toogleShowOption}>
-				<p> {selectValue} </p>
+				<p> {mainLang} </p>
 				<Icon
 					name='arrowDown'
 					variant='black'
