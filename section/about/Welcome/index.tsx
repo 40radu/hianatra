@@ -5,21 +5,23 @@ import Image from 'next/image'
 import React from 'react'
 import "./style.scss"
 import Link from 'next/link'
+import { getScopedI18n } from '@/locales/server'
 
-function Welcome() {
+async function Welcome() {
+	const translate = await getScopedI18n("aboutWelcome")
 	return (
 		<Container className="a-welcome">
 			<span className="a-welcome__image">
-				<Image src="/about/welcome.svg" alt='welcome image' width={547} height={547} priority/>
+				<Image src="/about/welcome.svg" alt='welcome image' width={547} height={547} priority />
 			</span >
 			<div className="a-welcome__text">
-				<Heading label='Bienvenue sur Hianatra.' align='start'>
-					Vous pouvez rejoindre Hianatra <br /> et améliorer vos compétences <br /> pour votre <span className="decoration">avenir</span> radieux.
+				<Heading label={translate("heading.title")} align='start'>
+					{translate("heading.follow")}  <br /> {translate("heading.ameliorate")}  <br /> {translate("heading.your")} <span className="decoration">{translate("heading.future")} </span> {translate("heading.radiant")} .
 				</Heading>
 				<p className="description">
-					Lorem Ipsum has been the industr’s standard dummy text ever since unknown printer took galley type and scmbled make type specimen book. It has survived not only five centuries.
+					{translate("description")}
 				</p>
-				<Link href="/courses"><Button label='Commencer le cours'/></Link>
+				<Link href="/courses"><Button label={translate("button")} /></Link>
 			</div>
 		</Container>
 	)
