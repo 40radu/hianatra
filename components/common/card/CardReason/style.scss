@@ -1,7 +1,6 @@
 .card-reason {
   padding: 30px 20px;
   border-radius: 20px;
-  height: 129px;
   row-gap: 11px;
   @apply flex flex-col items-center shadow-primary h-fit relative text-center;
   @screen lg {
