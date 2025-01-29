@@ -1,7 +1,7 @@
 export default {
   title: "welcome to HIantra",
   subtitle: {
-    first: "Join Hianatra and shape your  ",
+    first: "Join Hianatra and shape your ",
     deco: "future",
     end: " with enhanced skills.",
   },

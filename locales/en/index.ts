@@ -1,3 +1,4 @@
+import aboutCards from "./about/aboutCards";
 import aboutHero from "./about/aboutHero";
 import aboutWelcome from "./about/aboutWelcome";
 import header from "./common/header";
@@ -23,4 +24,5 @@ export default {
   aboutHero,
   aboutWelcome,
   contactCommon,
+  aboutCards,
 } as const;

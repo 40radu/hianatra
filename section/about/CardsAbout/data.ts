@@ -1,23 +1,34 @@
-import { CardInfoProps } from "@/components/common/card/CardInfo"
+type Label = "instructor" | "program" | "amelioration"
 
-const dataCardInfo: CardInfoProps[] = [
+interface AboutCardData { 
+	label : Label
+	image : string 
+	title : `${Label}.title`
+	firstDescription : `${Label}.firstDescription`
+	secondDescription : `${Label}.secondDescription`
+ }
+
+const dataCardInfo: AboutCardData[] = [
 	{
+		label : "instructor",
 		image: "/about/instructor.png",
-		title: "Meilleurs instructeurs",
-		firstDescription: "Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled to make type specimen book has survived.",
-		secondDescription: "Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled make.",
+		title: "instructor.title" ,
+		firstDescription: "instructor.firstDescription" ,
+		secondDescription: "instructor.secondDescription",
 	},
 	{
+		label : "program",
 		image: "/about/program.png",
-		title: "Programme portable",
-		firstDescription: "Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled to make type specimen book has survived.",
-		secondDescription: "Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled make.",
+		title: "program.title",
+		firstDescription: "program.firstDescription" ,
+		secondDescription:  "program.secondDescription" ,
 	},
 	{
+		label : "amelioration",
 		image: "/about/amelioration.png",
-		title: "Amélioration rapide",
-		firstDescription: "Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled to make type specimen book has survived.",
-		secondDescription: "Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled make.",
+		title: "amelioration.title",
+		firstDescription:"amelioration.firstDescription",
+		secondDescription: "amelioration.secondDescription",
 	},
 ]
 
