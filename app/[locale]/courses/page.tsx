@@ -1,4 +1,5 @@
 import HeroCommon from '@/components/common/section/HeroCommon'
+import { getI18n } from '@/locales/server'
 import CoursesList from '@/section/course/CoursesList'
 import Spotlight from '@/section/course/Spotlight'
 import { Metadata } from 'next'
@@ -8,11 +9,12 @@ export const metadata: Metadata = {
 	title: "Cours | Hianatra"
 }
 
-function Courses() {
+async function Courses() {
+	const translate = await getI18n()
 	return (
 		<>
 			<HeroCommon
-				smallTitle='Les cours chez'
+				smallTitle={translate("courseHero.title")}
 				largeTitle='Hianatra'
 			/>
 			<Spotlight />

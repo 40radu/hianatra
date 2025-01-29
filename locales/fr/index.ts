@@ -12,6 +12,7 @@ import homeTestimonial from "./home/homeTestimonial";
 import aboutInstructor from "./about/aboutInstructor";
 import footer from "./common/footer";
 import aboutPartner from "./about/aboutPartner";
+import courseHero from "./course/courseHero";
 
 export default {
   header,
@@ -30,5 +31,6 @@ export default {
   aboutCards,
   aboutInstructor,
   aboutPartner,
-  footer
+  courseHero,
+  footer,
 } as const;
