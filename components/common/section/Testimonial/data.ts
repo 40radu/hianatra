@@ -1,11 +1,11 @@
-interface CardTestimonialData { 
+interface CardTestimonialProps { 
 	image : string
 	starNumber : number
 	description : "descriOne" | "descriTwo" | "descriThree"
 	userName : string
  }
 
-const cardTestimonialData: CardTestimonialData[] = [
+const cardTestimonialData: CardTestimonialProps[] = [
     {
         image: "/profil.png",
         starNumber: 5,
