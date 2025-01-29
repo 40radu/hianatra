@@ -14,6 +14,5 @@ export default {
         title : "An adapted pedagogy",
         descri : "Our courses are designed to be accessible, interactive and engaging."
        },
-    },
-    button : "Get to know us"
+    }
  }
