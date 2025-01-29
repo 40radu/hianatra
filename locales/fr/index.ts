@@ -5,16 +5,18 @@ import homeCourse from "./home/homeCourse";
 import homeAbout from "./home/homeAbout";
 import homeReason from "./home/homeReason";
 import contactCommon from "./common/contactCommon";
+import homeTestimonial from "./home/homeTestimonial";
 
 export default {
   header,
   heroHome,
   homeReason,
-  viewMore : "Voir plus",
-  readMore : "En savoir plus",
-  moreAboutUs : "Nous connaitre",
+  viewMore: "Voir plus",
+  readMore: "En savoir plus",
+  moreAboutUs: "Nous connaitre",
   ready,
   homeCourse,
   homeAbout,
-  contactCommon
-} as const
+  homeTestimonial,
+  contactCommon,
+} as const;

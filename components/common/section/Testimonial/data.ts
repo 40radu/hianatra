@@ -1,22 +1,27 @@
-import { CardTestimonialProps } from "../../card/CardTestimonial"
+interface CardTestimonialProps { 
+	image : string
+	starNumber : number
+	description : "descriOne" | "descriTwo" | "descriThree"
+	userName : string
+ }
 
 const cardTestimonialData: CardTestimonialProps[] = [
     {
         image: "/profil.png",
         starNumber: 5,
-        description: "Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled to make type specimen book has survived. <br/> Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled make.",
+        description: "descriOne",
         userName: "Tolotra.k"
     },
     {
         image: "/profil.png",
         starNumber: 4,
-        description: "Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled to make type specimen book has survived. <br/> Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled make.",
+        description: "descriTwo" ,
         userName: "Tolotra.l"
     },
     {
         image: "/profil.png",
         starNumber: 5,
-        description: "Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled to make type specimen book has survived. <br/> Lorem Ipsum has been the industry's standard dumy text since the when took and scrambled make.",
+        description: "descriThree" ,
         userName: "Tolotra.m"
     },
 ]
