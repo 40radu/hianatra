@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { getScopedI18n } from '@/locales/server'
 
 async function Partner() {
-	const translate = await getScopedI18n("aboutPartenaire")
+	const translate = await getScopedI18n("aboutPartner")
 	return (
 		<Container className="partner">
 			<Heading label={translate("title")} align='start'>

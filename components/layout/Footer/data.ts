@@ -6,8 +6,8 @@ interface SocialMediaProps {
 }
 
 interface LinkProps {
-    label: string;
     link: string;
+    labKey: "home" | "about" | "course" | "career" | "resources" | "blog" | "privacyPolicy" | "termsOfUse"
 }
 
 const socialMediaData: SocialMediaProps[] = [
@@ -35,35 +35,35 @@ const socialMediaData: SocialMediaProps[] = [
 
 const linkData: LinkProps[] = [
     {
-        label: "Accueil",
+        labKey: "home",
         link: "/",
     },
     {
-        label: "À propos",
+        labKey: "about",
         link: "/about",
     },
     {
-        label: "Cours",
+        labKey: "course",
         link: "/courses",
     },
     {
-        label: "Parcours",
+        labKey: "career",
         link: "",
     },
     {
-        label: "Ressources",
+        labKey: "resources",
         link: "",
     },
     {
-        label: "Blog",
+        labKey: "blog",
         link: "",
     },
     {
-        label: "Politique de Confidentialité",
+        labKey: "privacyPolicy",
         link: "",
     },
     {
-        label: "Conditions d'Utilisation",
+        labKey: "termsOfUse",
         link: "",
     },
 ]

@@ -32,7 +32,7 @@
   };
   &__btn {
     padding: 12px 14px;
-    @apply text-sm;
+    @apply text-sm uppercase;
     @screen lg {
       padding: 16px 32px;
     };

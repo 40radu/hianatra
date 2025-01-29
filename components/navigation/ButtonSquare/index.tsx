@@ -7,7 +7,7 @@ interface ButtonSquareProps {
   variant?: "blue" | "white";
   className?: string;
   type?: "submit" | "button"
-  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 function ButtonSquare(props: ButtonSquareProps) {

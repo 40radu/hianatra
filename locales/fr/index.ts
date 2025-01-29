@@ -10,7 +10,8 @@ import homeReason from "./home/homeReason";
 import contactCommon from "./common/contactCommon";
 import homeTestimonial from "./home/homeTestimonial";
 import aboutInstructor from "./about/aboutInstructor";
-import aboutPartenaire from "./about/aboutPartenaire";
+import footer from "./common/footer";
+import aboutPartner from "./about/aboutPartner";
 
 export default {
   header,
@@ -28,5 +29,6 @@ export default {
   contactCommon,
   aboutCards,
   aboutInstructor,
-  aboutPartenaire,
+  aboutPartner,
+  footer
 } as const;
