@@ -10,6 +10,7 @@ import ready from "./common/ready";
 import homeCourse from "./home/homeCourse";
 import contactCommon from "./common/contactCommon";
 import aboutInstructor from "./about/aboutInstructor";
+import aboutPartenaire from "./about/aboutPartenaire";
 
 export default {
   header,
@@ -27,4 +28,5 @@ export default {
   contactCommon,
   aboutCards,
   aboutInstructor,
+  aboutPartenaire,
 } as const;
