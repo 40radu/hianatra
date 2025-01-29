@@ -15,8 +15,9 @@ async function Welcome() {
 				<Image src="/about/welcome.svg" alt='welcome image' width={547} height={547} priority />
 			</span >
 			<div className="a-welcome__text">
-				<Heading label={translate("heading.title")} align='start'>
-					{translate("heading.follow")}  <br /> {translate("heading.ameliorate")}  <br /> {translate("heading.your")} <span className="decoration">{translate("heading.future")} </span> {translate("heading.radiant")} .
+				<Heading label={translate("title")} align='start'>
+					{translate("subtitle.first")}
+					<span className="decoration">{translate("subtitle.deco")} </span> {translate("subtitle.end")}
 				</Heading>
 				<p className="description">
 					{translate("description")}
