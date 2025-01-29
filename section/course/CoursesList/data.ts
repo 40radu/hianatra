@@ -1,9 +1,8 @@
 import { CardCourseProps } from "@/components/common/card/CardCourse";
-export type listTabCourse = "all" | "collections" | "archives";
-type LabelType = "all" | "collection" | "archive";
+export type listTabCourse = "all" | "collection" | "archive";
 
 export interface LinksCoursType {
-  label: LabelType;
+  label: listTabCourse;
   href: listTabCourse;
 }
 const courseLinksData: LinksCoursType[] = [
@@ -13,11 +12,11 @@ const courseLinksData: LinksCoursType[] = [
   },
   {
     label: "collection",
-    href: "collections",
+    href: "collection",
   },
   {
     label: "archive",
-    href: "archives",
+    href: "archive",
   },
 ];
 
@@ -93,7 +92,7 @@ const courseListData: ListCourseProps = [
     ],
   },
   {
-    type: "archives",
+    type: "archive",
     content: [
       {
         topic: "html",
@@ -108,7 +107,7 @@ const courseListData: ListCourseProps = [
     ],
   },
   {
-    type: "collections",
+    type: "collection",
     content: [
       {
         topic: "html",
