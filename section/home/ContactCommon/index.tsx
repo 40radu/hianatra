@@ -4,8 +4,10 @@ import Image from 'next/image'
 import React from 'react'
 import { contactData } from './data'
 import ContactForm from '@/components/display/ContactForm'
+import { getScopedI18n } from '@/locales/server'
 
-function ContactCommon() {
+async function ContactCommon() {
+  const t = await getScopedI18n("contactCommon")
   return (
     <Container className="contact-common">
       <div className="contact-common__infos" id='contact'>
@@ -18,7 +20,7 @@ function ContactCommon() {
                     <Image src={dt.image} alt='' width={90} height={90} />
                   </span>
                   <div className="items-container__text">
-                    <p className="title">{dt.title}</p>
+                    <p className="title">{t(`info.${dt.title}`)}</p>
                     <p className="description">{dt.description}</p>
                   </div>
                 </div>

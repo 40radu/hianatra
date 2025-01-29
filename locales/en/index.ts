@@ -5,6 +5,7 @@ import homeReason from "./home/homeReason";
 import homeTestimonial from "./home/homeTestimonial";
 import ready from "./common/ready";
 import homeCourse from "./home/homeCourse";
+import contactCommon from "./common/contactCommon";
 
 export default {
   header,
@@ -17,4 +18,5 @@ export default {
   homeCourse,
   homeAbout,
   homeTestimonial,
+  contactCommon,
 } as const;

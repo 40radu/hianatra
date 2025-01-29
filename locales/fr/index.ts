@@ -4,6 +4,7 @@ import heroHome from "./home/heroHome";
 import homeCourse from "./home/homeCourse";
 import homeAbout from "./home/homeAbout";
 import homeReason from "./home/homeReason";
+import contactCommon from "./common/contactCommon";
 import homeTestimonial from "./home/homeTestimonial";
 
 export default {
@@ -17,4 +18,5 @@ export default {
   homeCourse,
   homeAbout,
   homeTestimonial,
+  contactCommon,
 } as const;
