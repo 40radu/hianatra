@@ -11,14 +11,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import CardTestimonial from '../../card/CardTestimonial'
+import { useScopedI18n } from '@/locales/client'
 
 function Testimonial() {
+	const translate = useScopedI18n("homeTestimonial")
 	return (
 		<Container className="testimonial">
-			<Heading label='vos retours' align='center' textAlign='center' >
-				<span className='primary'>Que disent les utilisateurs<br />
-					de </span>
-				<span className='decoration'>Hianatra?</span>
+			<Heading label={translate('heading.title')} align='center' textAlign='center' >
+				<span className='primary'>{translate('heading.subtitle.simple')}<br />
+					{translate('heading.subtitle.of')} </span>
+				<span className='decoration'> {translate('heading.subtitle.decored')}</span>
 			</Heading>
 			<Swiper
 
@@ -37,7 +39,7 @@ function Testimonial() {
 					cardTestimonialData.map((td, index) => {
 						return (
 							<SwiperSlide key={`td_${index}`}>
-								<CardTestimonial description={td.description} image={td.image} starNumber={td.starNumber} userName={td.userName} key={`td_${index}`} />
+								<CardTestimonial description={translate(`card.${td.description}`)} image={td.image} starNumber={td.starNumber} userName={td.userName} key={`td_${index}`} />
 							</SwiperSlide>
 						)
 					})

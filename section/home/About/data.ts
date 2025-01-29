@@ -1,17 +1,17 @@
 interface AboutProps {
-    title: "card.approach.title"|"card.teaching.title";
-    description: "card.approach.descri" | "card.teaching.descri";
+    title: "approach.title"|"teaching.title";
+    description: "approach.descri" | "teaching.descri";
 }
-// |
+
 const aboutData: AboutProps[] = [
     {
-        title: "card.approach.title",
-        description: "card.approach.descri"
+        title: "approach.title",
+        description: "approach.descri"
 
     },
     {
-        title: "card.teaching.title",
-        description: "card.teaching.descri"
+        title: "teaching.title",
+        description: "teaching.descri"
     }
 ]
 
