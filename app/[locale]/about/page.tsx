@@ -1,6 +1,7 @@
 import HeroCommon from '@/components/common/section/HeroCommon'
 import Ready from '@/components/common/section/Ready'
 import Testimonial from '@/components/common/section/Testimonial'
+import { getI18n } from '@/locales/server'
 import CardsAbout from '@/section/about/CardsAbout'
 import Instructors from '@/section/about/Instructors'
 import Partner from '@/section/about/Partner'
@@ -12,10 +13,11 @@ export const metadata: Metadata = {
 	title: "À propos | Hianatra",
 }
 
-function About() {
+async function About() {
+	const translate = await getI18n()
 	return (
 		<>
-			<HeroCommon smallTitle='À propos de' largeTitle='Hianatra' />
+			<HeroCommon smallTitle={translate("aboutHero.title")} largeTitle='Hianatra' />
 			<Welcome />
 			<CardsAbout />
 			<Ready />

@@ -1,3 +1,5 @@
+import aboutHero from "./about/aboutHero";
+import aboutWelcome from "./about/aboutWelcome";
 import header from "./common/header";
 import ready from "./common/ready";
 import heroHome from "./home/heroHome";
@@ -18,5 +20,7 @@ export default {
   homeCourse,
   homeAbout,
   homeTestimonial,
+  aboutHero,
+  aboutWelcome,
   contactCommon,
 } as const;
