@@ -13,6 +13,7 @@ import aboutInstructor from "./about/aboutInstructor";
 import footer from "./common/footer";
 import aboutPartner from "./about/aboutPartner";
 import courseHero from "./course/courseHero";
+import courseHeader from "./course/courseHeader";
 
 export default {
   header,
@@ -32,5 +33,6 @@ export default {
   aboutInstructor,
   aboutPartner,
   courseHero,
+  courseHeader,
   footer,
 } as const;
