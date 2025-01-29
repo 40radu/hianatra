@@ -1,5 +1,6 @@
 import aboutCards from "./about/aboutCards";
 import aboutHero from "./about/aboutHero";
+import aboutInsructor from "./about/aboutInsructor";
 import aboutWelcome from "./about/aboutWelcome";
 import header from "./common/header";
 import heroHome from "./home/heroHome";
@@ -16,5 +17,6 @@ export default {
   aboutHero,
   aboutWelcome,
   aboutCards,
-  viewMore: "View more"
-} as const
+  aboutInsructor,
+  viewMore: "View more",
+} as const;

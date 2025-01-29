@@ -11,12 +11,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { instructorData } from './data'
+import { useScopedI18n } from '@/locales/client'
 
 function Instructors() {
+	const translate = useScopedI18n("aboutInsructor")
 	return (
 		<Container className="instructors">
-			<Heading label='Team’s Hianatra'>
-				Instructor Qualifié <span className='decoration'>Hianatra</span>
+			<Heading label={translate("title")}>
+				{translate("subtitle.simple")} <span className='decoration'>{translate("subtitle.deco")} </span>
 			</Heading>
 			<Swiper
 
@@ -35,7 +37,7 @@ function Instructors() {
 					},
 					1280: {
 						slidesPerView: 4,
-						loop : false
+						loop: false
 					}
 				}}
 				className="instructors__content">
