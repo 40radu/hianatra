@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import "./style.scss"
 import Button from '@/components/navigation/Button'
+import { useScopedI18n } from '@/locales/client'
 
 export interface CardCourseProps {
 	topic: string;
@@ -17,6 +18,7 @@ export interface CardCourseProps {
 }
 
 function CardCourse(props: CardCourseProps) {
+	const translate = useScopedI18n("courseCardStatic")
 	const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price, description } = props
 	return (
 		<div className={classNames("card-course")}>
@@ -30,7 +32,7 @@ function CardCourse(props: CardCourseProps) {
 			</div>
 			<div className={classNames("card-course__body")}>
 				<p className={classNames("card-course__body-access", { free: isFree })}>
-					{isFree ? "Gratuit" : "Payante"}
+					{isFree ? translate("body.free") : translate("body.paying")}
 				</p>
 				<h4>
 					{title}
@@ -38,11 +40,11 @@ function CardCourse(props: CardCourseProps) {
 				<div className={classNames("card-course__body-description")}>
 					<span className={classNames("item", "students")}>
 						<Icon name='student' variant='blue-secondary' />
-						{numberOfStudent} Etudiants
+						{numberOfStudent} {translate("body.student")}
 					</span>
 					<span className={classNames("item", "lessons")}>
 						<Icon name='lesson' variant='blue-secondary' />
-						{numberOfLesson} Leçons
+						{numberOfLesson} {translate("body.lesson")}
 					</span>
 				</div>
 			</div>
@@ -53,11 +55,11 @@ function CardCourse(props: CardCourseProps) {
 					<div className={classNames("info")}>
 						<span className={classNames("item", "students")}>
 							<Icon name='student' variant='blue-secondary' />
-							{numberOfStudent} Etudiants
+							{numberOfStudent} {translate("hover.student")}
 						</span>
 						<span className={classNames("item", "lessons")}>
 							<Icon name='lesson' variant='blue-secondary' />
-							{numberOfLesson} Leçons
+							{numberOfLesson} {translate("hover.lesson")}
 						</span>
 					</div>
 					<p >
@@ -65,8 +67,8 @@ function CardCourse(props: CardCourseProps) {
 					</p>
 				</div>
 				<div className={classNames("card-course__hover-wrapper_btns")}>
-					<Button label='Voir Plus' />
-					<Button label='S&apos;inscrire' variant='transparent' />
+					<Button label={translate("hover.button.seeMore")} />
+					<Button label={translate("hover.button.subsribe")} variant='transparent' />
 				</div>
 
 			</div>

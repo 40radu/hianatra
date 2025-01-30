@@ -14,6 +14,7 @@ import footer from "./common/footer";
 import aboutPartner from "./about/aboutPartner";
 import courseHero from "./course/courseHero";
 import courseHeader from "./course/courseHeader";
+import courseCardStatic from "./course/courseCardStatic";
 
 export default {
   header,
@@ -34,5 +35,6 @@ export default {
   aboutPartner,
   courseHero,
   courseHeader,
+  courseCardStatic,
   footer,
 } as const;
