@@ -1,3 +1,4 @@
+"use client"
 import Icon from '@/components/Icon'
 import classNames from 'classnames'
 import Image from 'next/image'

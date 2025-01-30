@@ -1,10 +1,11 @@
+"use client"
 import Icon from '@/components/Icon'
 import classNames from 'classnames'
 import Image from 'next/image'
 import React from 'react'
 import "./style.scss"
 import Button from '@/components/navigation/Button'
-import { getScopedI18n } from '@/locales/server'
+import { useScopedI18n } from '@/locales/client'
 
 export interface BlogCourseProps {
   topic: string;
@@ -17,9 +18,9 @@ export interface BlogCourseProps {
   description: string
 }
 
-async function CardBlog(props: BlogCourseProps) {
+function CardBlog(props: BlogCourseProps) {
   const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price, description } = props
-  const translate = await getScopedI18n("blogCard")
+  const translate = useScopedI18n("blogCard")
   return (
     <div className={classNames("card-blog")}>
       <div className={classNames("card-blog__head")}>
@@ -70,7 +71,6 @@ async function CardBlog(props: BlogCourseProps) {
           <Button label={translate("hover.button.seeMore")} />
           <Button label={translate("hover.button.subsribe")} variant='transparent' />
         </div>
-
       </div>
     </div>
   )

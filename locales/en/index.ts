@@ -16,6 +16,7 @@ import courseHero from "./course/courseHero";
 import courseHeader from "./course/courseHeader";
 import courseCard from "./course/courseCard";
 import blogCard from "./blog/blogCard";
+import courseSpotlight from "./course/courseSpotlight";
 
 export default {
   header,
@@ -39,4 +40,5 @@ export default {
   courseCard,
   footer,
   blogCard,
+  courseSpotlight,
 } as const;
