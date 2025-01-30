@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import "./style.scss"
 import Button from '@/components/navigation/Button'
+import { getScopedI18n } from '@/locales/server'
 
 export interface BlogCourseProps {
   topic: string;
@@ -16,8 +17,9 @@ export interface BlogCourseProps {
   description: string
 }
 
-function CardBlog(props: BlogCourseProps) {
+async function CardBlog(props: BlogCourseProps) {
   const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price, description } = props
+  const translate = await getScopedI18n("blogCard")
   return (
     <div className={classNames("card-blog")}>
       <div className={classNames("card-blog__head")}>
@@ -30,7 +32,7 @@ function CardBlog(props: BlogCourseProps) {
       </div>
       <div className={classNames("card-blog__body")}>
         <p className={classNames("card-blog__body-access", { free: isFree })}>
-          {isFree ? "Gratuit" : "Payante"}
+          {isFree ? translate("body.free") : translate("body.paying")}
         </p>
         <h4>
           {title}
@@ -38,11 +40,11 @@ function CardBlog(props: BlogCourseProps) {
         <div className={classNames("card-blog__body-description")}>
           <span className={classNames("item", "students")}>
             <Icon name='student' variant='blue-secondary' />
-            {numberOfStudent} Etudiants
+            {numberOfStudent} {translate("body.student")}
           </span>
           <span className={classNames("item", "lessons")}>
             <Icon name='lesson' variant='blue-secondary' />
-            {numberOfLesson} Leçons
+            {numberOfLesson} {translate("body.lesson")}
           </span>
         </div>
       </div>
@@ -53,11 +55,11 @@ function CardBlog(props: BlogCourseProps) {
           <div className={classNames("info")}>
             <span className={classNames("item", "students")}>
               <Icon name='student' variant='blue-secondary' />
-              {numberOfStudent} Etudiants
+              {numberOfStudent} {translate("hover.student")}
             </span>
             <span className={classNames("item", "lessons")}>
               <Icon name='lesson' variant='blue-secondary' />
-              {numberOfLesson} Leçons
+              {numberOfLesson} {translate("hover.lesson")}
             </span>
           </div>
           <p >
@@ -65,8 +67,8 @@ function CardBlog(props: BlogCourseProps) {
           </p>
         </div>
         <div className={classNames("card-blog__hover-wrapper_btns")}>
-          <Button label='Voir Plus' />
-          <Button label='S&apos;inscrire' variant='transparent' />
+          <Button label={translate("hover.button.seeMore")} />
+          <Button label={translate("hover.button.subsribe")} variant='transparent' />
         </div>
 
       </div>

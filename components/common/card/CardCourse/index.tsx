@@ -18,7 +18,7 @@ export interface CardCourseProps {
 }
 
 function CardCourse(props: CardCourseProps) {
-	const translate = useScopedI18n("courseCardStatic")
+	const translate = useScopedI18n("courseCard")
 	const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price, description } = props
 	return (
 		<div className={classNames("card-course")}>
