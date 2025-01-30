@@ -6,8 +6,10 @@ import ButtonSquare from '@/components/navigation/ButtonSquare'
 import './style.scss'
 import { courseLinksData, courseListData, listTabCourse } from './data'
 import BodyTabsCourse from '@/components/display/BodyTabsCourse'
+import { useScopedI18n } from '@/locales/client'
 
 function CoursesList() {
+  const translate = useScopedI18n("courseHeader")
   const [tabActive, setTabActive] = useState<listTabCourse>("all")
   const dataCourseActive = courseListData.find((course) => course.type === tabActive)
 
@@ -21,7 +23,7 @@ function CoursesList() {
                 return (
                   <ButtonSquare
                     key={`course--${id}`}
-                    label={link.label}
+                    label={translate(`${link.label}`)}
                     variant={tabActive === link.href ? "blue" : "white"}
                     className='c-list-course__navbar__navigation__button'
                     onClick={() => setTabActive(link.href)}

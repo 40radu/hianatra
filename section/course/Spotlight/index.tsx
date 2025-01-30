@@ -9,11 +9,16 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import './style.scss'
 import { spotlightCourseData } from './data'
+import { useScopedI18n } from '@/locales/client'
+
+type keyOfDescription = "card1" | "card2" | "card3"
 
 function Spotlight() {
+	const translate = useScopedI18n("courseSpotlight")
+	const tCard = useScopedI18n("courseSpotlight.cards.description")
 	return (
 		<Container tag='section' className='c-spotlight' >
-			<h3>À la une</h3>
+			<h3>{translate("title")}</h3>
 			<Swiper
 				modules={[Pagination, Autoplay]}
 				slidesPerView={1.2}
@@ -47,7 +52,7 @@ function Spotlight() {
 									title={course.title}
 									topic={course.topic.toUpperCase()}
 									price={course.price}
-									description={course.description}
+									description={tCard(`${course.description as keyOfDescription}`)}
 								/>
 							</SwiperSlide>
 						)
