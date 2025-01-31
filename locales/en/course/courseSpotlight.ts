@@ -1,13 +1,19 @@
 export default {
   title: "Our highlights",
-  cards: {
-    description: {
-      card1:
-        "Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
-      card2:
-        "2Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
-      card3:
-        "3Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
+  data: {
+    html: {
+      description: "english html spot"
     },
+    css: {
+      description: "english css spot"
+    },
+    javascript: {
+      description: "english javascript spot"
+    },
+    "ux/ui": {
+      description: "english ui-ux spot"
+    }
+
   },
 };
+

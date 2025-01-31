@@ -13,10 +13,10 @@ import aboutInstructor from "./about/aboutInstructor";
 import footer from "./common/footer";
 import aboutPartner from "./about/aboutPartner";
 import courseHero from "./course/courseHero";
-import courseHeader from "./course/courseHeader";
 import courseCard from "./course/courseCard";
 import blogCard from "./blog/blogCard";
 import courseSpotlight from "./course/courseSpotlight";
+import courseList from "./course/courseList";
 
 export default {
   header,
@@ -36,9 +36,9 @@ export default {
   aboutInstructor,
   aboutPartner,
   courseHero,
-  courseHeader,
   courseCard,
   footer,
   blogCard,
   courseSpotlight,
+  courseList
 } as const;

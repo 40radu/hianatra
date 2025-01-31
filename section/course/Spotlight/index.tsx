@@ -11,11 +11,10 @@ import './style.scss'
 import { spotlightCourseData } from './data'
 import { useScopedI18n } from '@/locales/client'
 
-type keyOfDescription = "card1" | "card2" | "card3"
+// type keyOfDescription = "card1" | "card2" | "card3"
 
 function Spotlight() {
 	const translate = useScopedI18n("courseSpotlight")
-	const tCard = useScopedI18n("courseSpotlight.cards.description")
 	return (
 		<Container tag='section' className='c-spotlight' >
 			<h3>{translate("title")}</h3>
@@ -52,7 +51,7 @@ function Spotlight() {
 									title={course.title}
 									topic={course.topic.toUpperCase()}
 									price={course.price}
-									description={tCard(`${course.description as keyOfDescription}`)}
+									keyDescription={translate(`data.${course.keyDescription}.description`)}
 								/>
 							</SwiperSlide>
 						)

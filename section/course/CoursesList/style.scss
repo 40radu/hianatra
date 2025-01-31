@@ -2,6 +2,7 @@
   padding-block: 25px 50px;
   gap: 40px;
   @apply flex flex-col;
+
   @screen lg {
     gap: 50px;
     padding-block: 50px 75px;
@@ -16,6 +17,7 @@
     @screen md {
       @apply flex-row items-center justify-between;
     }
+
     @screen 2xl {
       @apply flex flex-row;
       padding: 20px;
@@ -24,6 +26,7 @@
     &__navigation {
       @apply flex overflow-scroll;
       gap: 10px;
+
       &::-webkit-scrollbar {
         display: none;
       }
@@ -36,11 +39,13 @@
         @apply text-sm text-nowrap;
         padding: 10px;
         border-radius: 5px;
+
         @screen lg {
           padding: 15px;
           font-size: 16px;
           border-radius: 10px;
         }
+
         @screen 2xl {
           font-size: 18px;
           font-weight: 500;
@@ -48,47 +53,25 @@
       }
     }
 
-    &__search {
-      @apply h-fit  w-fit flex flex-row items-center justify-center bg-white;
-      max-width: 100%;
-      gap: 10px;
-      padding: 8px 15px;
+    &__button {
       border-radius: 5px;
 
-      @screen md {
-        gap: 10px;
-        padding: 8px 20px;
-      }
       @screen lg {
-        @apply flex items-center justify-center;
-        gap: 10px;
-        padding: 13px 20px;
         border-radius: 10px;
       }
+    }
+  }
 
-      &__button {
-        border-radius: 5px;
+  &__body {
+    @apply grid;
+    gap: 20px;
 
-        @screen lg {
-          border-radius: 10px;
-        }
-      }
+    @screen md {
+      @apply grid-cols-2;
+    }
 
-      &__input {
-        background-color: transparent;
-        border: none;
-        width: 250px;
-        padding: 0;
-
-        @screen lg {
-          padding: 0;
-        }
-
-        @screen 2xl {
-          width: 383px;
-          padding: 0;
-        }
-      }
+    @screen xl {
+      @apply grid-cols-3;
     }
   }
 }
