@@ -4,46 +4,22 @@ export default {
     collection: "Collections",
     archive: "Archives",
   },
-  all: {
-    card1: {
+  data: {
+    html: {
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
+        "Html français ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
     },
-    card2: {
+    css: {
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
+        "Css français ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
     },
-    card3: {
+    javascript: {
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
+        "javascript français ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
     },
-    card4: {
+    "ux/ui": {
       description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
-    },
-    card5: {
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
-    },
-    card6: {
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
-    },
-  },
-  archive: {
-    card1: {
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
-    },
-  },
-  collection: {
-    card1: {
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
-    },
-    card2: {
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
-    },
-  },
-};
+        "UX-UI  english ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
+    }
+  }
+} 

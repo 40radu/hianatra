@@ -1,13 +1,18 @@
 export default {
   title: "À la une",
-  cards: {
-    description: {
-      card1:
-        "Français ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
-      card2:
-        "2Français ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
-      card3:
-        "3Français ipsum dolor sit amet consectetur. Vitae rutrum scelerisque semper pretium scelerisque. Malesuada etiam.",
+  data: {
+    html: {
+      description: "français html spot"
     },
+    css: {
+      description: "français css spot"
+    },
+    javascript: {
+      description: "français javascript spot"
+    },
+    "ux/ui": {
+      description: "français ui-ux spot"
+    }
+
   },
 };

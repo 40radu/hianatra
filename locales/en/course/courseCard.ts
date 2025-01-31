@@ -1,7 +1,9 @@
 export default {
   body: {
-    free: "Free",
-    paying: "Paying",
+    status : {
+      free : "Free",
+      paying : "Paying",
+    },
     student: "Students",
     lesson: "Lesson",
   },

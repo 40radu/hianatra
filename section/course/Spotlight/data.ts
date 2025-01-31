@@ -1,12 +1,17 @@
 import { CardCourseProps } from "@/components/common/card/CardCourse";
+import { keyOfCourseTopic } from "@/locales/type/listCourseTopic";
 
-export const spotlightCourseData: CardCourseProps[] = [
+interface SpotLightCoursProps extends CardCourseProps {
+  keyDescription : keyOfCourseTopic
+}
+
+export const spotlightCourseData: SpotLightCoursProps[] = [
   {
     topic: "html",
     image: "/courses/html.png",
     isFree: true,
     numberOfStudent: 4,
-    description: "card1",
+    keyDescription: "html",
     numberOfLesson: 10,
     price: "20.000",
     title: "HTML course",
@@ -16,7 +21,7 @@ export const spotlightCourseData: CardCourseProps[] = [
     image: "/courses/Css.png",
     isFree: false,
     numberOfStudent: 6,
-    description: "card2",
+    keyDescription: "css",
     numberOfLesson: 10,
     price: "20.000",
     title: "CSS course",
@@ -26,9 +31,9 @@ export const spotlightCourseData: CardCourseProps[] = [
     image: "/courses/ui-ux.png",
     isFree: true,
     numberOfStudent: 4,
-    description: "card3",
+    keyDescription: "javascript",
     numberOfLesson: 10,
     price: "20.000",
     title: "UI/UX course",
   },
-];
+] as const;

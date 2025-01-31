@@ -1,0 +1,1 @@
+export type keyOfCourseTopic = "html" | "css" | "javascript" | "ux/ui" 

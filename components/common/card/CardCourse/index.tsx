@@ -15,12 +15,12 @@ export interface CardCourseProps {
 	numberOfStudent: number;
 	numberOfLesson: number;
 	price: string;
-	description: string
+	keyDescription : string
 }
 
 function CardCourse(props: CardCourseProps) {
 	const translate = useScopedI18n("courseCard")
-	const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price, description } = props
+	const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price , keyDescription} = props
 	return (
 		<div className={classNames("card-course")}>
 			<div className={classNames("card-course__head")}>
@@ -33,7 +33,7 @@ function CardCourse(props: CardCourseProps) {
 			</div>
 			<div className={classNames("card-course__body")}>
 				<p className={classNames("card-course__body-access", { free: isFree })}>
-					{isFree ? translate("body.free") : translate("body.paying")}
+					{isFree ? translate("body.status.free") : translate("body.status.paying")}
 				</p>
 				<h4>
 					{title}
@@ -64,7 +64,7 @@ function CardCourse(props: CardCourseProps) {
 						</span>
 					</div>
 					<p >
-						{description}
+						{keyDescription}
 					</p>
 				</div>
 				<div className={classNames("card-course__hover-wrapper_btns")}>

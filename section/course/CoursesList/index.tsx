@@ -4,14 +4,14 @@ import React, { useState } from 'react'
 import Container from '@/components/common/Container'
 import ButtonSquare from '@/components/navigation/ButtonSquare'
 import './style.scss'
-import { courseLinksData, courseListData, listTabCourse } from './data'
-import BodyTabsCourse from '@/components/display/BodyTabsCourse'
+import { allCourseData, archiveData, collectionData, courseLinksData, listTabCourse } from './data'
 import { useScopedI18n } from '@/locales/client'
+import CardCourse from '@/components/common/card/CardCourse'
 
 function CoursesList() {
-  const translate = useScopedI18n("courseHeader")
+  const translate = useScopedI18n("courseList")
   const [tabActive, setTabActive] = useState<listTabCourse>("all")
-  const dataCourseActive = courseListData.find((course) => course.type === tabActive)
+  const t = useScopedI18n ("courseList.data")
 
   return (
     <>
@@ -23,7 +23,7 @@ function CoursesList() {
                 return (
                   <ButtonSquare
                     key={`course--${id}`}
-                    label={translate(`${link.label}`)}
+                    label={translate(`tabs.${link.label}`)}
                     variant={tabActive === link.href ? "blue" : "white"}
                     className='c-list-course__navbar__navigation__button'
                     onClick={() => setTabActive(link.href)}
@@ -33,7 +33,35 @@ function CoursesList() {
             }
           </div>
         </div>
-        <BodyTabsCourse cardsList={dataCourseActive!.content} />
+        <div className='c-list-course__body'>
+          {
+            tabActive === "all" ?
+              allCourseData.map((card, id) => {
+                return (
+                  <CardCourse {...card} key={id} keyDescription={t(`${card.keyDescription}.description`)} />
+                )
+              })
+              : ""
+          }
+          {
+            tabActive === "collection" ?
+              collectionData.map((card, id) => {
+                return (
+                  <CardCourse {...card} key={id} keyDescription={t(`${card.keyDescription}.description`)} />
+                )
+              })
+              : ""
+          }
+          {
+            tabActive === "archive" ?
+              archiveData.map((card, id) => {
+                return (
+                  <CardCourse {...card} key={id} keyDescription={t(`${card.keyDescription}.description`)} />
+                )
+              })
+              : ""
+          }
+        </div>
       </Container>
     </>
   )
