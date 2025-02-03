@@ -17,6 +17,8 @@ import courseCard from "./course/courseCard";
 import blogCard from "./blog/blogCard";
 import courseSpotlight from "./course/courseSpotlight";
 import courseList from "./course/courseList";
+import blogList from "./blog/blogList";
+import blogSpotlight from "./blog/blogSpotlight";
 
 export default {
   header,
@@ -40,5 +42,7 @@ export default {
   footer,
   blogCard,
   courseSpotlight,
-  courseList
+  courseList,
+  blogSpotlight,
+  blogList,
 } as const;

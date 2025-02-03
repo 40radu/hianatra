@@ -1,15 +1,17 @@
 export default {
   body: {
-    free: "Gratuit",
-    paying: "Payant",
+    status: {
+      free: "Gratuit",
+      paying: "Payant",
+    },
     student: "Etudiants",
-    lesson: "Leçons",
+    lesson: "Leçon",
   },
   hover: {
     student: "Etudiants",
-    lesson: "Leçons",
+    lesson: "Leçon",
     button: {
-      seeMore: "Voir Plus",
+      seeMore: "voir plus",
       subsribe: "S'inscrire",
     },
   },
