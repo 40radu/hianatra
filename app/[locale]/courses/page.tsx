@@ -15,7 +15,7 @@ async function Courses() {
 		<>
 			<HeroCommon
 				smallTitle={translate("courseHero.title")}
-				largeTitle='Hianatra'
+				largeTitle='Hianatra.'
 			/>
 			<Spotlight />
 			<CoursesList />

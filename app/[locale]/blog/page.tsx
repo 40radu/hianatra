@@ -13,7 +13,7 @@ function Courses() {
     <>
       <HeroCommon
         smallTitle=''
-        largeTitle='Blogs'
+        largeTitle='Blogs.'
       />
       <SpotlightBlog />
       <BlogList />
