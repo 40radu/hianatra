@@ -1,26 +1,29 @@
 .instructors {
-	.decoration {
-		&::after {
-			rotate: -4deg;
-		}
-	}
+  .decoration {
+    &::after {
+      rotate: -4deg;
+    }
+  }
 
-	.swiper {
-		padding-block: 40px 60px;
-		@screen xl {
-			padding-block: 60px 75px;
-		}
-	}
+  .swiper {
+    padding-block: 40px 52px;
+    @screen lg {
+      padding-block: 40px 45px;
+    }
+    @screen xl {
+      padding-block: 60px 75px;
+    }
+  }
 
-	.swiper-pagination-bullet {
-		height: 7px;
-		width: 7px;
-		&-active {
-			@apply bg-blue-primary;
-		}
-		@screen xl {
-			width: 8px;
-			height: 8px;
-		}
-	}
+  .swiper-pagination-bullet {
+    height: 7px;
+    width: 7px;
+    &-active {
+      @apply bg-blue-primary;
+    }
+    @screen xl {
+      width: 8px;
+      height: 8px;
+    }
+  }
 }

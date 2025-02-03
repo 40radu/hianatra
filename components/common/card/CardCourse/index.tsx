@@ -15,12 +15,12 @@ export interface CardCourseProps {
 	numberOfStudent: number;
 	numberOfLesson: number;
 	price: string;
-	keyDescription : string
+	keyDescription: string
 }
 
 function CardCourse(props: CardCourseProps) {
 	const translate = useScopedI18n("courseCard")
-	const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price , keyDescription} = props
+	const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price, keyDescription } = props
 	return (
 		<div className={classNames("card-course")}>
 			<div className={classNames("card-course__head")}>
@@ -41,11 +41,11 @@ function CardCourse(props: CardCourseProps) {
 				<div className={classNames("card-course__body-description")}>
 					<span className={classNames("item", "students")}>
 						<Icon name='student' variant='blue-secondary' />
-						{numberOfStudent} {translate("body.student")}
+						{numberOfStudent} {translate("student")}
 					</span>
 					<span className={classNames("item", "lessons")}>
 						<Icon name='lesson' variant='blue-secondary' />
-						{numberOfLesson} {translate("body.lesson")}
+						{numberOfLesson} {translate("lesson")}
 					</span>
 				</div>
 			</div>
@@ -56,11 +56,11 @@ function CardCourse(props: CardCourseProps) {
 					<div className={classNames("info")}>
 						<span className={classNames("item", "students")}>
 							<Icon name='student' variant='blue-secondary' />
-							{numberOfStudent} {translate("hover.student")}
+							{numberOfStudent} {translate("student")}
 						</span>
 						<span className={classNames("item", "lessons")}>
 							<Icon name='lesson' variant='blue-secondary' />
-							{numberOfLesson} {translate("hover.lesson")}
+							{numberOfLesson} {translate("lesson")}
 						</span>
 					</div>
 					<p >

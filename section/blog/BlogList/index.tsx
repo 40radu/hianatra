@@ -3,10 +3,11 @@
 import React, { useState } from 'react'
 import Container from '@/components/common/Container'
 import ButtonSquare from '@/components/navigation/ButtonSquare'
-import './style.scss'
 import { allBlogData, archiveData, blogLinksData, collectionData, listTabBlog } from './data'
 import CardBlog from '@/components/common/card/CardBlog'
 import { useScopedI18n } from '@/locales/client'
+import './style.scss'
+
 
 function BlogList() {
   const [tabActive, setTabActive] = useState<listTabBlog>("all")

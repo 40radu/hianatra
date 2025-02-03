@@ -17,7 +17,7 @@ async function About() {
 	const translate = await getI18n()
 	return (
 		<>
-			<HeroCommon smallTitle={translate("aboutHero.title")} largeTitle='Hianatra' />
+			<HeroCommon smallTitle={translate("aboutHero.title")} largeTitle='Hianatra.' />
 			<Welcome />
 			<CardsAbout />
 			<Ready />

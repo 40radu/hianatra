@@ -4,12 +4,10 @@ export default {
       free: "Free",
       paying: "Paying",
     },
-    student: "Students",
-    lesson: "Lesson",
   },
+  student: "Students",
+  lesson: "Lessons",
   hover: {
-    student: "Students",
-    lesson: "Lesson",
     button: {
       seeMore: "See more",
       subsribe: "Subscribe",

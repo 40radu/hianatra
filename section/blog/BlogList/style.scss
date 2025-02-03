@@ -33,10 +33,19 @@
       }
 
       &__button {
+        @apply text-sm text-nowrap;
+        padding: 10px;
         border-radius: 5px;
 
         @screen lg {
+          padding: 15px;
+          font-size: 16px;
           border-radius: 10px;
+        }
+
+        @screen 2xl {
+          font-size: 18px;
+          font-weight: 500;
         }
       }
     }

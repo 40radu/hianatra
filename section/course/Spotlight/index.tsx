@@ -11,8 +11,6 @@ import './style.scss'
 import { spotlightCourseData } from './data'
 import { useScopedI18n } from '@/locales/client'
 
-// type keyOfDescription = "card1" | "card2" | "card3"
-
 function Spotlight() {
 	const translate = useScopedI18n("courseSpotlight")
 	return (

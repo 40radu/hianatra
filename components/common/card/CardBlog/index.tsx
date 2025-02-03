@@ -41,11 +41,11 @@ function CardBlog(props: BlogCardProps) {
         <div className={classNames("card-blog__body-description")}>
           <span className={classNames("item", "students")}>
             <Icon name='student' variant='blue-secondary' />
-            {numberOfStudent} {translate("body.student")}
+            {numberOfStudent} {translate("student")}
           </span>
           <span className={classNames("item", "lessons")}>
             <Icon name='lesson' variant='blue-secondary' />
-            {numberOfLesson} {translate("body.lesson")}
+            {numberOfLesson} {translate("lesson")}
           </span>
         </div>
       </div>
@@ -56,11 +56,11 @@ function CardBlog(props: BlogCardProps) {
           <div className={classNames("info")}>
             <span className={classNames("item", "students")}>
               <Icon name='student' variant='blue-secondary' />
-              {numberOfStudent} {translate("hover.student")}
+              {numberOfStudent} {translate("student")}
             </span>
             <span className={classNames("item", "lessons")}>
               <Icon name='lesson' variant='blue-secondary' />
-              {numberOfLesson} {translate("hover.lesson")}
+              {numberOfLesson} {translate("lesson")}
             </span>
           </div>
           <p >

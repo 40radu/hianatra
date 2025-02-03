@@ -1,6 +1,6 @@
 export default {
   tabs: {
-    all: "All blogs",
+    all: "Tous les blogs",
     collection: "Collections",
     archive: "Archives",
   },

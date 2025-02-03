@@ -97,7 +97,9 @@
   &:hover &__hover {
     transform: translateX(0);
     transition: 0.3s ease-in-out;
-    transition-delay: 0.5s;
+    @screen lg {
+      transition-delay: 0.75s;
+    }
   }
   &__hover {
     transition: 0s;
