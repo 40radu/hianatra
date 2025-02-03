@@ -2,7 +2,7 @@ import { CardCourseProps } from "@/components/common/card/CardCourse";
 import { keyOfCourseTopic } from "@/locales/type/listCourseTopic";
 
 interface SpotLightCoursProps extends CardCourseProps {
-  keyDescription : keyOfCourseTopic
+  keyDescription: keyOfCourseTopic;
 }
 
 export const spotlightCourseData: SpotLightCoursProps[] = [
@@ -18,7 +18,7 @@ export const spotlightCourseData: SpotLightCoursProps[] = [
   },
   {
     topic: "css",
-    image: "/courses/Css.png",
+    image: "/courses/html.png",
     isFree: false,
     numberOfStudent: 6,
     keyDescription: "css",

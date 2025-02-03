@@ -8,7 +8,7 @@ export interface LinksCoursType {
 }
 
 interface keyCardProps extends CardCourseProps {
-  keyDescription: keyOfCourseTopic
+  keyDescription: keyOfCourseTopic;
 }
 const courseLinksData: LinksCoursType[] = [
   {
@@ -38,7 +38,7 @@ const allCourseData: keyCardProps[] = [
   },
   {
     topic: "css",
-    image: "/courses/Css.png",
+    image: "/courses/javascript.png",
     isFree: false,
     numberOfStudent: 6,
     keyDescription: "css",
@@ -78,7 +78,7 @@ const allCourseData: keyCardProps[] = [
   },
   {
     topic: "sass",
-    image: "/courses/Css.png",
+    image: "/courses/javascript.png",
     isFree: false,
     numberOfStudent: 7,
     keyDescription: "css",
@@ -86,7 +86,7 @@ const allCourseData: keyCardProps[] = [
     price: "20.000",
     title: "sass course",
   },
-]
+];
 
 const archiveData: keyCardProps[] = [
   {
@@ -98,8 +98,8 @@ const archiveData: keyCardProps[] = [
     numberOfLesson: 10,
     price: "20.000",
     title: "HTML course",
-  }
-]
+  },
+];
 
 const collectionData: keyCardProps[] = [
   {
@@ -132,6 +132,6 @@ const collectionData: keyCardProps[] = [
     price: "20.000",
     title: "UI/UX course",
   },
-]
+];
 
-export { allCourseData, archiveData, collectionData, courseLinksData }
+export { allCourseData, archiveData, collectionData, courseLinksData };

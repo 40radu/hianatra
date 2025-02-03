@@ -7,7 +7,7 @@ import "./style.scss"
 import Button from '@/components/navigation/Button'
 import { useScopedI18n } from '@/locales/client'
 
-export interface BlogCourseProps {
+export interface BlogCardProps {
   topic: string;
   image: string;
   isFree: boolean;
@@ -15,11 +15,11 @@ export interface BlogCourseProps {
   numberOfStudent: number;
   numberOfLesson: number;
   price: string;
-  description: string
+  keyDescription: string
 }
 
-function CardBlog(props: BlogCourseProps) {
-  const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price, description } = props
+function CardBlog(props: BlogCardProps) {
+  const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price, keyDescription } = props
   const translate = useScopedI18n("blogCard")
   return (
     <div className={classNames("card-blog")}>
@@ -33,7 +33,7 @@ function CardBlog(props: BlogCourseProps) {
       </div>
       <div className={classNames("card-blog__body")}>
         <p className={classNames("card-blog__body-access", { free: isFree })}>
-          {isFree ? translate("body.free") : translate("body.paying")}
+          {isFree ? translate("body.status.free") : translate("body.status.paying")}
         </p>
         <h4>
           {title}
@@ -41,11 +41,11 @@ function CardBlog(props: BlogCourseProps) {
         <div className={classNames("card-blog__body-description")}>
           <span className={classNames("item", "students")}>
             <Icon name='student' variant='blue-secondary' />
-            {numberOfStudent} {translate("body.student")}
+            {numberOfStudent} {translate("student")}
           </span>
           <span className={classNames("item", "lessons")}>
             <Icon name='lesson' variant='blue-secondary' />
-            {numberOfLesson} {translate("body.lesson")}
+            {numberOfLesson} {translate("lesson")}
           </span>
         </div>
       </div>
@@ -56,15 +56,15 @@ function CardBlog(props: BlogCourseProps) {
           <div className={classNames("info")}>
             <span className={classNames("item", "students")}>
               <Icon name='student' variant='blue-secondary' />
-              {numberOfStudent} {translate("hover.student")}
+              {numberOfStudent} {translate("student")}
             </span>
             <span className={classNames("item", "lessons")}>
               <Icon name='lesson' variant='blue-secondary' />
-              {numberOfLesson} {translate("hover.lesson")}
+              {numberOfLesson} {translate("lesson")}
             </span>
           </div>
           <p >
-            {description}
+            {keyDescription}
           </p>
         </div>
         <div className={classNames("card-blog__hover-wrapper_btns")}>

@@ -16,8 +16,7 @@ async function Welcome() {
 			</span >
 			<div className="a-welcome__text">
 				<Heading label={translate("title")} align='start'>
-					{translate("subtitle.first")}
-					<span className="decoration">{translate("subtitle.deco")} </span> {translate("subtitle.end")}
+					{translate("subtitle.first")} <span className="decoration">{translate("subtitle.deco")}</span> {translate("subtitle.end")}
 				</Heading>
 				<p className="description">
 					{translate("description")}

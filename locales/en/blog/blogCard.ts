@@ -1,13 +1,13 @@
 export default {
   body: {
-    free: "Free",
-    paying: "Paying",
-    student: "Students",
-    lesson: "Lesson",
+    status: {
+      free: "Free",
+      paying: "Paying",
+    },
   },
+  student: "Students",
+  lesson: "Lessons",
   hover: {
-    student: "Students",
-    lesson: "Lesson",
     button: {
       seeMore: "See more",
       subsribe: "Subscribe",
