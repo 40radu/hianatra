@@ -17,7 +17,6 @@ function Courses() {
       />
       <SpotlightBlog />
       <BlogList />
-
     </>
   )
 }

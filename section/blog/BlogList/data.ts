@@ -1,148 +1,137 @@
+import { BlogCardProps } from "@/components/common/card/CardBlog";
+import { KeyOfBlogTopic } from "@/locales/type/listCourseTopic";
+export type listTabBlog = "all" | "collection" | "archive";
 
-import { BlogCourseProps } from '@/components/common/card/CardBlog';
-export type listTabBlog = "all" | "collections" | "archives"
-
-export interface LinksBlogsType {
-    label : string, 
-    href : listTabBlog
+export interface LinksBlogType {
+  label: listTabBlog;
+  href: listTabBlog;
 }
- const blogLinksData : LinksBlogsType[] = [
-    {
-        label : "Tous les blogs",
-        href : "all"
-    },
-    {
-        label : "Collections",
-        href : "collections"
-    },
-    {
-        label : "Archives",
-        href : "archives"
-    }
-]
 
-type ListBlogProps = {
-    type : listTabBlog,
-    content : BlogCourseProps[]
-}[]
+interface keyCardProps extends BlogCardProps {
+  keyDescription: KeyOfBlogTopic;
+}
+const blogLinksData: LinksBlogType[] = [
+  {
+    label: "all",
+    href: "all",
+  },
+  {
+    label: "collection",
+    href: "collection",
+  },
+  {
+    label: "archive",
+    href: "archive",
+  },
+];
 
-const blogListData : ListBlogProps = [
-    {
-        type : "all",
-        content : [
-                    {
-                        topic : 'html',
-                        image : '/courses/html.png',
-                        isFree : true,
-                        numberOfStudent : 4,
-                        description : 'this is a html description',
-                        numberOfLesson : 10,
-                        price : '20.000',
-                        title : 'HTML course'
-                    },
-                    {
-                        topic : 'css',
-                        image : '/courses/Css.png',
-                        isFree : false,
-                        numberOfStudent : 6,
-                        description : 'this is a css description',
-                        numberOfLesson : 10,
-                        price : '20.000',
-                        title : 'CSS course'
-                    },
-                    {
-                        topic : 'ui/ux',
-                        image : '/courses/ui-ux.png',
-                        isFree : true,
-                        numberOfStudent : 4,
-                        description : 'this is a ui/ux description',
-                        numberOfLesson : 10,
-                        price : '20.000',
-                        title : 'UI/UX course'
-                    },
-                    {
-                        topic : 'Vue js',
-                        image : "/courses/javascript.png",
-                        isFree : true,
-                        numberOfStudent : 4,
-                        description : 'this is a Vue js description',
-                        numberOfLesson : 10,
-                        price : '20.000',
-                        title : 'Vue js course'
-                    },
-                    {
-                        topic : 'react',
-                        image : '/courses/html.png',
-                        isFree : false,
-                        numberOfStudent : 4,
-                        description : 'this is a react description',
-                        numberOfLesson : 10,
-                        price : '20.000',
-                        title : 'react course'
-                    },
-                    {
-                        topic : 'sass',
-                        image : '/courses/Css.png',
-                        isFree : false,
-                        numberOfStudent : 7,
-                        description : 'this is a sass description',
-                        numberOfLesson : 10,
-                        price : '20.000',
-                        title : 'sass course'
-                    }
-        ]
-    },
-    {
-        type :  "archives",
-        content : [
-            {
-                topic : 'html',
-                image : '/courses/html.png',
-                isFree : true,
-                numberOfStudent : 4,
-                description : 'this is a html description',
-                numberOfLesson : 10,
-                price : '20.000',
-                title : 'HTML course'
-            }
-        ]
-    },
-    {
-        type :  "collections",
-        content : [
-            {
-                topic : 'html',
-                image : '/courses/html.png',
-                isFree : true,
-                numberOfStudent : 4,
-                description : 'this is a html description',
-                numberOfLesson : 10,
-                price : '20.000',
-                title : 'HTML course'
-            },
-            {
-                topic : 'css',
-                image : '/courses/Css.png',
-                isFree : true,
-                numberOfStudent : 6,
-                description : 'this is a css description',
-                numberOfLesson : 10,
-                price : '20.000',
-                title : 'CSS course'
-            },
-            {
-                topic : 'ui/ux',
-                image : '/courses/ui-ux.png',
-                isFree : true,
-                numberOfStudent : 4,
-                description : 'this is a ui/ux description',
-                numberOfLesson : 10,
-                price : '20.000',
-                title : 'UI/UX course'
-            }
-            
-        ]
-    }, 
-]
+const allBlogData: keyCardProps[] = [
+  {
+    topic: "html",
+    image: "/courses/html.png",
+    isFree: true,
+    numberOfStudent: 4,
+    keyDescription: "html",
+    numberOfLesson: 10,
+    price: "20.000",
+    title: "HTML Blog",
+  },
+  {
+    topic: "css",
+    image: "/courses/Css.png",
+    isFree: false,
+    numberOfStudent: 6,
+    keyDescription: "css",
+    numberOfLesson: 10,
+    price: "20.000",
+    title: "CSS Blog",
+  },
+  {
+    topic: "ui/ux",
+    image: "/courses/ui-ux.png",
+    isFree: true,
+    numberOfStudent: 4,
+    keyDescription: "ux/ui",
+    numberOfLesson: 10,
+    price: "20.000",
+    title: "UI/UX Blog",
+  },
+  {
+    topic: "Vue js",
+    image: "/courses/javascript.png",
+    isFree: true,
+    numberOfStudent: 4,
+    keyDescription: "css",
+    numberOfLesson: 10,
+    price: "20.000",
+    title: "Vue js Blog",
+  },
+  {
+    topic: "react",
+    image: "/courses/html.png",
+    isFree: false,
+    numberOfStudent: 4,
+    keyDescription: "html",
+    numberOfLesson: 10,
+    price: "20.000",
+    title: "react Blog",
+  },
+  {
+    topic: "sass",
+    image: "/courses/Css.png",
+    isFree: false,
+    numberOfStudent: 7,
+    keyDescription: "css",
+    numberOfLesson: 10,
+    price: "20.000",
+    title: "sass Blog",
+  },
+];
 
-export {blogLinksData, blogListData}
+const archiveData: keyCardProps[] = [
+  {
+    topic: "html",
+    image: "/courses/html.png",
+    isFree: true,
+    numberOfStudent: 4,
+    keyDescription: "html",
+    numberOfLesson: 10,
+    price: "20.000",
+    title: "HTML Blog",
+  },
+];
+
+const collectionData: keyCardProps[] = [
+  {
+    topic: "html",
+    image: "/courses/html.png",
+    isFree: true,
+    numberOfStudent: 4,
+    keyDescription: "css",
+    numberOfLesson: 10,
+    price: "20.000",
+    title: "HTML Blog",
+  },
+  {
+    topic: "css",
+    image: "/courses/Css.png",
+    isFree: true,
+    numberOfStudent: 6,
+    keyDescription: "javascript",
+    numberOfLesson: 10,
+    price: "20.000",
+    title: "CSS Blog",
+  },
+  {
+    topic: "ui/ux",
+    image: "/courses/ui-ux.png",
+    isFree: true,
+    numberOfStudent: 4,
+    keyDescription: "html",
+    numberOfLesson: 10,
+    price: "20.000",
+    title: "UI/UX Blog",
+  },
+];
+
+export { allBlogData, archiveData, collectionData, blogLinksData };
