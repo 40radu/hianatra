@@ -6,9 +6,11 @@ import Button from '@/components/navigation/Button'
 import Image from 'next/image'
 import React from 'react'
 import { scrollTo } from '@/app/utils/scrollTo'
+import { useScopedI18n } from '@/locales/client'
 
 function ContactUs() {
-  const scrollToContact = ()=>{
+  const translate = useScopedI18n("contactUs")
+  const scrollToContact = () => {
     scrollTo("contact")
   }
   return (
@@ -16,13 +18,13 @@ function ContactUs() {
       <div className="contact-us__text">
         <Heading label='' align='start'>
           <span className='primary'>
-            Besoin d’aide ou de plus <br /> d’informations ? Nous <br /> sommes là pour vous.
+            {translate("title")}
           </span>
         </Heading>
         <div className="contact-us__text-description">
-          <p className="fat">Contactez notre équipe et obtenez des réponses rapidement.</p>
+          <p className="fat">{translate("descri")}</p>
         </div>
-        <Button label='Nous contacter' onClick={scrollToContact}/>
+        <Button label={translate("button")} onClick={scrollToContact} />
       </div>
 
       <div className="contact-us__image">
