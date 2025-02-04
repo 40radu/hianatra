@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import Image from 'next/image'
 import React from 'react'
 import "./style.scss"
@@ -13,16 +12,16 @@ export interface CardInfoProps {
 function CardInfo(props: CardInfoProps) {
   const { image, title, firstDescription, secondDescription } = props
   return (
-    <div className={classNames("card-info")}>
-      <div className={classNames("card-info__head")}>
-        <span className={classNames("img")}>
+    <div className="card-info">
+      <div className="card-info__head">
+        <span className="img">
           <Image src={image} alt='' width={100} height={100} />
         </span>
         <h4>
           {title}
         </h4>
       </div>
-      <p className={classNames("card-info__description")}>
+      <p className="card-info__description">
         <span> {firstDescription}</span>
         <span>  {secondDescription} </span>
       </p>

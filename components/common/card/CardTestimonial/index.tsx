@@ -1,6 +1,5 @@
 import Icon from '@/components/Icon'
 import Star from '@/components/Icon/Star/Star'
-import classNames from 'classnames'
 import Image from 'next/image'
 import React from 'react'
 import "./style.scss"
@@ -14,20 +13,20 @@ export interface CardTestimonialProps {
 function CardTestimonial(props: CardTestimonialProps) {
     const { description, image, starNumber, userName } = props
     return (
-        <div className={classNames("card-testimonial")} >
-            <div className={classNames("card-testimonial__head")}>
-                <span className={classNames("profile")}><Image src={image} alt="" width={96} height={96} /></span>
+        <div className="card-testimonial" >
+            <div className="card-testimonial__head">
+                <span className="profile"><Image src={image} alt="" width={96} height={96} /></span>
                 <Icon name='apostr' variant='blue-secondary' className='apostr' />
             </div>
-            <div className={classNames("card-testimonial__stars")}>
+            <div className="card-testimonial__stars">
                 {starNumber ? Array(starNumber).fill(null).map((_, index) => {
                     return (
                         <Star key={`star_${index}`} />
                     )
                 }) : ""}
             </div>
-            <p className={classNames("card-testimonial__description")} dangerouslySetInnerHTML={{ __html: description }} />
-            <p className={classNames("card-testimonial__user")}>
+            <p className="card-testimonial__description" dangerouslySetInnerHTML={{ __html: description }} />
+            <p className={"card-testimonial__user"}>
                 {userName}
             </p>
         </div>

@@ -22,43 +22,43 @@ function CardCourse(props: CardCourseProps) {
 	const translate = useScopedI18n("courseCard")
 	const { image, isFree, numberOfLesson, numberOfStudent, title, topic, price, keyDescription } = props
 	return (
-		<div className={classNames("card-course")}>
-			<div className={classNames("card-course__head")}>
-				<span className={classNames("card-course__head-image")}>
+		<div className="card-course">
+			<div className="card-course__head">
+				<span className="card-course__head-image">
 					<Image src={image} width={433} height={282} alt='' />
 				</span>
-				<div className={classNames("card-course__head-topic")}>
+				<div className="card-course__head-topic">
 					<p>{topic}</p>
 				</div>
 			</div>
-			<div className={classNames("card-course__body")}>
+			<div className="card-course__body">
 				<p className={classNames("card-course__body-access", { free: isFree })}>
 					{isFree ? translate("body.status.free") : translate("body.status.paying")}
 				</p>
 				<h4>
 					{title}
 				</h4>
-				<div className={classNames("card-course__body-description")}>
-					<span className={classNames("item", "students")}>
+				<div className="card-course__body-description">
+					<span className="item students">
 						<Icon name='student' variant='blue-secondary' />
 						{numberOfStudent} {translate("student")}
 					</span>
-					<span className={classNames("item", "lessons")}>
+					<span className="item lessons">
 						<Icon name='lesson' variant='blue-secondary' />
 						{numberOfLesson} {translate("lesson")}
 					</span>
 				</div>
 			</div>
-			<div className={classNames("card-course__hover")}>
-				<p className={classNames("card-course__hover-price")}> {price} Ar </p>
-				<div className={classNames("card-course__hover-text")}>
+			<div className="card-course__hover">
+				<p className="card-course__hover-price"> {price} Ar </p>
+				<div className={"card-course__hover-text"}>
 					<h4>{title}</h4>
-					<div className={classNames("info")}>
-						<span className={classNames("item", "students")}>
+					<div className="info">
+						<span className="item students">
 							<Icon name='student' variant='blue-secondary' />
 							{numberOfStudent} {translate("student")}
 						</span>
-						<span className={classNames("item", "lessons")}>
+						<span className="item lessons">
 							<Icon name='lesson' variant='blue-secondary' />
 							{numberOfLesson} {translate("lesson")}
 						</span>
@@ -67,7 +67,7 @@ function CardCourse(props: CardCourseProps) {
 						{keyDescription}
 					</p>
 				</div>
-				<div className={classNames("card-course__hover-wrapper_btns")}>
+				<div className="card-course__hover-wrapper_btns">
 					<Button label={translate("hover.button.seeMore")} />
 					<Button label={translate("hover.button.subsribe")} variant='transparent' />
 				</div>

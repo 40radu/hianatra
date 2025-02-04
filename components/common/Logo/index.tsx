@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import React from 'react'
 import "./style.scss"
 
@@ -9,7 +8,7 @@ interface LogoProps {
 function Logo(props: LogoProps) {
     const { variant } = props
     return (
-        <svg width="79" height="88" viewBox="0 0 79 88" fill="none" xmlns="http://www.w3.org/2000/svg" className={classNames('logo', `logo--${variant}`)}>
+        <svg width="79" height="88" viewBox="0 0 79 88" fill="none" xmlns="http://www.w3.org/2000/svg" className={`logo logo--${variant}`}>
             <path d="M17.0354 44.0816H0V75.2664C0 84.3733 9.85843 90.065 17.7452 85.5116L73.1102 53.5466C76.796 51.4186 78.7593 47.7988 79 44.0816H47.2208V52.4294C47.2208 57.4508 43.1502 61.5214 38.1288 61.5214V44.0816H26.1274V52.4294C26.1274 57.4508 22.0567 61.5214 17.0354 61.5214V44.0816Z"
                 fill="currentColor" />
             <path d="M0 11.8478L2.72626e-06 43.0326H17.0354V34.6451C17.0354 29.6237 21.106 25.5531 26.1274 25.5531V43.0326H38.1288V34.6451C38.1288 29.6237 42.1994 25.5531 47.2208 25.5531V43.0326L79 43.0326C78.7593 39.3154 76.796 35.6956 73.1102 33.5676L17.7452 1.60258C9.85843 -2.95083 -7.96145e-07 2.74095 0 11.8478Z"
