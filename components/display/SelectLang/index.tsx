@@ -62,7 +62,7 @@ export default function Selectlang() {
 	return (
 		<div className="select-lang" ref={selectRef}>
 			<div
-				className={classNames('select-lang__default')}
+				className='select-lang__default'
 				onClick={toogleShowOption}>
 				<p> {mainLang} </p>
 				<Icon
