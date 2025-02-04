@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import React from 'react'
 import "./style.scss"
 interface TextAreaProps {
@@ -10,7 +9,7 @@ interface TextAreaProps {
 function TextArea(props: TextAreaProps) {
     const { name, placeholder, onChange } = props
     return (
-        <div className={classNames("text-area")}>
+        <div className={"text-area"}>
             <textarea name={name} placeholder={placeholder} onChange={onChange} />
         </div>
     )

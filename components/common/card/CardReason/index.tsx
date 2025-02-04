@@ -1,5 +1,4 @@
 import ButtonMore from '@/components/navigation/ButtonMore';
-import classNames from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link'
 import React from 'react'
@@ -16,8 +15,8 @@ async function CardReason(props: CardReasonProps) {
     const { image, description, link, title } = props
     const t = await getI18n()
     return (
-        <Link href={link} className={classNames("card-reason")}>
-            <span className={classNames("image")}>
+        <Link href={link} className="card-reason">
+            <span className={"image"}>
                 <Image src={image} alt="" width={127} height={127} />
             </span>
             <h4>{title}</h4>

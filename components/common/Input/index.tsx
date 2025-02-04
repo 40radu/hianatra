@@ -1,4 +1,3 @@
-import classNames from 'classnames'
 import React from 'react'
 import "./style.scss"
 interface InputProps {
@@ -12,7 +11,7 @@ interface InputProps {
 function Input(props: InputProps) {
   const { name, type = "text", placeholder, className = "", onChange } = props
   return (
-    <div className={classNames("input", `${className}`)}>
+    <div className={`input ${className}`}>
       <input
         name={name}
         type={type}
