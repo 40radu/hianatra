@@ -32,10 +32,10 @@ function Header() {
 		})
 	}, [])
 	return (
-		<header className={classNames("header__bg")}>
-			<Container tag='div' className={classNames("header__content")}>
+		<header className="header__bg">
+			<Container tag='div' className="header__content">
 				<Link href="/" className='logo'><Logo variant='primary' /></Link>
-				<nav className={classNames("header__content-nav")}>
+				<nav className="header__content-nav">
 					{dataLinks.map((link, index) => (
 						<Link key={`link_${index}`} href={link.href} className={classNames("link", { active: pathname == link.href })}>
 							{t(link.labelKey)}
@@ -51,13 +51,13 @@ function Header() {
 							{t(link.labelKey)}
 						</Link>
 					))}
-					<Link href="/contact" onClick={handleMenuOpen} className={classNames("button")}>
+					<Link href="/contact" onClick={handleMenuOpen} className="button">
 						<Button label='Contact' />
 					</Link>
 				</nav>
-				<div className={classNames("header__content-right")}>
+				<div className="header__content-right">
 					<Selectlang />
-					<Link href="/contact" className={classNames("button")}> <Button label='Contact' /></Link>
+					<Link href="/contact" className="button"> <Button label='Contact' /></Link>
 					<div className={classNames("menu-bar", { active: isMenuOpen })} onClick={handleMenuOpen}>
 						<span></span>
 						<span></span>
