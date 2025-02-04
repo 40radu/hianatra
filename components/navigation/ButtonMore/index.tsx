@@ -10,7 +10,7 @@ interface ButtonMoreProps {
 function ButtonMore(props: ButtonMoreProps) {
     const { label, color = "#FF1414", iconVariant = "red" } = props
     return (
-        <div style={{ color: color } as React.CSSProperties} className={"btn-more"}>
+        <div style={{ color: color } as React.CSSProperties} className="btn-more">
             {label}
             <Icon variant={iconVariant} name='arrowRight' />
         </div>
