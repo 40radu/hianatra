@@ -16,11 +16,11 @@ async function Ready() {
 					<p>{t("description")}</p>
 				</div>
 				<div className="ready__logos">
-					<Link href="" className="logo">
-						<Image src="/home/google-play.png" alt='' width={266} height={117} />
+					<Link href="" className="link">
+						<Image src="/home/google-play.svg" alt='' width={266} height={117} />
 					</Link>
-					<Link href="" className="logo">
-						<Image src="/home/app-store.png" alt='' width={266} height={117} />
+					<Link href="" className="link">
+						<Image src="/home/app-store.svg" alt='' width={266} height={117} />
 					</Link>
 				</div>
 				<span className="ready__3circles">

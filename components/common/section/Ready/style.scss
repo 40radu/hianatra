@@ -45,27 +45,20 @@
     &__logos {
         @apply flex relative z-10 items-center;
         gap: 20px;
-        .logo {
-            width: 112px;
-            height: 46px;
+        .link {
+            width: auto;
+            height: 68px;
             img {
                 @apply w-full h-full;
             };
-            @screen md {
-                width: 150px;
-                height: 66px;
-            };
             @screen lg {
-                width: 172px;
                 height: 75px;
             };
             @screen xl {
-                width: 192px;
-                height: 86;
+                height: 86px;
             };
             @screen 2xl {
-                width: 266px;
-                height: 117px;
+                height: auto;
             }
 
         };
