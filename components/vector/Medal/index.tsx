@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import React from 'react'
 
 interface MedalProps {
@@ -8,7 +7,7 @@ interface MedalProps {
 function Medal(props: MedalProps) {
 	const { className = "" } = props
 	return (
-		<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" className={classNames(`${className}`)}>
+		<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
 			<rect x="0.5" y="0.5" width="199" height="199" rx="99.5" stroke="#031EA9" />
 			<rect x="16.1956" y="16.5" width="167.609" height="167" rx="83.5" fill="#020F4F" />
 			<g clipPath="url(#clip0_102_174)">
