@@ -7,10 +7,10 @@ function HomeHeroImage() {
 	return (
 		<div className="h-image">
 			<Image className="dashed"
-				src="/bg-dashed.png" width={1920} height={1024} alt='hero' />
+				src="/bg-dashed.png" width={700} height={700} alt='hero-dashed' priority />
 			<div className="circle">
 				<span className="main-img">
-					<Image src="/home/hero.svg" width={1920} height={1024} alt='hero' />
+					<Image src="/home/hero.svg" width={580} height={680} alt='hero' />
 				</span>
 			</div>
 			<span className="h-image__logo css">
