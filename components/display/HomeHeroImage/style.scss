@@ -8,16 +8,7 @@
   }
   .dashed {
     @apply absolute w-full left-0 top-0 object-cover;
-    animation: dashedImage linear infinite 220s;
   }
-  // @keyframes dashedImage {
-  //   from {
-  //     rotate: 0;
-  //   }
-  //   to {
-  //     rotate: 360deg;
-  //   }
-  // }
   .circle {
     @apply w-full rounded-full bg-blue-secondary relative;
     aspect-ratio: 1/1;
